@@ -1,0 +1,9 @@
+
+@media (max-width: 787px) {
+  .hellom {
+    height: 50vh;
+  }
+  .iframe_outer{
+    height: 50vh;
+  }
+}

@@ -1,0 +1,105 @@
+.introduction {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  z-index: 99;
+  background-color: #006f69;
+}
+
+.introduction svg {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: calc(100% + 300px);
+}
+
+.introduction svg path {
+  fill: #006f69;
+}
+
+.introduction p {
+  display: flex;
+  color: white;
+  font-size: 42px;
+  align-items: center;
+  position: absolute;
+  z-index: 1;
+}
+
+.introduction p span {
+  display: block;
+  width: 10px;
+  height: 10px;
+  background-color: white;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.counterContainer {
+  position: relative;
+}
+
+.preloader_text{
+  position: absolute;
+  right: 0rem;
+  bottom: 0rem;
+}
+
+.percentageCounter {
+  font-size: 5em;
+  position: absolute;
+  right: -38rem;
+  bottom: -17rem;
+  color: #fff;
+}
+
+@media(min-width:1600px){
+  .percentageCounter {
+    font-size: 5em;
+    position: absolute;
+    right: -50rem;
+    bottom: -22rem;
+    color: #fff;
+  }
+}
+
+@media(max-width:991px){
+  .percentageCounter {
+    font-size: 5em;
+    position: absolute;
+    right: -18rem;
+    bottom: -20rem;
+    color: #fff;
+  }
+
+  .preloader_text{
+    position: absolute;
+    right: -3rem;
+    bottom: 5rem;
+  }
+  
+}
+
+
+
+
+
+@media(max-width:787px){
+  .percentageCounter {
+    font-size: 5em;
+    position: absolute;
+    right: -5rem;
+    bottom: -20rem;
+    color: #fff;
+  }
+
+  .preloader_text{
+    position: absolute;
+    right: -3rem;
+    bottom: 5rem;
+  }
+  
+}

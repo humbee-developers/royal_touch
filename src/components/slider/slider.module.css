@@ -1,0 +1,235 @@
+.slider_wrapper {
+  /* display: flex; */
+  justify-content: space-around;
+}
+.side_one_wrapper {
+  text-align: left;
+  display: flex;
+}
+.sliderCard {
+  padding: 0;
+}
+
+.slider_image_outer {
+  height: 100%;
+}
+.slider_image_test {
+  width: 100%;
+  height: 100%;
+}
+.slider_header {
+  font-size: 66px;
+  padding: 79px 0px 0px 80px;
+  font-weight: 400;
+  color: white;
+  text-transform: uppercase;
+}
+.slider_number {
+  font-size: 22px;
+  margin-top: 1rem;
+  font-weight: 300;
+}
+.slider_email {
+  margin-top: 0.3rem;
+  font-size: 22px;
+  font-weight: 300;
+}
+.slider_text {
+  margin-top: 1.4rem;
+  padding: 63px;
+  line-height: 141.5%;
+  width: 60%;
+  font-size: 23px;
+  color: white;
+}
+
+.customerCard_sideTwo {
+  background-color: #c3a464;
+  position: relative;
+  width: 25%;
+}
+
+.image_swiper_button_next {
+  border-radius: 50%;
+  width: 85px;
+  cursor: pointer;
+  position: absolute;
+  z-index: 19;
+  bottom: 25rem;
+  left: 84rem;
+  height: 85px;
+}
+.image_swiper_button_prev {
+  border-radius: 50%;
+  width: 85px;
+  cursor: pointer;
+  z-index: 9;
+  transform: rotate(180deg);
+  position: absolute;
+  bottom: 25rem;
+  left: 75rem;
+  height: 85px;
+}
+
+.navigation_arrow {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@media (min-width: 1600px) {
+  .image_swiper_button_next {
+    border-radius: 50%;
+    width: 85px;
+    cursor: pointer;
+    position: absolute;
+    z-index: 19;
+    bottom: 25rem;
+    left: 108rem;
+    height: 85px;
+  }
+  .image_swiper_button_prev {
+    border-radius: 50%;
+    width: 85px;
+    cursor: pointer;
+    z-index: 9;
+    transform: rotate(180deg);
+    position: absolute;
+    bottom: 25rem;
+    left: 100rem;
+    height: 85px;
+  }
+}
+
+@media (max-width: 991px) {
+  .side_one_wrapper {
+    text-align: left;
+    display: block;
+  }
+
+  .slider_header {
+    font-size: 45px;
+    padding: 35px;
+    font-weight: 400;
+    color: white;
+    text-transform: uppercase;
+  }
+  .slider_number {
+    font-size: 22px;
+    margin-top: 1rem;
+    font-weight: 300;
+  }
+
+  .slider_text {
+    margin-top: 0;
+    padding: 10px 24px 73px 35px;
+    line-height: 141.5%;
+    margin-bottom: 2.2rem;
+    width: 100%;
+    font-weight: 300;
+    font-size: 22px;
+    color: white;
+  }
+  .slider_image_test {
+    height: 280px;
+  }
+
+  .image_swiper_button_next {
+    border-radius: 50%;
+    width: 55px;
+    cursor: pointer;
+    position: absolute;
+    z-index: 19;
+    bottom: 3rem;
+    left: 45rem;
+    height: 55px;
+  }
+  .image_swiper_button_prev {
+    border-radius: 50%;
+    width: 55px;
+    cursor: pointer;
+    z-index: 9;
+    transform: rotate(180deg);
+    position: absolute;
+    bottom: 3rem;
+    left: 39rem;
+    height: 55px;
+  }
+
+  .navigation_arrow {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 40px;
+    transform: translate(-50%, -50%);
+  }
+}
+
+@media (max-width: 787px) {
+  .side_one_wrapper {
+    text-align: left;
+    display: block;
+  }
+
+  .slider_header {
+    font-size: 45px;
+    padding: 35px;
+    font-weight: 400;
+    color: white;
+    text-transform: uppercase;
+  }
+  .slider_number {
+    font-size: 22px;
+    margin-top: 1rem;
+    font-weight: 300;
+  }
+
+  .slider_text {
+    margin-top: 0;
+    padding: 0px 24px 73px 35px;
+    line-height: 141.5%;
+    margin-bottom: 2.2rem;
+    width: 100%;
+    font-weight: 300;
+    font-size: 22px;
+    color: white;
+  }
+  .slider_image_test {
+    height: 280px;
+  }
+
+  .image_swiper_button_next {
+    color: black;
+  }
+
+  .image_swiper_button_next {
+    border-radius: 50%;
+    width: 55px;
+    cursor: pointer;
+    position: absolute;
+    z-index: 19;
+    bottom: 3rem;
+    left: 19rem;
+    height: 55px;
+  }
+  .image_swiper_button_prev {
+    border-radius: 50%;
+    width: 55px;
+    cursor: pointer;
+    z-index: 9;
+    transform: rotate(180deg);
+    position: absolute;
+    bottom: 3rem;
+    left: 15rem;
+    height: 55px;
+  }
+
+  .navigation_arrow {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 40px;
+    transform: translate(-50%, -50%);
+  }
+}

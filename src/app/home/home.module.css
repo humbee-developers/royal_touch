@@ -1,0 +1,19 @@
+
+.homepage_third_image_wrapper {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 70/35;
+}
+
+
+@media (max-width: 787px) {
+  .homepage_third_image_wrapper {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 1;
+  }
+}
+@media(max-width:991px){
+  
+}
+

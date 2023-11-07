@@ -1,0 +1,110 @@
+.main {
+  display: flex;
+  height: 130vh;
+  align-items: flex-end;
+  justify-content: center;
+  margin-bottom: 40vh;
+  color: rgb(211, 211, 211);
+}
+.scroll_text_wrapper {
+  position: relative;
+}
+.scroll_text_header {
+  position: absolute;
+  color: white;
+  font-size: 30px;
+  top: -2rem;
+  left: 0.2rem;
+  font-weight: 300;
+}
+
+.body {
+  width: 90%;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.body p {
+  font-size: 3.4vw;
+  margin: 0px;
+  margin-right: 1.2vw;
+  font-weight: 300;
+}
+
+.body span {
+  opacity: 0.2;
+}
+.test {
+  background-color: #006f69;
+}
+
+
+
+@media (max-width: 991px) {
+  .body p {
+    font-size: 5.7vw;
+    margin: 0px;
+    margin-right: 1.5vw;
+    font-weight: 300;
+  }
+
+  .scroll_text_header{
+    position: absolute;
+    color: white;
+    font-size: 30px;
+    top: 20rem;
+    left: 3rem;
+    font-weight: 300;
+  }
+  .main {
+    display: flex;
+    height: 130vh;
+    align-items: flex-end;
+    justify-content: center;
+    margin-bottom: 10vh;
+    color: rgb(211, 211, 211);
+  }
+}
+
+
+
+
+@media (max-width: 787px) {
+  .body p {
+    font-size: 8vw;
+    margin: 0px;
+    margin-right: 1.8vw;
+    font-weight: 300;
+  }
+
+  .scroll_text_header{
+    position: absolute;
+    color: white;
+    font-size: 30px;
+    top: 35rem;
+    left: 1.3rem;
+    font-weight: 300;
+  }
+
+  .main {
+    display: flex;
+    height: 100vh;
+    align-items: flex-end;
+    justify-content: center;
+    margin-bottom: 10vh;
+    color: rgb(211, 211, 211);
+  }
+}
+
+
+@media(max-width:575px){
+  .scroll_text_header{
+    position: absolute;
+    color: white;
+    font-size: 30px;
+    top: -3rem;
+    left: 0.3rem;
+    font-weight: 300;
+  }
+}

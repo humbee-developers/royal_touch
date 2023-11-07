@@ -1,0 +1,170 @@
+import { Navigation, EffectFade, A11y } from "swiper/modules";
+import { Swiper, SwiperSlide } from "swiper/react";
+import Image from "next/image";
+import slider_image from "@/images/tst.png";
+import rightArrow from "@/images/Arrow.svg";
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import "swiper/css/scrollbar";
+import "swiper/css/effect-fade";
+import styles from "@/common/new_carousal/new_carousal.module.css";
+export default () => {
+  return (
+    <div className={styles.sliderCard_outer_first}>
+      <div className={styles.sliderCard}>
+        <Swiper
+          effect="fade"
+          speed={2000}
+          fadeEffect={{
+            crossFade: true,
+          }}
+          modules={[Navigation, EffectFade, A11y]}
+          spaceBetween={5}
+          slidesPerView={1}
+          navigation={{
+            nextEl: ".new_carousal_image_swiper_button_next__S2lHF img",
+            prevEl: ".new_carousal_image_swiper_button_prev__1cMQG img",
+          }}
+        >
+          <SwiperSlide>
+            <div className={styles.slider_wrapper}>
+              <div className={styles.slider_side_one}>
+                <div className={styles.side_one_wrapper}>
+                  <div className={styles.photo_gallery}>Photo Gallery</div>
+                  <div className={styles.slider_header}>
+                    Lorem Ipsum is simply
+                  </div>
+
+                  <div className={styles.slider_text}>
+                    Lorem Ipsum has been the industry's standard dummy text ever
+                    since the 1500s, when an unknown printer took a galley of
+                    type and scrambled it to make a type specimen book. It has
+                    survived not only five centuries, but also the leap
+                  </div>
+                </div>
+              </div>
+
+              <div className={styles.slider_side_two}>
+                <div className={styles.slider_image_outer}>
+                  <Image
+                    src={slider_image}
+                    alt="Picture of the author"
+                    className={styles.slider_image_test}
+                  />
+                </div>
+              </div>
+            </div>
+          </SwiperSlide>
+
+          <SwiperSlide>
+            <div className={styles.slider_wrapper}>
+              <div className={styles.slider_side_one}>
+                <div className={styles.side_one_wrapper}>
+                  <div className={styles.photo_gallery}>Photo Gallery</div>
+                  <div className={styles.slider_header}>
+                    Lorem Ipsum is simply
+                  </div>
+
+                  <div className={styles.slider_text}>
+                    Lorem Ipsum has been the industry's standard dummy text ever
+                    since the 1500s, when an unknown printer took a galley of
+                    type and scrambled it to make a type specimen book. It has
+                    survived not only five centuries, but also the leap
+                  </div>
+                </div>
+              </div>
+
+              <div className={styles.slider_side_two}>
+                <div className={styles.slider_image_outer}>
+                  <Image
+                    src={slider_image}
+                    alt="Picture of the author"
+                    className={styles.slider_image_test}
+                  />
+                </div>
+              </div>
+            </div>
+          </SwiperSlide>
+
+          <SwiperSlide>
+            <div className={styles.slider_wrapper}>
+              <div className={styles.slider_side_one}>
+                <div className={styles.side_one_wrapper}>
+                  <div className={styles.photo_gallery}>Photo Gallery</div>
+                  <div className={styles.slider_header}>
+                    Lorem Ipsum is simply
+                  </div>
+
+                  <div className={styles.slider_text}>
+                    Lorem Ipsum has been the industry's standard dummy text ever
+                    since the 1500s, when an unknown printer took a galley of
+                    type and scrambled it to make a type specimen book. It has
+                    survived not only five centuries, but also the leap
+                  </div>
+                </div>
+              </div>
+
+              <div className={styles.slider_side_two}>
+                <div className={styles.slider_image_outer}>
+                  <Image
+                    src={slider_image}
+                    alt="Picture of the author"
+                    className={styles.slider_image_test}
+                  />
+                </div>
+              </div>
+            </div>
+          </SwiperSlide>
+
+          <SwiperSlide>
+            <div className={styles.slider_wrapper}>
+              <div className={styles.slider_side_one}>
+                <div className={styles.side_one_wrapper}>
+                  <div className={styles.photo_gallery}>Photo Gallery</div>
+                  <div className={styles.slider_header}>
+                    Lorem Ipsum is simply
+                  </div>
+                  <div className={styles.slider_text}>
+                    Lorem Ipsum has been the industry's standard dummy text ever
+                    since the 1500s, when an unknown printer took a galley of
+                    type and scrambled it to make a type specimen book. It has
+                    survived not only five centuries, but also the leap
+                  </div>
+                </div>
+              </div>
+
+              <div className={styles.slider_side_two}>
+                <div className={styles.slider_image_outer}>
+                  <Image
+                    src={slider_image}
+                    alt="Picture of the author"
+                    className={styles.slider_image_test}
+                  />
+                </div>
+              </div>
+            </div>
+          </SwiperSlide>
+        </Swiper>
+
+        <div className={styles.customerCard_sideTwo}>
+          <div className={styles.image_swiper_button_next}>
+            <Image
+              className={styles.navigation_arrow}
+              src={rightArrow}
+              alt="rightArrow"
+            />
+          </div>
+          <div className={styles.image_swiper_button_prev}>
+            <Image
+              className={styles.navigation_arrow}
+              src={rightArrow}
+              alt="rightArrow"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};

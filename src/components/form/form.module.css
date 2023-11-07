@@ -1,0 +1,184 @@
+.contact_form {
+  background: #f3f3f3;
+  color: #1e1e1e;
+  padding: 110px 35px 0px 90px;
+  height: 100%;
+}
+
+.contact_form_wrapper {
+  width: 100%;
+}
+.contact_form_title{
+  font-size: 50px;
+    margin-bottom: 45px;
+
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 50px;
+}
+
+.field input {
+  background: #f3f3f3;
+  border: none;
+  opacity: 0.5;
+  border-bottom: 1px solid #d1d1d1;
+  height: 40px;
+  width: 380px;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.field input:focus {
+  outline: none;
+}
+
+.field label {
+  color: #1e1e1e;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.submit_btn {
+  border-radius: 500px;
+  border: 1.3px solid #fff;
+  background: #0f8a83;
+  width: 269px;
+  height: 52px;
+  cursor: pointer;
+  color: white;
+  flex-shrink: 0;
+  font-size: 20px;
+}
+
+.submit_btn:focus-visible {
+  outline: none;
+}
+
+p.error {
+  color: red;
+  font-size: 15px;
+  margin: 0;
+}
+
+.common_button_outer2 {
+  width: 250px;
+  margin: 0px 0px;
+  margin-top: 1rem;
+}
+
+@media(min-width:1600px){
+
+
+  .field input {
+    background: #f3f3f3;
+    border: none;
+    opacity: 0.5;
+    border-bottom: 1px solid #d1d1d1;
+    height: 40px;
+    width: 480px;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+
+  .contact_form {
+    background: #f3f3f3;
+    color: #1e1e1e;
+    padding: 130px 35px 0px 90px;
+    height: 100%;
+  }
+  
+
+  .field {
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 70px;
+  }
+
+
+
+}
+
+
+
+@media only screen and (max-width: 1199px) {
+  .contact_form {
+    padding: 61px;
+  }
+
+  .contact_form_title{
+    font-size: 45px;
+      margin-bottom: 45px;
+  
+  }
+
+
+
+  .field input {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .field input {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .section-1 {
+    width: 40%;
+  }
+
+  .field input {
+    width: 100%;
+  }
+  .contact_form {
+    padding: 60px 44px 1px 43px;
+
+  }
+}
+
+@media only screen and (max-width: 768px) {
+
+  .section-2 {
+    width: 100%;
+  }
+  .field label {
+    font-size: 17px;
+  }
+
+  .field input {
+    width: 100%;
+  }
+  .submit_btn {
+    width: 211px;
+  }
+  .container {
+    display: block;
+    background: #f3f3f3;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .container {
+    display: block;
+    background: #f3f3f3;
+  }
+  .Image1 {
+    width: 100%;
+  }
+  .field input {
+    width: 252.5px;
+  }
+  .section-2 {
+    width: 100%;
+  }
+}

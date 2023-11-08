@@ -8,7 +8,7 @@ import { AnimatePresence } from "framer-motion";
 import Preloader from "@/components/preloader/page";
 import HeroSection from "@/components/heroSection/page";
 
-const contactUs = () => {
+const ContactUs = () => {
   const [isLoading, setIsLoading] = useState(true);
   useEffect(() => {
     (async () => {
@@ -40,4 +40,4 @@ const contactUs = () => {
   );
 };
 
-export default contactUs;
+export default ContactUs;

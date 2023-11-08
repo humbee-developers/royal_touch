@@ -5,7 +5,7 @@ import FindStore_search from "@/components/findStore_search/page"
 import styles from "@/app/page.module.css"
 import findStore_image from "@/images/new_channel.png"
 import HeroSection from "@/components/heroSection/page"
-const page = () => {
+const Page = () => {
 
   useEffect( () => {
     (
@@ -26,4 +26,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Page

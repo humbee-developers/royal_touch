@@ -4,7 +4,7 @@ import { useRef, useEffect } from "react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import gsap from "gsap";
 
-const home =()=> {
+const Home =()=> {
 
   const container = useRef(null);
 
@@ -97,4 +97,4 @@ const home =()=> {
         </div>
     )
 };
- export default home;
+ export default Home;

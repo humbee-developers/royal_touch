@@ -1,6 +1,5 @@
 import React from 'react'
 import Image from 'next/image'
-import timeline_bg from "@/images/timeline_bg.png"
 import img1 from "@/images/img1.png"
 import img2 from "@/images/img2.png" 
 import img3 from "@/images/img3.png"
@@ -17,7 +16,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import gsap from "gsap";
 
 import styles from "@/common/real_timeline/real_timeline.module.css"
-const page = () => {
+const Page = () => {
       const container = useRef(null);
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
@@ -253,4 +252,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Page

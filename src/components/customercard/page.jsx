@@ -2,7 +2,6 @@
 import { Navigation, Pagination, Scrollbar, EffectFade, A11y } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import Image from "next/image";
-// Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
@@ -12,7 +11,7 @@ import styles from "@/components/customercard/customerCard1.module.css"
 import carousal_image from "@/images/customerCard_image.png"
 import carousal_image2 from "@/images/aboutUs_carousal_image.png"
 import rightArrow from "@/images/Arrow.svg"
-export default () => {
+const Page = () => {
 
  
   
@@ -109,4 +108,4 @@ export default () => {
   );
 };
 
-
+export default Page;

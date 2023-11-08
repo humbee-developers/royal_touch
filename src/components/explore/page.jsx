@@ -4,8 +4,8 @@ import Image from "next/image";
 import styles from "@/components/explore/explore.module.css";
 import explore from "@/images/explore_image.png";
 import Button from"@/common/button/button5"
-import explore_button from "@/images/explore.svg"
-const exploreUs = () => {
+
+const ExploreUs = () => {
   return (
     <div className={styles.explore_outer}>
       <div className={styles.explore_wrapper}>
@@ -31,4 +31,4 @@ const exploreUs = () => {
     </div>
   );
 };
-export default exploreUs;
+export default ExploreUs;

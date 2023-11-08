@@ -10,7 +10,7 @@ import Quality_text from "@/components/quality_text/page"
 import HeroSection from "@/components/heroSection/page";
 import Quality_slider from "@/components/quality_slider/page"
 import quality_image from "@/images/new_product.png";
-const page = () => {
+const Page = () => {
   const [isLoading, setIsLoading] = useState(true);
   useEffect(() => {
     (async () => {
@@ -47,4 +47,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;

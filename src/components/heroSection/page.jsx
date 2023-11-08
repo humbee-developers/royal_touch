@@ -8,12 +8,12 @@ import Button from "@/common/button/Button";
 import Navbar from "@/components/navbar/index";
 
 import styles from "@/components/heroSection/heroSection.module.css";
-const page = (props) => {
+const Page = (props) => {
   return (
     <div>
       <div className={styles.home_nav_setting}>
         <div className={styles.nav_menu_names}>
-          <Image src={logo} className={styles.logo} />
+          <Image src={logo} alt="image" className={styles.logo} />
         </div>
         <div className={styles.btn_outer}>
           <Button btn_text="New arrivals" />
@@ -39,7 +39,7 @@ const page = (props) => {
               )}
         {props.banner_image && (
           <Image
-          
+          alt="image"
             src={props.banner_image}
             fill
             className={styles.homepage_image}
@@ -73,4 +73,4 @@ const page = (props) => {
   );
 };
 
-export default page;
+export default Page;

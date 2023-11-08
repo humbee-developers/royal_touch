@@ -7,7 +7,7 @@ import Timeline from "@/components/timeline/page"
 import styles from "@/app/products/product.module.css"
 import products_image from "@/images/new_product1.png";
 import HeroSection from "@/components/heroSection/page";
-const page = () => {
+const Page = () => {
   const [isLoading, setIsLoading] = useState(true);
   useEffect(() => {
     (async () => {
@@ -44,4 +44,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;

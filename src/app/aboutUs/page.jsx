@@ -9,7 +9,7 @@ import Real_Timeline from "@/common/real_timeline/page"
 import Slider from "@/components/slider/page"
 import Aboutus_hammer from "@/components/aboutUs_hammer/page"
 import aboutUs_image from "@/images/new_about.png"
-const page = () => {
+const Page = () => {
   const [isLoading, setIsLoading] = useState(true);
   useEffect( () => {
     (
@@ -47,4 +47,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Page

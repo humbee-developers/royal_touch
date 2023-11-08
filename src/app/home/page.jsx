@@ -9,7 +9,7 @@ import Image from "next/image";
 import homepage_image_second from "@/images/home_second_image.png";
 import homepage_third_image from "@/images/home_cover_page.jpg";
 import styles from "@/app/home/home.module.css"
-const page = () => {
+const Page = () => {
   return (
     
    <div>
@@ -32,4 +32,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Page

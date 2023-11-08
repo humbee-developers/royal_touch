@@ -12,7 +12,7 @@ import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 import "swiper/css/effect-fade"
 import styles from "@/components/slider/slider.module.css";
-export default () => {
+const Page = () => {
   return (
     <div className={styles.sliderCard_outer_first}>
       <div className={styles.sliderCard}>
@@ -46,7 +46,7 @@ export default () => {
                 <div className={styles.slider_header}>Lorem Ipsum is simply</div>
               
                 <div className={styles.slider_text}>
-                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap
+                {"Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap"}
                 </div>
                 
               </div>
@@ -75,7 +75,7 @@ export default () => {
             
               
               <div className={styles.slider_text}>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore id nulla velit officia et in aspernatur pariatur optio, itaque rerum eveniet soluta harum quia? Illo minima vel eligendi modi tenetur in nihil! Eveniet corrupti excepturi voluptas asperiores? Ut officiis dolor sit aliquam incidunt doloribus.
+              {"Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap"}
               </div>
               
             </div>
@@ -104,7 +104,7 @@ export default () => {
               
                 
                 <div className={styles.slider_text}>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore id nulla velit officia et in aspernatur pariatur optio, itaque rerum eveniet soluta harum quia? Illo minima  tenetur in nihil! Eveniet corrupti excepturi voluptas asperiores? Ut officiis dolor sit aliquam incidunt doloribus.
+                {"Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap"}
                 </div>
                 
               </div>
@@ -133,7 +133,7 @@ export default () => {
             
               
               <div className={styles.slider_text}>
-              Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap
+              {"Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap"}
               </div>
               
             </div>
@@ -160,7 +160,7 @@ export default () => {
           <div className={styles.side_one_wrapper}>
             <div className={styles.slider_header}>Lorem Ipsum is simply</div>
             <div className={styles.slider_text}>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore id nulla velit officia et in aspernatur pariatur optio, itaque rerum eveniet soluta harum quia? Illo minima vel eligendi modi tenetur in nihil! Eveniet corrupti excepturi voluptas asperiores? Ut officiis dolor sit 
+            {"Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap"}
             </div>
             
           </div>
@@ -185,3 +185,4 @@ export default () => {
     </div>
   );
 };
+export default Page

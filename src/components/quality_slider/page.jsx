@@ -52,62 +52,51 @@ const KeyFeatures = () => {
           >
             <SwiperSlide>
               <div className={"slider_wrapper"}>
-                <div className={"title"}>Raw Material:</div>
+                <div className={"title"}>{"Raw Material:"}</div>
                 <p>
-                  Made from carefully selected hardwood timber to ensure high
-                  strength and durability.
+                  {"Made from carefully selected hardwood timber to ensure high strength and durability."}
                 </p>
-                <p>Gurjan species used in the face veneers.</p>
+                <p>{"Gurjan species used in the face veneers."}</p>
                 <p>
-                  Made from all composed full sheet veneers in all layers,
-                  ensuring a robust and well-structured plywood.
+                  {"Made from all composed full sheet veneers in all layers,ensuring a robust and well-structured plywood."}
                 </p>
               </div>
             </SwiperSlide>
             <SwiperSlide>
               <div className={"slider_wrapper"}>
                 <div className={"title"}>
-                  High Solid Polymer used adhesives:
+                  {"High Solid Polymer used adhesives:"}
                 </div>
                 <p>
-                  Use of 100% BWP grade, High solid Phenolic polymer ensures
-                  better bonding strength and excellent boiling waterproof
-                  properties.
+                 {" Use of 100% BWP grade, High solid Phenolic polymer ensures better bonding strength and excellent boiling waterproof properties."}
                 </p>
               </div>
             </SwiperSlide>
             <SwiperSlide>
               <div className={"slider_wrapper"}>
                 <div className={"title"}>
-                  Strength and durability by balanced construction:
+                  {"Strength and durability by balanced construction:"}
                 </div>
                 <p>
-                  The plywood is constructed using an advanced cross-bonding
-                  technology, which enhances its strength and durability. The
-                  veneers are sourced from select hardwood species to ensure the
-                  plywood's stability and stand in the boiling water testing.
+                  {"The plywood is constructed using an advanced cross-bonding technology, which enhances its strength and durability. The veneers are sourced from select hardwood species to ensure the plywood's stability and stand in the boiling water testing."}
                 </p>
               </div>
             </SwiperSlide>
             <SwiperSlide>
               <div className={"slider_wrapper"}>
                 <div className={"title"}>
-                  Weather Durability by longer conditioning system of raw
-                  material and pressed material:
+                 {" Weather Durability by longer conditioning system of raw material and pressed material:"}
                 </div>
                 <p>
-                  High durability against all weather conditions, ensuring
-                  longevity and warp-free performance. This maintains the ideal
-                  moisture balance, preventing warping or delamination.
+                  {"High durability against all weather conditions, ensuring longevity and warp-free performance. This maintains the ideal moisture balance, preventing warping or delamination."}
                 </p>
               </div>
             </SwiperSlide>
             <SwiperSlide>
               <div className={"slider_wrapper"}>
-                <div className={"title"}>Raw Material:</div>
+                <div className={"title"}>{"Raw Material:"}</div>
                 <p>
-                  Made from carefully selected hardwood timber to ensure high
-                  strength and durability.
+                  {"Made from carefully selected hardwood timber to ensure high strength and durability."}
                 </p>
               </div>
             </SwiperSlide>
@@ -116,6 +105,7 @@ const KeyFeatures = () => {
             <div className={"sliderArrow_next"} ref={arrowRef1}>
             <Image
             src={sliderArrow}
+            alt="arrow-btn"
             
           
           />
@@ -123,6 +113,7 @@ const KeyFeatures = () => {
             <div className={"sliderArrow_prev"} ref={arrowRef2}>
             <Image
             src={sliderArrow}
+            alt="arrow-button"
             
            
           />

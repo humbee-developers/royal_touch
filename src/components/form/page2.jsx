@@ -3,7 +3,7 @@ import Image from "next/image";
 import styles from "@/components/form/form2.module.css"
 import Form from "@/components/form/page"
 import form_image from "@/images/form-section.png";
-const page2 = () => {
+const Page2 = () => {
   return (
     <>
     <div>
@@ -27,4 +27,4 @@ const page2 = () => {
   )
 }
 
-export default page2
+export default Page2

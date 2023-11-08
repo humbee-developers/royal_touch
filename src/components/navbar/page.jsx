@@ -5,7 +5,7 @@ import Image from "next/image";
 import logo from "@/images/logo.png";
 import { useRouter } from "next/navigation";
 import Navbar from "@/components/navbar/index"
-const page = () => {
+const Page = () => {
   const router = useRouter();
   return (
     <>
@@ -64,4 +64,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;

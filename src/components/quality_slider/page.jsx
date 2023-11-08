@@ -1,4 +1,3 @@
-import styles from "@/components/quality_slider/quality_slider.module.css"
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";

@@ -8,7 +8,7 @@ import HeroSection from "@/components/heroSection/page"
 import Real_Timeline from "@/common/real_timeline/page"
 import Slider from "@/components/slider/page"
 import Aboutus_hammer from "@/components/aboutUs_hammer/page"
-import aboutUs_image from "@/images/aboutUs_banner_image.png"
+import aboutUs_image from "@/images/new_about.png"
 const page = () => {
   const [isLoading, setIsLoading] = useState(true);
   useEffect( () => {

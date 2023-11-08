@@ -3,7 +3,9 @@ import React from "react";
 import { useEffect, useState } from "react";
 import { AnimatePresence } from "framer-motion";
 import Preloader from "@/components/preloader/page";
-import products_image from "@/images/productPage_banner_image.png";
+import Timeline from "@/components/timeline/page"
+import styles from "@/app/products/product.module.css"
+import products_image from "@/images/new_product1.png";
 import HeroSection from "@/components/heroSection/page";
 const page = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -33,6 +35,11 @@ const page = () => {
           header_comment="Lorem Ipsum is simply dummy text of the printing and typesetting industry.  Lorem Ipsum"
         />
       </div>
+      <div className={styles.Quality_timeline_wrapper}>
+      <h1 className={styles.Quality_timeline_text}> Quality</h1>
+      
+      </div>
+      <Timeline/>
     </main>
   );
 };

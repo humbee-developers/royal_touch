@@ -3,7 +3,7 @@ import React from 'react'
 import { useEffect } from 'react';
 import FindStore_search from "@/components/findStore_search/page"
 import styles from "@/app/page.module.css"
-import findStore_image from "@/images/findStore_banner_image.png"
+import findStore_image from "@/images/new_channel.png"
 import HeroSection from "@/components/heroSection/page"
 const page = () => {
 

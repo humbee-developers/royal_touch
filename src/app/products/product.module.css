@@ -1,0 +1,48 @@
+.Quality_timeline_wrapper {
+  padding: 70px 0;
+}
+
+.Quality_timeline_text {
+  text-align: center;
+  font-size: 85px;
+  font-weight: 400;
+  color: white;
+}
+
+@media (max-width: 1199px) {
+  .Quality_timeline_wrapper {
+    padding: 45px 0;
+  }
+
+  .Quality_timeline_text {
+    text-align: center;
+    font-size: 75px;
+    color: white;
+  }
+}
+
+@media (max-width: 991px) {
+  .Quality_timeline_wrapper {
+    padding: 25px 0;
+  }
+
+  .Quality_timeline_text {
+    text-align: center;
+    font-size:55px;
+    font-weight: 400;
+    color: white;
+  }
+}
+
+@media (max-width: 787px) {
+  .Quality_timeline_wrapper {
+    padding: 18px 0;
+  }
+
+  .Quality_timeline_text {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 400;
+    color: white;
+  }
+}

@@ -21,8 +21,8 @@
   height: 100%;
 }
 .photo_gallery {
-  font-size: 100px;
-  margin-left: 6rem;
+  font-size: 80px;
+  margin-left: 4rem;
   margin-top: 3rem;
   color: white;
   margin-bottom: 5rem;
@@ -36,7 +36,7 @@
   /* padding: 79px 0px 0px 0px; */
   width: 80%;
   text-align: start;
-  margin-left: 6rem;
+  margin-left: 4rem;
   font-weight: 400;
   color: white;
   text-transform: uppercase;
@@ -68,7 +68,7 @@
   line-height: 141.5%;
   width: 70%;
   padding-top: 1rem;
-  margin-left: 6rem;
+  margin-left: 4rem;
   font-weight: 300;
   text-align: left;
   font-size: 23px;
@@ -87,8 +87,8 @@
   cursor: pointer;
   position: absolute;
   z-index: 19;
-  bottom: 21rem;
-  left: 36rem;
+  bottom: 28rem;
+  left: 30rem;
   height: 85px;
 }
 .image_swiper_button_prev {
@@ -98,8 +98,8 @@
   z-index: 9;
   transform: rotate(180deg);
   position: absolute;
-  bottom: 21rem;
-  left: 113rem;
+  bottom: 28rem;
+    left: 90rem;
   height: 85px;
 }
 
@@ -117,7 +117,7 @@
     cursor: pointer;
     position: absolute;
     z-index: 19;
-    bottom: 21rem;
+    bottom: 23rem;
     left: 37rem;
     height: 85px;
   }
@@ -128,7 +128,7 @@
     z-index: 9;
     transform: rotate(180deg);
     position: absolute;
-    bottom: 21rem;
+    bottom: 23rem;
     left: 113rem;
     height: 85px;
   }
@@ -143,7 +143,7 @@
   }
 
   .photo_gallery {
-    font-size: 80px;
+    font-size: 85px;
     margin-left: 2rem;
     margin-top: 3rem;
     color: white;
@@ -208,7 +208,7 @@
     cursor: pointer;
     position: absolute;
     z-index: 19;
-    bottom: 35rem;
+    bottom: 37rem;
     left: 0rem;
     height: 55px;
   }
@@ -221,8 +221,8 @@
     z-index: 9;
     transform: rotate(180deg);
     position: absolute;
-    bottom: 35rem;
-    left: 45rem;
+    bottom: 37rem;
+    left: 55rem;
     height: 55px;
   }
 
@@ -240,7 +240,7 @@
 
   .slider_image_test {
     width: 100%;
-    height:revert-layer;
+    height:100%;
   }
   .slider_wrapper {
     display: flex;
@@ -265,15 +265,14 @@
   }
 
   .slider_header {
-    font-size: 30px;
-    padding: 35px 0px 13px 19px;
-
+    font-size: 34px;
+    padding: 35px 0px 13px 22px;
     margin-top: 0;
     margin-left: 0;
     font-weight: 400;
     color: white;
     text-transform: uppercase;
-    width: 100%;
+    width: 89%;
   }
   .slider_number {
     font-size: 22px;
@@ -304,7 +303,7 @@
     cursor: pointer;
     position: absolute;
     z-index: 19;
-    bottom: 28rem;
+    bottom: 23rem;
     left: 0rem;
     height: 55px;
   }
@@ -315,7 +314,7 @@
     z-index: 9;
     transform: rotate(180deg);
     position: absolute;
-    bottom: 28rem;
+    bottom: 23rem;
     left: 20rem;
     height: 55px;
   }
@@ -324,6 +323,7 @@
     position: absolute;
     top: 50%;
     left: 50%;
+    height: 50px;
     width: 40px;
     transform: translate(-50%, -50%);
   }

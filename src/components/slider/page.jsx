@@ -3,7 +3,7 @@ import {Navigation,EffectFade, A11y,} from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import Image from "next/image";
 import slider_image from "@/images/tst.png";
-import rightArrow from "@/images/Arrow.svg"
+import rightArrow from "@/images/Arrow2.svg"
 
 // Import Swiper styles
 import "swiper/css";

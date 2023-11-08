@@ -23,18 +23,20 @@ const page = (props) => {
           <Navbar />
         </div>
       </div>
-      <div className={styles.homepage_image_wrapper}>
-        <div className={styles.video_outer}>
-          {props.video_bg  && (
-            <video autoPlay loop muted className={styles.videoBackground}>
-              <source
-                className={styles.video_bg}
-                src={props.video_bg}
-                type="video/mp4"
-              />
-            </video>
-          )}
-        </div>
+     
+    
+        <div className={styles.homepage_image_wrapper}>
+        {props.video_bg  && (
+          <div className={styles.video_outer}>
+              <video autoPlay loop muted className={styles.videoBackground}>
+                <source
+                  className={styles.video_bg}
+                  src={props.video_bg}
+                  type="video/mp4"
+                />
+              </video>
+              </div>
+              )}
         {props.banner_image && (
           <Image
           

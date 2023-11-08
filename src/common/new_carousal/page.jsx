@@ -1,7 +1,10 @@
 import { Navigation, EffectFade, A11y } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import Image from "next/image";
-import slider_image from "@/images/tst.png";
+import slider_image from "@/images/new_contact.png";
+import slider_image2 from "@/images/new_about.png";
+import slider_image3 from "@/images/new_product.png";
+import slider_image4 from "@/images/new_product1.png"
 import rightArrow from "@/images/Arrow.svg";
 // Import Swiper styles
 import "swiper/css";
@@ -34,14 +37,11 @@ export default () => {
                 <div className={styles.side_one_wrapper}>
                   <div className={styles.photo_gallery}>Photo Gallery</div>
                   <div className={styles.slider_header}>
-                    Lorem Ipsum is simply
+                  5000+ Laminate Designs
                   </div>
 
                   <div className={styles.slider_text}>
-                    Lorem Ipsum has been the industry's standard dummy text ever
-                    since the 1500s, when an unknown printer took a galley of
-                    type and scrambled it to make a type specimen book. It has
-                    survived not only five centuries, but also the leap
+                  Royale Touche offers a staggering variety of over 5000+ laminate designs, allowing you to pick the perfect style for your space.
                   </div>
                 </div>
               </div>
@@ -64,14 +64,11 @@ export default () => {
                 <div className={styles.side_one_wrapper}>
                   <div className={styles.photo_gallery}>Photo Gallery</div>
                   <div className={styles.slider_header}>
-                    Lorem Ipsum is simply
+                  10-15 years of Durability
                   </div>
 
                   <div className={styles.slider_text}>
-                    Lorem Ipsum has been the industry's standard dummy text ever
-                    since the 1500s, when an unknown printer took a galley of
-                    type and scrambled it to make a type specimen book. It has
-                    survived not only five centuries, but also the leap
+                  Our laminates are built to last, with an average lifespan of 10-15 years, making them a long-term investment in your home's aesthetics.
                   </div>
                 </div>
               </div>
@@ -79,7 +76,36 @@ export default () => {
               <div className={styles.slider_side_two}>
                 <div className={styles.slider_image_outer}>
                   <Image
-                    src={slider_image}
+                    src={slider_image2}
+                    alt="Picture of the author"
+                    className={styles.slider_image_test}
+                  />
+
+                  
+                </div>
+              </div>
+            </div>
+          </SwiperSlide>
+
+          <SwiperSlide>
+            <div className={styles.slider_wrapper}>
+              <div className={styles.slider_side_one}>
+                <div className={styles.side_one_wrapper}>
+                  <div className={styles.photo_gallery}>Photo Gallery</div>
+                  <div className={styles.slider_header}>
+                  95% Happy Customers
+                  </div>
+
+                  <div className={styles.slider_text}>
+                  Over 95% of our customers report being highly satisfied with our products and service, showcasing our commitment to excellence.
+                  </div>
+                </div>
+              </div>
+
+              <div className={styles.slider_side_two}>
+                <div className={styles.slider_image_outer}>
+                  <Image
+                    src={slider_image3}
                     alt="Picture of the author"
                     className={styles.slider_image_test}
                   />
@@ -94,14 +120,10 @@ export default () => {
                 <div className={styles.side_one_wrapper}>
                   <div className={styles.photo_gallery}>Photo Gallery</div>
                   <div className={styles.slider_header}>
-                    Lorem Ipsum is simply
+                  80% Of laminates are eco-friendly
                   </div>
-
                   <div className={styles.slider_text}>
-                    Lorem Ipsum has been the industry's standard dummy text ever
-                    since the 1500s, when an unknown printer took a galley of
-                    type and scrambled it to make a type specimen book. It has
-                    survived not only five centuries, but also the leap
+                  Royale Touche is proud to have reduced its environmental impact by using sustainable materials and practices. More than 80% of our laminates are eco-friendly, contributing to a greener planet.
                   </div>
                 </div>
               </div>
@@ -109,7 +131,7 @@ export default () => {
               <div className={styles.slider_side_two}>
                 <div className={styles.slider_image_outer}>
                   <Image
-                    src={slider_image}
+                    src={slider_image4}
                     alt="Picture of the author"
                     className={styles.slider_image_test}
                   />
@@ -118,52 +140,26 @@ export default () => {
             </div>
           </SwiperSlide>
 
-          <SwiperSlide>
-            <div className={styles.slider_wrapper}>
-              <div className={styles.slider_side_one}>
-                <div className={styles.side_one_wrapper}>
-                  <div className={styles.photo_gallery}>Photo Gallery</div>
-                  <div className={styles.slider_header}>
-                    Lorem Ipsum is simply
-                  </div>
-                  <div className={styles.slider_text}>
-                    Lorem Ipsum has been the industry's standard dummy text ever
-                    since the 1500s, when an unknown printer took a galley of
-                    type and scrambled it to make a type specimen book. It has
-                    survived not only five centuries, but also the leap
-                  </div>
-                </div>
-              </div>
 
-              <div className={styles.slider_side_two}>
-                <div className={styles.slider_image_outer}>
-                  <Image
-                    src={slider_image}
-                    alt="Picture of the author"
-                    className={styles.slider_image_test}
-                  />
+          <div className={styles.customerCard_sideTwo}>
+                  <div className={styles.image_swiper_button_next}>
+                    <Image
+                      className={styles.navigation_arrow}
+                      src={rightArrow}
+                      alt="rightArrow"
+                    />
+                  </div>
+                  <div className={styles.image_swiper_button_prev}>
+                    <Image
+                      className={styles.navigation_arrow}
+                      src={rightArrow}
+                      alt="rightArrow"
+                    />
+                  </div>
                 </div>
-              </div>
-            </div>
-          </SwiperSlide>
         </Swiper>
 
-        <div className={styles.customerCard_sideTwo}>
-          <div className={styles.image_swiper_button_next}>
-            <Image
-              className={styles.navigation_arrow}
-              src={rightArrow}
-              alt="rightArrow"
-            />
-          </div>
-          <div className={styles.image_swiper_button_prev}>
-            <Image
-              className={styles.navigation_arrow}
-              src={rightArrow}
-              alt="rightArrow"
-            />
-          </div>
-        </div>
+        
       </div>
     </div>
   );

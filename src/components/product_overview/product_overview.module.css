@@ -1,0 +1,115 @@
+.productOverview {
+}
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.productOverviewCard {
+  width: 50%;
+  color: white;
+  background: #006F69;
+}
+.productOverviewCard_wrapper {
+}
+.productOverviewCard h2 {
+  text-align: center;
+  color: #fff;
+  font-family: Lato;
+  font-size: 74.688px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  padding: 48px 0;
+}
+.image {
+}
+.image img {
+  max-width: 100%;
+  width: 100%;
+  display: block;
+}
+.contentSec {
+  width: 460px;
+  margin: 0 auto;
+  padding: 73px 20px 73px;
+}
+.title {
+  color: #fff;
+  font-family: Lato;
+  font-size: 37px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 144.5%;
+  margin: 0 0 19px;
+}
+.content {
+  color: #fff;
+  font-family: Lato;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 158%;
+  padding: 0 0 75px;
+  border-bottom: 1px solid white;
+}
+.secondConetnt {
+  color: #fff;
+  padding: 48px 0 0;
+  font-family: Lato;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 158%;
+}
+.productOverviewCard:last-child {
+  background: #C3A464;
+  color: black;
+}
+.productOverviewCard:last-child h2 {
+  color: black;
+}
+.productOverviewCard:last-child .title {
+  color: black;
+}
+.productOverviewCard:last-child .content {
+  color: black;
+  border-bottom: 1px solid black;
+}
+.productOverviewCard:last-child .secondConetnt {
+  color: black;
+}
+@media (max-width: 1199px) {
+  .contentSec {
+    padding: 65px 20px 65px;
+  }
+  .productOverviewCard h2 {
+    padding: 35px 0;
+  }
+  .content {
+    padding: 0 0 65px;
+  }
+}
+@media (max-width: 991px) {
+  .contentSec {
+    width: 350px;
+    padding: 60px 20px 60px;
+  }
+}
+@media (max-width: 767px) {
+  .wrapper {
+    flex-direction: column;
+  }
+  .productOverviewCard {
+    width: 100%;
+  }
+  .contentSec {
+    width: 95%;
+    padding: 60px 20px 60px 20px;
+  }
+}
+@media (max-width: 575px) {
+  .contentSec {
+    width: 90%;
+    padding: 60px 20px 60px 20px;
+  }
+}

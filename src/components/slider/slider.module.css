@@ -102,6 +102,37 @@
   }
 }
 
+
+@media (max-width: 1199px) {
+
+  .image_swiper_button_next {
+    border-radius: 50%;
+    width: 85px;
+    cursor: pointer;
+    position: absolute;
+    z-index: 19;
+    bottom: 29rem;
+    left: 55rem;
+    height: 85px;
+  }
+  .image_swiper_button_prev {
+    border-radius: 50%;
+    width: 85px;
+    cursor: pointer;
+    z-index: 9;
+    transform: rotate(180deg);
+    position: absolute;
+    bottom: 29rem;
+    left: 65rem;
+    height: 85px;
+  }
+
+
+}
+
+
+
+
 @media (max-width: 991px) {
   .side_one_wrapper {
     text-align: left;

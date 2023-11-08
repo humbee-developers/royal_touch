@@ -4,7 +4,7 @@ import { useRef, useEffect } from 'react';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import gsap from 'gsap';
 
-const phrase = "For those who accept nothing less than the finest. Super Exclusive, handcrafted luxury laminates that make a bold statement, Always Classy, Beautifully Luxurious,One transcends trends to create timeless elegance.                 For those who accept nothing less than the finest Super Exclusive, handcrafted luxury laminates that make a bold statement Always Classy, Beautifully Luxurious.";
+const phrase = "For those who accept nothing less than the finest. Super Exclusive, handcrafted laminates that make a bold statement. Indulge in the luxury of simplicity, and let your space make a statement for your life. Your life is a story - create timeless elegance with Royale Touche. Always Classy, Beautifully Luxurious.";
 
 export default function Home() {
 
@@ -61,7 +61,7 @@ export default function Home() {
       {
         splitWords(phrase)
       }
-      <h1 className={styles.scroll_text_header}>About Royal Touch</h1>
+      <h1 className={styles.scroll_text_header}>Royale Touche</h1>
     </div>
     
   </div>

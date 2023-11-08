@@ -4,8 +4,12 @@ import { useEffect, useState } from "react";
 import Explore from "@/components/explore/page";
 import { AnimatePresence } from "framer-motion";
 import Preloader from "@/components/preloader/page";
+import Product_overview from "@/components/product_overview/page"
+import Quality_timeline from "@/common/quality_timeline/page"
+import Quality_text from "@/components/quality_text/page"
 import HeroSection from "@/components/heroSection/page";
-import quality_image from "@/images/quality_banner_image.png";
+import Quality_slider from "@/components/quality_slider/page"
+import quality_image from "@/images/new_product.png";
 const page = () => {
   const [isLoading, setIsLoading] = useState(true);
   useEffect(() => {
@@ -33,8 +37,12 @@ const page = () => {
           header_name="Quality"
           header_comment="Lorem Ipsum is simply dummy text of the printing and typesetting industry.  Lorem Ipsum"
         />
-        <Explore />
       </div>
+<Product_overview/>
+<Quality_text/>
+<Quality_slider/>
+      <Quality_timeline/>
+      <Explore />
     </main>
   );
 };

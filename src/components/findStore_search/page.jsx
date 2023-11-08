@@ -248,7 +248,7 @@ function Mapsection() {
                         </ul>
                     </div>
                  
-                    <div className={`${styles.select_menu} ${isOpen2 ? styles.active : ''}`} onClick={toggleDropdown1}>
+                    <div className={`${styles.select_menu} ${isOpen2 ? styles.active : ''}`} onClick={toggleDropdown2}>
                     
                         <div className={styles.select_btn} onClick={toggleDropdown2}>
                             <div className={styles.sBtn_text}>{selectedOption2 || 'Select City'}</div>

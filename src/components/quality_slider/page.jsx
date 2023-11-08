@@ -6,7 +6,7 @@ import "swiper/css/scrollbar";
 import { Autoplay, Navigation } from "swiper/modules";
 import Image from "next/image";
 import "@/components/quality_slider/quality_slider.css"
-import sliderArrow from "@/images/arrow.svg"
+import sliderArrow from "@/images/Arrow.svg"
 import { useRef } from "react";
 const KeyFeatures = () => {
   const arrowRef1 = useRef(null);

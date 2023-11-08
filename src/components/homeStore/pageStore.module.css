@@ -1,6 +1,6 @@
 .heading {
   color: #c3a464;
-  font-size: 62px;
+  font-size: 68px;
   font-style: normal;
   font-weight: 300;
   /* line-height: 146%; */
@@ -11,6 +11,7 @@
   font-size: 65px;
   font-style: normal;
   font-weight: 400;
+  margin-right: 0.2rem;
   /* line-height: 146%; */
 }
 .content span {

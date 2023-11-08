@@ -49,7 +49,7 @@ const Page = ()=> {
               <div className={styles.slider_side_two}>
                 <div className={styles.slider_image_outer}>
                   <Image
-                    src={slider_image}
+                    src={slider_image2}
                     alt="Picture of the author"
                     className={styles.slider_image_test}
                   />
@@ -76,7 +76,7 @@ const Page = ()=> {
               <div className={styles.slider_side_two}>
                 <div className={styles.slider_image_outer}>
                   <Image
-                    src={slider_image2}
+                    src={slider_image}
                     alt="Picture of the author"
                     className={styles.slider_image_test}
                   />

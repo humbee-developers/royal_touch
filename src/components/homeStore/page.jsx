@@ -10,7 +10,7 @@ const Page = () => {
           <div className={styles.responsive_section}>
               <div className={styles.content1}>
               <p   className={styles.heading}>{"Discover the Elegance of"}
-                      <span> {"Royale Touché"}</span>{"Laminates"}</p>
+                      <span> {"Royale Touché"} </span> {" Laminates"}</p>
                   <p   className={styles.content}>{"Looking to experience the luxury of"}
                   <span>{" Royale Touché"}</span>{" laminates up close? You're just a click away from exploring our exquisite range of laminates and getting expert advice from our trusted partners."}</p>
                   <div className={styles.common_button_outer3}>

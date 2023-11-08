@@ -53,6 +53,14 @@ const Page = (props) => {
           >
             {props.homepage_heading}
           </div>
+          
+          <div
+          data-scroll
+          data-scroll-speed="0.3"
+          className={styles.header_text2}
+        >
+          {props.homepage_heading2}
+        </div>
           <div
             data-scroll
             data-scroll-speed="0.2"

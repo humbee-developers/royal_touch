@@ -61,7 +61,7 @@ export default function Home() {
       {
         splitWords(phrase)
       }
-      <h1 className={styles.scroll_text_header}>Royale Touche</h1>
+      <h1 className={styles.scroll_text_header}>Royale Touché</h1>
     </div>
     
   </div>

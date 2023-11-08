@@ -1,3 +1,4 @@
+"use client"
 import React from 'react'
 import HeroSection from "@/components/heroSection/page"
 import Carousal from "@/components/carousal/page"

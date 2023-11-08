@@ -1,9 +1,8 @@
 'use client'
- 
 import { useRouter } from 'next/navigation'
 import React from "react";
 import styles from"@/common/button/button.module.css"
-function Button(props) {
+function Button(props) {npm 
     const router = useRouter()
     return (
       

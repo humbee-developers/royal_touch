@@ -1,6 +1,5 @@
 
 import { Lato } from 'next/font/google'
-import Navbar from "@/components/Navbar/page"
 import Footer from "@/components/footer/page"
 import Form from "@/components/form/page2"
 import './globals.css'

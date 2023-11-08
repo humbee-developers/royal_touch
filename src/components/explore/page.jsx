@@ -12,7 +12,7 @@ const ExploreUs = () => {
 
         <div className={styles.explore_side_one_wrapper}>
           <h1 className={styles.explore_heading}>Explore <br /> All Products</h1>
-          <p className={styles.explore_text}>Lorem ipsum dolor sit amet consectetuxr, adipisicing elit. Ipsa quis autem inventore, hic ut consequuntur.</p>
+          <p className={styles.explore_text}>Lorem ipsum dolor sit amet consectetuxxr, adipisicing elit. Ipsa quis autem inventore, hic ut consequuntur.</p>
           <div className={styles.explore_button_wrapper}>
           
           <Button  btn_text="Explore us"/>

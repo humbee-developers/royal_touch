@@ -3,7 +3,7 @@ import React from "react";
 import Image from "next/image";
 import styles from "@/components/explore/explore.module.css";
 import explore from "@/images/explore_image.png";
-import Button from "@/common/button/button4"
+import Button from "@/common/button/button6"
 
 const ExploreUs = () => {
   return (

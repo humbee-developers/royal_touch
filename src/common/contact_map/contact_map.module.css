@@ -1,4 +1,10 @@
 
+
+
+.hellom{
+  float: left;
+  border: none;
+}
 @media (max-width: 787px) {
   .hellom {
     height: 50vh;

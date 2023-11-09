@@ -125,6 +125,7 @@
 .search_button {
   border-radius: 30px;
   background: #006f69;
+  font-family: lato;
   outline: none;
   border: none;
   box-shadow: 39px 35px 28px -20px rgba(0, 0, 0, 0.05);
@@ -189,6 +190,7 @@
 }
 .map_frame{
   float: left;
+  border: none;
 }
 .address {
   color: #000;

@@ -152,7 +152,7 @@
   overflow: hidden;
 }
 .content30 {
-  width: 32%;
+  width: 31%;
   margin: 30px;
   height: 562px;
   overflow-y: scroll;
@@ -232,6 +232,17 @@
 .allsvg {
   padding-right: 10px;
   margin: 4px;
+}
+
+@media(min-width:1600px){
+  .content30 {
+    width: 32%;
+    margin: 30px;
+    height: 562px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    padding-right: 10px;
+  }
 }
 
 @media (max-width: 768px) {

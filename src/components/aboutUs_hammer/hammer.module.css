@@ -58,6 +58,10 @@
   left: 0rem;
   background: #c3a464;
 }
+
+.upper_left:hover{
+  background: #bd974b;
+}
 .ply {
   width: 50%;
   margin-left: 150px;
@@ -77,6 +81,10 @@
   width: 50%;
   top: -4rem;
   right: 0rem;
+}
+
+.upper_right:hover{
+  background: #026863;
 }
 .productimg {
   width: 100%;

@@ -21,6 +21,7 @@
   font-size: 66px;
   padding: 79px 0px 0px 80px;
   font-weight: 400;
+  margin-bottom: 3rem;
   color: white;
   text-transform: uppercase;
 }
@@ -35,7 +36,7 @@
   font-weight: 300;
 }
 .slider_text {
-  margin-top: 1.4rem;
+  margin-top: 1.3rem;
   padding: 63px;
   line-height: 141.5%;
   width: 60%;
@@ -90,6 +91,15 @@
     bottom: 25rem;
     left: 108rem;
     height: 85px;
+  }
+
+  .slider_header {
+    font-size: 66px;
+    padding: 79px 0px 0px 80px;
+    font-weight: 400;
+    margin-bottom: 3.5rem;
+    color: white;
+    text-transform: uppercase;
   }
   .image_swiper_button_prev {
     border-radius: 50%;

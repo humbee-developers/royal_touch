@@ -47,7 +47,7 @@ const Page = () => {
        <p>Contact Us</p>
      </Link>
    </li>
-  <button className={styles.nav_button} onClick={()=>router.push("/")}>New arrivals</button>
+  <button className={styles.nav_button} onClick={()=>router.push("/")}>New Arrivals</button>
 
   <div className={styles.nav_ham_button}>
   <Navbar/>

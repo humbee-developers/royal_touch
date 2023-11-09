@@ -5,8 +5,12 @@
 }
 .logo {
   height: 100%;
-  width: revert-layer;
+  cursor:pointer;
+  width: 90%;
 }
+
+
+
 
 .homepage_image_wrapper3 {
   position: relative;
@@ -15,16 +19,16 @@
 }
 .header_text {
   color: #fff;
-  font-size: 34px;
-  letter-spacing: 9.17px;
+  font-size: 71px;
+  /* letter-spacing: 9.17px; */
   font-style: normal;
   position: absolute;
-  bottom: 29rem;
+  bottom: 20rem;
   left: 6rem;
-  text-transform: uppercase;
+ 
   font-weight: 300;
   line-height: normal;
-  width: 100%;
+  width: 59%;
 }
 
 .header_text2{
@@ -36,13 +40,14 @@
   position: absolute;
   bottom: 22rem;
   left: 5rem;
-  /* text-transform: uppercase; */
+  
   font-weight: 300;
   line-height: normal;
 }
 .video_outer {
   position: relative;
   overflow: hidden;
+  filter: brightness(85%);
 }
 
 .videoBackground {
@@ -119,16 +124,16 @@
 @media(min-width:1600px){
   .header_text {
     color: #fff;
-    font-size: 40px;
-    letter-spacing: 15.17px;
+    font-size: 71px;
+    /* letter-spacing: 9.17px; */
     font-style: normal;
     position: absolute;
-    bottom: 40rem;
-    left: 5rem;
-    text-transform: uppercase;
+    bottom: 29rem;
+    left: 6rem;
+    /* text-transform: uppercase; */
     font-weight: 300;
     line-height: normal;
-    width: 100%;
+    width: 46%;
   }
   
   .header_text2{
@@ -154,7 +159,7 @@
     position: absolute;
     bottom: 40rem;
     left: 5rem;
-    text-transform: uppercase;
+
     font-weight: 300;
     line-height: normal;
     width: 100%;
@@ -210,21 +215,22 @@
   }
   .logo {
     height: 100%;
+    cursor:pointer;
     width: 100%;
   }
 
   .header_text {
     color: #fff;
-    font-size: 31px;
+    font-size: 72px;
     letter-spacing: 4.17px;
     font-style: normal;
     position: absolute;
-    bottom: 4rem;
+    bottom: 12rem;
     left: 2rem;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     font-weight: 300;
     line-height: normal;
-    width: 100%
+    width: 72%;
   }
 
 
@@ -281,9 +287,10 @@
     font-size: 16px;
     font-style: normal;
     z-index: 1;
+    width: 14%;
     position: absolute;
     top: 2rem;
-    left: 5rem;
+    left: 2rem;
     font-weight: 500;
     line-height: normal;
   }
@@ -382,15 +389,16 @@
 @media (max-width: 575px) {
   .header_text {
     color: #fff;
-    font-size: 24px;
+    font-size: 48px;
+   
     font-style: normal;
     position: absolute;
     letter-spacing: 1px;
-    bottom: 7rem;
-    left: 1.3rem;
+    bottom: 12rem;
+    left: 2.3rem;
     font-weight: 300;
-    line-height: normal;
-    width: 100%;
+    line-height: 46px;
+    width: 47%;
   }
 
   .header_text2{
@@ -402,7 +410,7 @@
       position: absolute;
       bottom: 10rem;
       left: 1.3rem;
-      /* text-transform: uppercase; */
+     
       font-weight: 300;
       line-height: normal;
   }

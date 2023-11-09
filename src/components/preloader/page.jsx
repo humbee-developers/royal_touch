@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 import { opacity, slideUp } from "@/components/preloader/anime";
 
-const words = ["નમસ્તે", "Bonjour", "Ciao", "શાહી સ્પર્શ", "やあ", "Hallå", "नमस्ते", "Hallo"];
+const words = ["નમસ્તે", "hello", "Ciao", "Hallå", "नमस्ते", "Ola"];
 
 export default function Index() {
     const [index, setIndex] = useState(0);

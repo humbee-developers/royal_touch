@@ -12,6 +12,7 @@
     
     .titles .title .wrapper {
       /* display: inline-block; */
+      cursor: pointer;
       padding-left: 5%;
     }
     

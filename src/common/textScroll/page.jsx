@@ -22,7 +22,7 @@ export default function Home() {
         scrollTrigger: {
             trigger: container.current,
             scrub: true,
-            start: `top`,
+            start: `top 40%`,
             end: `+=${window.innerHeight / 1.55}`,
         },
         opacity: 1,

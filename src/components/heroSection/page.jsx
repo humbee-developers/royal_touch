@@ -9,14 +9,15 @@ import Navbar from "@/components/navbar/index";
 
 import styles from "@/components/heroSection/heroSection.module.css";
 const Page = (props) => {
+  const router = useRouter();
   return (
     <div>
       <div className={styles.home_nav_setting}>
         <div className={styles.nav_menu_names}>
-          <Image src={logo} alt="image" className={styles.logo} />
+          <Image  onClick={()=> router.push("/")} src={logo} alt="image" className={styles.logo} />
         </div>
         <div className={styles.btn_outer}>
-          <Button btn_text="New arrivals" />
+          <Button onClick={()=> router.push("/")} btn_text="New Arrivals" />
         </div>
 
         <div className={styles.nav_ham_button}>

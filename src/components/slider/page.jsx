@@ -24,6 +24,7 @@ const Page = () => {
           }}
           modules={[Navigation, EffectFade, A11y]}
           spaceBetween={5}
+          loop={true}
           slidesPerView={1}
           navigation={{
             nextEl: ".slider_image_swiper_button_next__Eddeo img",
@@ -46,7 +47,7 @@ const Page = () => {
                 <div className={styles.slider_header}>Lorem Ipsum is simply</div>
               
                 <div className={styles.slider_text}>
-                {"Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap"}
+                {"Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,"}
                 </div>
                 
               </div>
@@ -75,7 +76,7 @@ const Page = () => {
             
               
               <div className={styles.slider_text}>
-              {"Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap"}
+              {"Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived centuries, but also the leap"}
               </div>
               
             </div>
@@ -104,7 +105,7 @@ const Page = () => {
               
                 
                 <div className={styles.slider_text}>
-                {"Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap"}
+                {"Lorem Ipsum has been the industry's standard dummy text ever, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap"}
                 </div>
                 
               </div>
@@ -160,7 +161,7 @@ const Page = () => {
           <div className={styles.side_one_wrapper}>
             <div className={styles.slider_header}>Lorem Ipsum is simply</div>
             <div className={styles.slider_text}>
-            {"Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap"}
+            {"Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap and study to product odd section."}
             </div>
             
           </div>

@@ -55,6 +55,7 @@
   cursor: pointer;
   position: absolute;
   z-index: 19;
+  transform: rotate(180deg);
   bottom: 25rem;
   left: 84rem;
   height: 85px;
@@ -64,7 +65,7 @@
   width: 85px;
   cursor: pointer;
   z-index: 9;
-  transform: rotate(180deg);
+  transform: rotate(0deg);
   position: absolute;
   bottom: 25rem;
   left: 75rem;
@@ -84,6 +85,7 @@
     width: 85px;
     cursor: pointer;
     position: absolute;
+    transform: rotate(180deg);
     z-index: 19;
     bottom: 25rem;
     left: 108rem;
@@ -94,7 +96,7 @@
     width: 85px;
     cursor: pointer;
     z-index: 9;
-    transform: rotate(180deg);
+    transform: rotate(0deg);
     position: absolute;
     bottom: 25rem;
     left: 100rem;
@@ -109,6 +111,7 @@
     border-radius: 50%;
     width: 85px;
     cursor: pointer;
+    transform: rotate(180deg);
     position: absolute;
     z-index: 19;
     bottom: 29rem;
@@ -120,7 +123,7 @@
     width: 85px;
     cursor: pointer;
     z-index: 9;
-    transform: rotate(180deg);
+    transform: rotate(0deg);
     position: absolute;
     bottom: 29rem;
     left: 65rem;
@@ -172,6 +175,7 @@
     cursor: pointer;
     position: absolute;
     z-index: 19;
+    transform: rotate(180deg);
     bottom: 3rem;
     left: 45rem;
     height: 55px;
@@ -181,7 +185,7 @@
     width: 55px;
     cursor: pointer;
     z-index: 9;
-    transform: rotate(180deg);
+    transform: rotate(0deg);
     position: absolute;
     bottom: 3rem;
     left: 39rem;
@@ -239,6 +243,7 @@
     width: 55px;
     cursor: pointer;
     position: absolute;
+    transform: rotate(180deg);
     z-index: 19;
     bottom: 3rem;
     left: 19rem;
@@ -249,7 +254,7 @@
     width: 55px;
     cursor: pointer;
     z-index: 9;
-    transform: rotate(180deg);
+    transform: rotate(0deg);
     position: absolute;
     bottom: 3rem;
     left: 15rem;

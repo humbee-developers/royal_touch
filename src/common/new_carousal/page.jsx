@@ -26,6 +26,7 @@ const Page = ()=> {
           modules={[Navigation, EffectFade, A11y]}
           spaceBetween={5}
           slidesPerView={1}
+          loop={true}
           navigation={{
             nextEl: ".new_carousal_image_swiper_button_next__S2lHF img",
             prevEl: ".new_carousal_image_swiper_button_prev__1cMQG img",
@@ -49,7 +50,7 @@ const Page = ()=> {
               <div className={styles.slider_side_two}>
                 <div className={styles.slider_image_outer}>
                   <Image
-                    src={slider_image2}
+                    src={slider_image3}
                     alt="Picture of the author"
                     className={styles.slider_image_test}
                   />
@@ -123,7 +124,7 @@ const Page = ()=> {
                  {" 80% Of laminates are eco-friendly"}
                   </div>
                   <div className={styles.slider_text}>
-                  {"Royale Touche is proud to have reduced its environmental impact by using sustainable materials and practices. More than 80% of our laminates are eco-friendly, contributing to a greener planet."}
+                  {"Royale Touche is proud to have reduced its environmental impact by using sustainable materials and practices. More than 80% of our laminates are eco-friendly."}
                   </div>
                 </div>
               </div>

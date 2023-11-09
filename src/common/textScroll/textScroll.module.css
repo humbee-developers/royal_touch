@@ -1,6 +1,6 @@
 .main {
   display: flex;
-  height: 130vh;
+  height: 90vh;
   align-items: flex-end;
   justify-content: center;
   margin-bottom: 40vh;
@@ -59,7 +59,7 @@
   }
   .main {
     display: flex;
-    height: 130vh;
+    height: 80vh;
     align-items: flex-end;
     justify-content: center;
     margin-bottom: 10vh;

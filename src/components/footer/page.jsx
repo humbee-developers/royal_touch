@@ -54,10 +54,6 @@ const Page = () => {
           </ul>
         </div>
       </div>
-
-      <div className={styles.footer_copyright_wrapper}>
-      <p className={styles.footer_copyright}>{"Copyright@ 2023 Royal touch, All Right Reserved. Designed & Developed By "}<a className={styles.copyright_company_name} href="https://www.humbeestudio.com/">{"H/DS"}</a></p>
-      </div>
     </div>
   );
 };

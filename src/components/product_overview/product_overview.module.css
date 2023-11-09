@@ -1,5 +1,4 @@
-.productOverview {
-}
+
 .wrapper {
   display: flex;
   justify-content: space-between;
@@ -21,7 +20,8 @@
   line-height: normal;
   padding: 48px 0;
 }
-.image {
+.productOverviewCard h2:hover{
+  background-color: #026863;
 }
 .image img {
   max-width: 100%;
@@ -67,6 +67,10 @@
 }
 .productOverviewCard:last-child h2 {
   color: black;
+}
+ 
+.productOverviewCard:last-child h2:hover {
+  background-color: #bd974b;
 }
 .productOverviewCard:last-child .title {
   color: black;

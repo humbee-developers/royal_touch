@@ -8,6 +8,7 @@ import Product_overview from "@/components/product_overview/page"
 import Quality_timeline from "@/common/quality_timeline/page"
 import Quality_text from "@/components/quality_text/page"
 import HeroSection from "@/components/heroSection/page";
+import Technical from "@/components/technical/page"
 import Quality_slider from "@/components/quality_slider/page"
 import quality_image from "@/images/new_product.png";
 const Page = () => {
@@ -42,6 +43,7 @@ const Page = () => {
 <Quality_text/>
 <Quality_slider/>
       <Quality_timeline/>
+      <Technical/>
       <Explore />
     </main>
   );

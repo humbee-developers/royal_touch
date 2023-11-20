@@ -5,15 +5,12 @@
 }
 .side_one_wrapper {
   text-align: right;
-  /* display: flex; */
-  /* margin-right: 3rem; */
 }
 .sliderCard {
   padding: 0;
 }
 
 .slider_image_outer {
-  /* position: relative; */
   height: 100%;
 }
 .slider_image_test {
@@ -33,7 +30,6 @@
 
 .slider_header {
   font-size: 47px;
-  /* padding: 79px 0px 0px 0px; */
   width: 80%;
   text-align: start;
   margin-left: 4rem;
@@ -57,7 +53,6 @@
   font-weight: 300;
 }
 .slider_email {
-  /* margin-top: 0.3rem; */
   font-size: 22px;
   font-weight: 300;
   color: white;
@@ -118,7 +113,7 @@
     position: absolute;
     z-index: 19;
     bottom: 23rem;
-    left: 37rem;
+    left: 125%;
     height: 85px;
   }
   .photo_gallery {
@@ -139,7 +134,7 @@
     transform: rotate(180deg);
     position: absolute;
     bottom: 23rem;
-    left: 113rem;
+    left:375%;
     height: 85px;
   }
 

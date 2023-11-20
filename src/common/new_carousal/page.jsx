@@ -1,4 +1,4 @@
-import { Navigation, EffectFade, A11y } from "swiper/modules";
+import { Navigation, EffectFade, A11y, Autoplay } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import Image from "next/image";
 import slider_image from "@/images/new_contact.png";
@@ -14,7 +14,9 @@ import "swiper/css/scrollbar";
 import "swiper/css/effect-fade";
 import styles from "@/common/new_carousal/new_carousal.module.css";
 const Page = ()=> {
+  
   return (
+    
     <div className={styles.sliderCard_outer_first}>
       <div className={styles.sliderCard}>
         <Swiper
@@ -23,15 +25,20 @@ const Page = ()=> {
           fadeEffect={{
             crossFade: true,
           }}
-          modules={[Navigation, EffectFade, A11y]}
+          
+          modules={[Navigation, EffectFade, A11y , Autoplay]}
+          
           spaceBetween={5}
           slidesPerView={1}
+          
           loop={true}
+          autoplay={
+            {delay: 3000}
+          }
           navigation={{
             nextEl: ".new_carousal_image_swiper_button_next__S2lHF img",
             prevEl: ".new_carousal_image_swiper_button_prev__1cMQG img",
-          }}
-        >
+          }}>
           <SwiperSlide>
             <div className={styles.slider_wrapper}>
               <div className={styles.slider_side_one}>

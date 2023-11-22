@@ -10,7 +10,7 @@ border: 2px solid #C3A464;
 color: #C3A464;
   text-decoration: none;
   cursor: pointer;
-  z-index: 16;
+  z-index: 20;
   background:transparent;
   user-select: none;
   -webkit-user-select: none;

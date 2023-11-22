@@ -10,7 +10,7 @@ const Page = () => {
   return (
     
    <div>
-   <HeroSection video_bg="./video/latestkitchen.mp4"     homepage_heading="Surfaces That Speak of Luxury, Whispers of Style"/>
+   <HeroSection video_bg="./video/final_k.mp4"     homepage_heading="Surfaces That Speak of Luxury, Whispers of Style"/>
    {/*<HeroSection  banner_image={homepage_image_second}  homepage_heading2="Elevate Your Space with Royale Touche: Where Luxury is a Lifestyle."/> */}
      
    

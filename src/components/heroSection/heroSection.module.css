@@ -23,7 +23,7 @@
   /* letter-spacing: 9.17px; */
   font-style: normal;
   position: absolute;
-  bottom: 20rem;
+  bottom: 17rem;
   left: 6rem;
  
   font-weight: 300;
@@ -46,6 +46,7 @@
 }
 .video_outer {
   position: relative;
+  height: 100vh;
   overflow: hidden;
   filter: brightness(85%);
 }
@@ -128,7 +129,7 @@
     /* letter-spacing: 9.17px; */
     font-style: normal;
     position: absolute;
-    bottom: 29rem;
+    bottom: 23rem;
     left: 6rem;
     /* text-transform: uppercase; */
     font-weight: 300;
@@ -339,7 +340,7 @@
     left: 2rem;
     font-weight: 300;
     line-height: normal;
-    width: 100%;
+    width: 99%;
   }
 
 

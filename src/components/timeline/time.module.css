@@ -154,7 +154,7 @@
 @media(max-width:787px){
   .contentX{
     width: 100%; 
-    padding: 46px 0px 0px 90px;
+    padding: 40px 0px 0px 150px;
     width: calc(0);
     color: #26ACA5;
     font-size: 20px;
@@ -201,7 +201,7 @@
     background-color: #0F8A83;
     left: 20.3%;
     z-index: 2;
-    top: 20%;
+    top: 27%;
     transform: translateX(-50%);
   }
   

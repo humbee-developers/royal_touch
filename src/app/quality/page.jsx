@@ -4,6 +4,8 @@ import { useEffect, useState } from "react";
 import Explore from "@/components/explore/page";
 import { AnimatePresence } from "framer-motion";
 import Preloader from "@/components/preloader/page";
+import Footer from "@/components/footer/page"
+import Form from "@/components/form/page2"
 import Product_overview from "@/components/product_overview/page"
 import Quality_timeline from "@/common/quality_timeline/page"
 import Quality_text from "@/components/quality_text/page"
@@ -45,6 +47,9 @@ const Page = () => {
       <Quality_timeline/>
       <Technical/>
       <Explore />
+
+      <Form/>
+<Footer/>
     </main>
   );
 };

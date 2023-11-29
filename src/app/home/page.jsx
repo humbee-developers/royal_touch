@@ -2,6 +2,8 @@
 import React from 'react'
 import HeroSection from "@/components/heroSection/page"
 import Timeline from "@/components/timeline/page"
+import Footer from "@/components/footer/page"
+import Form from "@/components/form/page2"
 import HomeStore from "@/components/homeStore/page"
 import TextScroll from "@/common/textScroll/page"
 import New_carousal from "@/common/new_carousal/page"
@@ -19,7 +21,8 @@ const Page = () => {
 
 <New_carousal/>
 <HomeStore/>
-  
+<Form/>
+<Footer/>
    </div>
    
    

@@ -1,0 +1,246 @@
+.ply_bock {
+  display: flex;
+  height: 100vh;
+}
+.ply_side1 {
+  width: 50%;
+  background: #c3a464;
+}
+.block_side2 {
+  width: 50%;
+  background: #006f69;
+}
+
+.plywood {
+  margin-top: 10rem;
+}
+.plywood_title {
+  font-size: 63px;
+  font-style: normal;
+  font-weight: 300;
+  text-align: center;
+  color: black;
+}
+.plywood_text {
+  color: #000;
+  transform: translate(60%, 50%);
+
+  font-weight: 500;
+  width: 50%;
+  font-size: 18px;
+}
+
+.blockboard {
+  margin-top: 10rem;
+}
+.blockboard_title {
+  font-size: 63px;
+  font-style: normal;
+  text-align: center;
+  font-weight: 300;
+  color: black;
+}
+.blockboard_text {
+  color: #000;
+  transform: translate(60%, 50%);
+  font-weight: 500;
+  width: 50%;
+  font-size: 18px;
+}
+
+.big_arrow_outer {
+  margin-left: 34rem;
+  margin-top: 15rem;
+}
+
+@media (min-width: 1600px) {
+  .big_arrow_outer {
+    margin-left: 43rem;
+    margin-top: 24rem;
+  }
+}
+
+@media (max-width: 1440px) {
+}
+@media (max-width: 1199px) {
+  .ply_bock {
+    cursor: pointer;
+    display: flex;
+    height: 100vh;
+  }
+  .ply_side1 {
+    width: 50%;
+    background: #c3a464;
+  }
+  .block_side2 {
+    width: 50%;
+    background: #006f69;
+  }
+
+  .plywood {
+    margin-top: 10rem;
+  }
+  .plywood_title {
+    font-size: 63px;
+    font-style: normal;
+    font-weight: 300;
+    text-align: center;
+    color: black;
+  }
+  .plywood_text {
+    color: #000;
+    transform: translate(60%, 50%);
+
+    font-weight: 500;
+    width: 50%;
+    font-size: 18px;
+  }
+
+  .blockboard {
+    margin-top: 10rem;
+  }
+  .blockboard_title {
+    font-size: 63px;
+    font-style: normal;
+    text-align: center;
+    font-weight: 300;
+    color: black;
+  }
+  .blockboard_text {
+    color: #000;
+    transform: translate(60%, 50%);
+    font-weight: 500;
+    width: 50%;
+    font-size: 18px;
+  }
+
+  .big_arrow_outer {
+    margin-left: 20rem;
+    margin-top: 15rem;
+  }
+}
+
+@media (max-width: 991px) {
+  .ply_bock {
+    display: flex;
+    height: 100vh;
+  }
+  .ply_side1 {
+    width: 100%;
+    background: #c3a464;
+  }
+  .block_side2 {
+    width: 100%;
+    background: #006f69;
+  }
+  .blockboard {
+    margin-top: 10rem;
+  }
+  .plywood {
+    margin-top: 10rem;
+  }
+  .big_arrow_outer {
+    margin-left: 18rem;
+    margin-top: 20rem;
+  }
+
+  .plywood_text {
+    color: #000;
+    width: 100%;
+    transform: none;
+    padding: 10px 12px 0px 45px;
+    font-size: 18px;
+  }
+  .blockboard_text {
+    color: #000;
+    width: 100%;
+    transform: none;
+    padding: 10px 12px 0px 45px;
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 768px) {
+  .ply_bock {
+    display: flex;
+    height: 100vh;
+  }
+  .ply_side1 {
+    width: 100%;
+    background: #c3a464;
+  }
+  .block_side2 {
+    width: 100%;
+    background: #006f69;
+  }
+  .blockboard {
+    margin-top: 10rem;
+  }
+  .plywood {
+    margin-top: 10rem;
+  }
+  .big_arrow_outer {
+    margin-left: 13rem;
+    margin-top: 20rem;
+  }
+
+  .plywood_text {
+    color: #000;
+    width: 100%;
+    transform: none;
+    padding: 10px 12px 0px 45px;
+    font-size: 18px;
+  }
+  .blockboard_text {
+    color: #000;
+    width: 100%;
+    transform: none;
+    padding: 10px 12px 0px 45px;
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 575px) {
+  .ply_bock {
+    display: block;
+    height: 100vh;
+  }
+  .ply_side1 {
+    width: 100%;
+    height: 50%;
+    background: #c3a464;
+  }
+  .block_side2 {
+    width: 100%;
+    height: 50%;
+    background: #006f69;
+  }
+  .blockboard {
+    margin-top: 0;
+  }
+  .plywood {
+    margin-top: 0;
+  }
+  .big_arrow_outer {
+    margin-left: 15rem;
+    margin-top: 7rem;
+  }
+
+  .big_arrow {
+    width: 50%;
+  }
+  .plywood_text {
+    color: #000;
+    width: 100%;
+    transform: none;
+    padding: 10px 12px 0px 45px;
+    font-size: 18px;
+  }
+  .blockboard_text {
+    color: #000;
+    width: 100%;
+    transform: none;
+    padding: 10px 12px 0px 45px;
+    font-size: 18px;
+  }
+}

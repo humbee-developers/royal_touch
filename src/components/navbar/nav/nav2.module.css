@@ -41,6 +41,7 @@
 
 .menu .body .nav a:hover{
   background-color: #01625d;
+  color:#C3A464;
 }
 @media (max-width: 787px) {
   .menu .body .nav {

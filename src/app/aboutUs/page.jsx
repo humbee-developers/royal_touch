@@ -5,6 +5,8 @@ import Explore from "@/components/explore/page"
 import { AnimatePresence } from 'framer-motion';
 import Preloader from "@/components/preloader/page"
 import HeroSection from "@/components/heroSection/page"
+import Footer from "@/components/footer/page"
+import Form from "@/components/form/page2"
 import Real_Timeline from "@/common/real_timeline/page"
 import Slider from "@/components/slider/page"
 import Aboutus_hammer from "@/components/aboutUs_hammer/page"
@@ -42,6 +44,9 @@ const Page = () => {
  
    
    </div>
+   <Form/>
+   <Footer/>
+   
    </main>
   
   )

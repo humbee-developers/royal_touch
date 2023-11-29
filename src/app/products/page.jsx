@@ -4,6 +4,8 @@ import { useEffect, useState } from "react";
 import { AnimatePresence } from "framer-motion";
 import Preloader from "@/components/preloader/page";
 import Timeline from "@/components/timeline/page"
+import Footer from "@/components/footer/page"
+import Form from "@/components/form/page2"
 import styles from "@/app/products/product.module.css"
 import products_image from "@/images/new_product1.png";
 import HeroSection from "@/components/heroSection/page";
@@ -40,6 +42,9 @@ const Page = () => {
       
       </div>
       <Timeline/>
+
+      <Form/>
+<Footer/>
     </main>
   );
 };

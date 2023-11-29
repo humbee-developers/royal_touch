@@ -20,6 +20,11 @@ const navItems = [
     title: "Products",
     href: "/products",
   },
+
+  {
+    title: "product",
+    href: "/product",
+  },
   {
     title: "Quality",
     href: "/quality",

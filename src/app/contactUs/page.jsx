@@ -2,7 +2,8 @@
 import React from "react";
 import { useEffect, useState } from "react";
 import contactUs_image from "@/images/new_contact.png";
-import Form from "@/components/form/page2";
+import Footer from "@/components/footer/page"
+import Form from "@/components/form/page2"
 import Contact_Map from "@/common/contact_map/page";
 import { AnimatePresence } from "framer-motion";
 import Preloader from "@/components/preloader/page";
@@ -36,6 +37,8 @@ const ContactUs = () => {
         />
         <Contact_Map />
       </div>
+      <Form/>
+<Footer/>
     </main>
   );
 };

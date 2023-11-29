@@ -1,9 +1,6 @@
 import React from 'react'
 import Image from "next/image";
-
-import image2 from "@/images/ProductPage_banner_image.png"
 import image3 from "@/images/quality_banner_image.png"
-import image4 from "@/images/aboutUs_carousal_image.png"
 import image5 from "@/images/ProductPage_banner_image.png"
 import styles from "@/components//carousal/page.module.css"
 const Page = () => {

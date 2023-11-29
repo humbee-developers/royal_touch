@@ -1,7 +1,5 @@
 
 import { Lato } from 'next/font/google'
-import Footer from "@/components/footer/page"
-import Form from "@/components/form/page2"
 import './globals.css'
 
 const lato = Lato({
@@ -19,8 +17,6 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={lato.className}>{children}
-      <Form/>
-      <Footer/>
       </body>
     </html>
   )

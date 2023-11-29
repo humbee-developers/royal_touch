@@ -2,7 +2,6 @@ import { Navigation, EffectFade, A11y, Autoplay } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import Image from "next/image";
 import slider_image from "@/images/new_contact.png";
-import slider_image2 from "@/images/new_about.png";
 import slider_image3 from "@/images/new_product.png";
 import slider_image4 from "@/images/new_product1.png"
 import rightArrow from "@/images/Arrow.svg";

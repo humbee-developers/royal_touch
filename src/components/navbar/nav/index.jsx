@@ -16,13 +16,13 @@ const navItems = [
     title: "About Us",
     href: "/aboutUs",
   },
-  {
-    title: "Products",
-    href: "/products",
-  },
+  // {
+  //   title: "Products",
+  //   href: "/products",
+  // },
 
   {
-    title: "product",
+    title: "products",
     href: "/product",
   },
   {

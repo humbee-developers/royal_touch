@@ -7,7 +7,7 @@ import innovation_flex_img1 from "@/images/innovation1.png";
 import innovation_flex_img2 from "@/images/innovation2.png";
 import innvotion_flex_img3 from "@/images/innvotion3.png";
 import styles from "@/components/innovation_cards/innovation_cards.module.css";
-const page = () => {
+const Page = () => {
   const text = " Lorem Ipsum is simply dummy text of the printing and typesetting industry.".split(" ");
 
   return (
@@ -135,4 +135,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;

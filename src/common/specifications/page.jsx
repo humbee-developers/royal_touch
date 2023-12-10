@@ -56,7 +56,7 @@ const Page = () => {
           variants={animationVariant}
           className={styles.specifications_img}
         >
-          <Image src={spec_img} className={styles.s} />
+          <Image src={spec_img} alt='image' className={styles.s} />
         </motion.div>
       </div>
     </div>

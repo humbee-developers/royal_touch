@@ -5,7 +5,7 @@ const Page = (props) => {
   return (
     <div>
       <div className={styles.common_img_outer}>
-            <Image fill src={props.common_img} className={styles.common_img}/>
+            <Image fill src={props.common_img} alt='image' className={styles.common_img}/>
       </div>
     </div>
   )

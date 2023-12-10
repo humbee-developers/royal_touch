@@ -118,7 +118,7 @@ const Blockboard = () => {
             animate={controlsDesk}
             variants={fadeInDown}
           >
-            <Image src={Blockboard_desk} />
+            <Image src={Blockboard_desk}  alt='image' />
           </motion.div>
         </div>
       </div>

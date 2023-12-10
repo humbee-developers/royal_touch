@@ -1,0 +1,66 @@
+.Blockboard{
+      background-color: #D8D8D8;
+      position: relative;
+      /* height: 100vh; */
+  }
+  .Blockboard h1{
+      font-size: 120px;
+      font-weight: 500;
+      color: white;
+      padding-left:4rem;
+      padding-top: 2rem;
+  }
+  .Blockboard_details{
+      font-size: 20px;
+      font-weight: 400;
+      width: 100%;
+      padding: 6rem 46rem 0rem 18rem;
+
+  }
+  .blockboard_button{
+    margin-top: 1rem !important;
+  }
+  .black_txt{
+     color: black;
+  }
+.blockboard_button{
+    margin-top: 1rem;
+}
+
+  .Blue_text3{
+    color: #006F69;
+  }
+  .blockboard_button{
+      background-color:transparent;
+      margin-top: 1.5rem;
+  }
+  .Blockboard_led{
+      position: absolute;
+      top: 0;
+      right: 180px;
+  }
+  .Blockboard_desk{
+      display: flex;
+      margin-top: 5.5rem;
+      justify-content:center;
+      /* padding-top: 15rem; */
+  }
+  
+  
+  @media (min-width: 1600px){
+      .Blockboard_desk{
+            display: flex;
+            margin-top: 14rem;
+            justify-content:center;
+            /* padding-top: 15rem; */
+        }
+        .Blockboard_details{
+            font-size: 20px;
+            font-weight: 400;
+            width: 100%;
+            padding: 6rem 60rem 0rem 18rem;
+      
+        }
+  }
+  
+  

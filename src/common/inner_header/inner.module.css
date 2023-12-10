@@ -1,0 +1,76 @@
+.nav_menu_names {
+  color: #006f69;
+  font-size: 16px;
+  font-style: normal;
+  z-index: 1;
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+  font-weight: 500;
+  line-height: normal;
+}
+.btn_outer {
+  position: absolute;
+  top: 5rem;
+  right: 7rem;
+}
+.homepage_image{
+  height: 100%;
+  width:100%;
+}
+.inner_image_outer{
+  position: relative;
+    width: 100%;
+    aspect-ratio: 70/35;
+}
+
+
+@media (max-width: 991px) {
+  .logo {
+    height: 100%;
+    width: 100%;
+  }
+  .btn_outer {
+    position: absolute;
+    top: 2rem;
+    right: 5rem;
+  }
+
+  .nav_menu_names {
+    color: #006f69;
+    font-size: 16px;
+    font-style: normal;
+    z-index: 1;
+    width: 23%;
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    font-weight: 500;
+    line-height: normal;
+  }
+}
+
+@media (max-width: 787px) {
+  .logo {
+    height: 100%;
+    width: 100%;
+  }
+  .btn_outer {
+    position: absolute;
+    top: 2rem;
+    right: 5rem;
+  }
+
+  .nav_menu_names {
+    color: #006f69;
+    font-size: 16px;
+    font-style: normal;
+    z-index: 1;
+    width: 23%;
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    font-weight: 500;
+    line-height: normal;
+  }
+}

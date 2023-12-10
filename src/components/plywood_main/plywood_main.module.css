@@ -1,0 +1,57 @@
+.section2 {
+  width: 100%;
+  height: 100%;
+  background: #d8d8d8;
+}
+.image2 {
+  max-width: 100%;
+  height: 100%;
+}
+
+.section_Title {
+  color: #fff;
+  padding-top: 2rem;
+  margin-left: 2rem;
+  font-size: 120px;
+  font-weight: 500;
+}
+.explore_btn{
+  margin-top: 1.5rem;
+}
+.section_Content {
+  width: 50%;
+  margin-top: 12rem;
+  padding-right: 8rem;
+}
+
+.section_Content_Text {
+  width: 100%;
+  font-size: 23px;
+  color: black;
+  margin-bottom: 2rem;
+}
+
+.svg_arrow {
+  margin-left: 1rem;
+}
+.Blue_text {
+  color: #006f69;
+}
+
+.abc {
+  display: flex;
+}
+
+.abc1 {
+  width: 50%;
+}
+
+.section_Content_Button {
+  padding: 10px 23px;
+  font-size: 25px;
+  color: black;
+  cursor: pointer;
+  border: 1px solid black;
+  background-color: #d8d8d8;
+  margin-bottom: 20px;
+}

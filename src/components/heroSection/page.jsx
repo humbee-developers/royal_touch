@@ -6,7 +6,6 @@ import logo from "@/images/logo.png";
 import { useRouter } from "next/navigation";
 import Button from "@/common/button/Button";
 import Navbar from "@/components/navbar/index";
-
 import styles from "@/components/heroSection/heroSection.module.css";
 const Page = (props) => {
   const router = useRouter();

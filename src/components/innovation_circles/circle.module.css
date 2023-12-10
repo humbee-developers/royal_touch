@@ -1,0 +1,178 @@
+.circles_heading_outer {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 50px;
+}
+
+.circles_outer_spacing {
+  padding: 6rem 7rem;
+}
+.circles_outer {
+  display: flex;
+  justify-content: space-around;
+}
+.circle_one {
+  border-radius: 50%;
+  width: 470px;
+  height: 470px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  border: 1px solid white;
+}
+
+.overlay {
+  width: 50px;
+  position: absolute;
+  height: 50px;
+  border-radius: 50%;
+  top: 13rem;
+  left: 13rem;
+  z-index: 1;
+  transition: transform 0.6s ease-out;
+}
+
+.circle_one:hover .overlay {
+  transform: scale(9.3) translateZ(0);
+  background-color: rgb(234, 228, 228);
+}
+.circle_two:hover .overlay {
+  transform: scale(9.3) translateZ(0);
+  background-color: rgb(234, 228, 228);
+}
+.circle_three:hover .overlay {
+  transform: scale(9.3) translateZ(0);
+  background-color: rgb(234, 228, 228);
+}
+
+.circle_two {
+  border-radius: 50%;
+  width: 470px;
+  transition: all 0.3s ease-out;
+  height: 470px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  border: 1px solid white;
+}
+.circle_three {
+  border-radius: 50%;
+  width: 470px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  transition: background-color 0.5s ease-out 80ms;
+  height: 470px;
+  border: 1px solid white;
+}
+
+.circles_inner_circle_outer {
+  height: 500px;
+  width: 100%;
+
+  border-radius: 50%;
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  position: relative;
+}
+.circles_inner_circle {
+  width: 165.2px;
+  height: 165.2px;
+  left: 15px;
+  position: absolute;
+  border: 1px solid rgb(255, 252, 245);
+  border-radius: 50%;
+}
+.circles_inner_text {
+  font-size: 20px;
+  font-weight: 300;
+  margin-left: 30px;
+}
+.circles_paragraph {
+  text-align: center;
+  width: 50%;
+  font-size: 28px;
+  margin: 0 auto;
+  font-weight: 300;
+}
+.circles_circle {
+  margin: 0 10px;
+}
+@media (min-width: 1600px) {
+  .circle_one {
+    border-radius: 50%;
+    width: 550px;
+    height: 550px;
+    transition: background-color 0.5s ease-out 80ms;
+    border: 2px solid white;
+  }
+  .circle_two {
+    border-radius: 50%;
+    width: 550px;
+    transition: all 0.3s ease-out;
+    height: 550px;
+    border: 2px solid white;
+  }
+  .circle_three {
+    border-radius: 50%;
+    width: 550px;
+    transition: background-color 0.5s ease-out 80ms;
+    height: 550px;
+    border: 2px solid white;
+  }
+
+  .overlay {
+    width: 50px;
+    position: absolute;
+    height: 50px;
+    border-radius: 50%;
+    top: 15.4rem;
+    left: 15.4rem;
+    z-index: 1;
+    z-index: 1;
+    transition: transform 0.6s ease-out;
+  }
+
+
+  .circle_one:hover .overlay {
+    transform: scale(11) translateZ(0);
+    background-color: rgb(234, 228, 228);
+  }
+  .circle_two:hover .overlay {
+    transform: scale(11) translateZ(0);
+    background-color: rgb(234, 228, 228);
+  }
+  .circle_three:hover .overlay {
+    transform: scale(11) translateZ(0);
+    background-color: rgb(234, 228, 228);
+  }
+
+
+  .circles_inner_text {
+    font-size: 20px;
+    font-weight: 300;
+    margin-left: 0;
+  }
+  .circles_paragraph {
+    text-align: center;
+    width: 50%;
+    font-size: 28px;
+    margin: 0 auto;
+    font-weight: 300;
+  }
+}
+
+@media (min-width: 1200px) {
+}

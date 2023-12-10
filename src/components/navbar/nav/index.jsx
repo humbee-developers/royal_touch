@@ -22,7 +22,7 @@ const navItems = [
   // },
 
   {
-    title: "products",
+    title: "Products",
     href: "/product",
   },
   {
@@ -32,6 +32,10 @@ const navItems = [
   {
     title: "Find Store",
     href: "/findStore",
+  },
+  {
+    title: "Innovation",
+    href: "/innovation",
   },
   {
     title: "Contact Us",

@@ -1,0 +1,21 @@
+.innovation_flex {
+  display: flex;
+  background: #e5e5e5;
+}
+.innovation_flex_fifty_side1 {
+  padding: 4rem 5rem;
+  height: 100%;
+}
+.flex_img_fifty {
+  height: 100%;
+  width: auto;
+}
+.innovation_flex_fifty_side2 {
+  padding: 16rem 9rem;
+}
+.innovation_flex_fifty_text {
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 158%;
+  color: #006f69;
+}

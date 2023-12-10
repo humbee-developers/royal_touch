@@ -1,0 +1,5 @@
+.common_img_outer {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 70/35;
+}

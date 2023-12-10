@@ -6,8 +6,8 @@ import Button8 from '@/common/button/button8';
 import { InView } from 'react-intersection-observer';
 import Common_animation from "@/common/common_animation/animation";
 import styles from '@/components/blockboard_main/blockboard_main.module.css';
-import Blockboard_led from '@/images/block_light.png';
-import Blockboard_desk from '@/images/blockboard_desk.png';
+import Block_led from '@/images/block_light.png';
+import Block_desk from "@/images/block_desk.png"
 
 const Blockboard = () => {
 
@@ -109,7 +109,7 @@ const Blockboard = () => {
             animate={controlsLed}
             variants={fadeInUp}
           >
-            <Image src={Blockboard_led} alt='image' />
+            <Image src={Block_led} alt='image' />
           </motion.div>
         </div>
         <div className={styles.Blockboard_desk} ref={refDesk}>
@@ -118,7 +118,7 @@ const Blockboard = () => {
             animate={controlsDesk}
             variants={fadeInDown}
           >
-            <Image src={Blockboard_desk}  alt='image' />
+            <Image src={Block_desk}  alt='image' />
           </motion.div>
         </div>
       </div>

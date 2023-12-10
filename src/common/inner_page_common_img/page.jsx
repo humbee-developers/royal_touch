@@ -1,7 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 import styles from "@/common/inner_page_common_img/inner_page_common_img.module.css"
-const page = (props) => {
+const Page = (props) => {
   return (
     <div>
       <div className={styles.common_img_outer}>
@@ -11,4 +11,4 @@ const page = (props) => {
   )
 }
 
-export default page
+export default Page

@@ -109,7 +109,7 @@ const Blockboard = () => {
             animate={controlsLed}
             variants={fadeInUp}
           >
-            <Image src={Blockboard_led} />
+            <Image src={Blockboard_led} alt='image' />
           </motion.div>
         </div>
         <div className={styles.Blockboard_desk} ref={refDesk}>

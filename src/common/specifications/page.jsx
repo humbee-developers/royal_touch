@@ -8,7 +8,7 @@ import LeftContent from '@/common/specifications/data';
 import RightContent from '@/common/specifications/data2';
 import Common_animation from '@/common/common_animation/animation';
 
-const page = () => {
+const Page = () => {
   const controls = useAnimation();
   const [ref, inView] = useInView({ triggerOnce: true });
 
@@ -63,4 +63,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;

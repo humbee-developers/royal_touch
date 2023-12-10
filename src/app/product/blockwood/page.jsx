@@ -12,7 +12,7 @@ import Specifications from "@/common/specifications/page"
 import Inner_page_slider2 from "@/common/inner_page_slider2/page"
 import Footer from "@/components/footer/page"
 import Form from "@/components/form/page2"
-const page = () => {
+const Page = () => {
   const [isLoading, setIsLoading] = useState(true);
   useEffect(() => {
     (async () => {
@@ -46,4 +46,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Page

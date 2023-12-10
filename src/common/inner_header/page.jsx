@@ -5,7 +5,7 @@ import Navbar from "@/components/navbar/index";
 import Image from "next/image";
 import logo from "@/images/logo.png";
 import styles from "@/common/inner_header/inner.module.css"
-const page = (props) => {
+const Page = (props) => {
   const router = useRouter();
   return (
     <div className={styles.s}>
@@ -29,4 +29,4 @@ const page = (props) => {
   )
 }
 
-export default page
+export default Page

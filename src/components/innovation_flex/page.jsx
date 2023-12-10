@@ -5,7 +5,7 @@ import Image from 'next/image';
 import flex_img from '@/images/innovation4.png';
 import styles from '@/components/innovation_flex/innovation_flex.module.css';
 
-const page = () => {
+const Page = () => {
   const text = "Royale Touche Plywood is a premium-grade Structural Plywood made from carefully selected hardwood timber, offering exceptional strength, high load-bearing capacity, durability against all weather conditions, fire retardant properties, and protection against termites and borer. Utilizing an advanced vacuum pressure treatment system with nano-molecule chemicals ensures top-notch performance and longevity of the plywood.".split(' ');
 
   const imageAnimationControls = useAnimation();
@@ -57,4 +57,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;

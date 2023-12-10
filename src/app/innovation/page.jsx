@@ -12,7 +12,7 @@ import innovation_image from "@/images/innovation_header.png";
 import { AnimatePresence } from "framer-motion";
 import Preloader from "@/components/preloader/page";
 
-const page = () => {
+const Page = () => {
   const [isLoading, setIsLoading] = useState(true);
   useEffect(() => {
     (async () => {
@@ -46,4 +46,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;

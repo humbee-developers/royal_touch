@@ -3,7 +3,7 @@ import React from "react";
 import HeroSection from "@/components/heroSection/page";
 import Timeline from "@/components/timeline/page";
 import Footer from "@/components/footer/page";
-// import Factory from "@/components/factory/page"
+import Factory from "@/components/factory/page"
 import Form from "@/components/form/page2";
 import HomeStore from "@/components/homeStore/page";
 import TextScroll from "@/common/textScroll/page";
@@ -17,7 +17,7 @@ const Page = () => {
         homepage_heading="Surfaces That Speak of Luxury, Whispers of Style"
       />
       {/*<HeroSection  banner_image={homepage_image_second}  homepage_heading2="Elevate Your Space with Royale Touche: Where Luxury is a Lifestyle."/> */}
-      {/* <Factory/> */}
+      <Factory/>
 
       <TextScroll />
       <Timeline />

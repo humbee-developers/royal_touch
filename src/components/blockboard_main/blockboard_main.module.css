@@ -133,7 +133,7 @@
     }
   
     .Blockboard_led {
-      right: 9%;
+      right: 4%;
       top: 0%;
     }
   
@@ -172,7 +172,7 @@
     }
   
     .Blockboard_led {
-      right: 6%;
+      right: 0%;
       top: 0%;
     }
   
@@ -199,7 +199,7 @@
   
     .Blockboard_details {
       font-size: 14px;
-      padding: 6rem 10rem 0rem 3rem;
+      padding: 4rem 5rem 0rem 2rem;
   
     }
   
@@ -210,7 +210,7 @@
     }
   
     .Blockboard_led {
-      right: 3%;
+      right: 0%;
       top: 0%;
     }
   
@@ -237,7 +237,7 @@
   
     .Blockboard_details {
       font-size: 14px;
-      padding: 6rem 6rem 0rem 2rem;
+      padding: 4rem 6rem 0rem 2rem;
   
     }
   
@@ -248,7 +248,7 @@
     }
   
     .Blockboard_led {
-      right: -3%;
+      right: 0%;
       top: -1%;
     }
   

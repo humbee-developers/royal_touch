@@ -30,10 +30,11 @@ const page = () => {
 
   return (
     <div className={styles.inner_carousal_two_outer}>
-      <div className={styles.inner_carousal_two_top}>
-        <div className={styles.inner_carousal_two_heading}>
+    <div className={styles.inner_carousal_two_heading}>
           <Common_animation text="KEY FEATURES" />
         </div>
+      <div className={styles.inner_carousal_two_top}>
+        
 
         <InView triggerOnce={true}>
           {({ inView, ref }) => (
@@ -65,6 +66,20 @@ const page = () => {
             slidesPerView={3}
             loop={true}
             autoplay={{ delay: 5000 }}
+            breakpoints={{
+        10: {
+          // width: 576,
+          slidesPerView: 1,
+        },
+        768: {
+          // width: 768,
+          slidesPerView: 2,
+        },
+        991: {
+          // width: 991,
+          slidesPerView: 3,
+        },
+      }}
           >
         <SwiperSlide>
         <div className={styles.inner_carousal_slider_outer}>

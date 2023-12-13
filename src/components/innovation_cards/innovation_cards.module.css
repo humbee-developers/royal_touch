@@ -72,3 +72,255 @@ text-decoration: underline;
     padding-left: 7rem;
   }
 }
+
+
+
+@media (max-width:1265px){
+  .flexing{
+    width: 50%;
+  }
+  
+  .flex_img{
+    height: 100%;
+    width: 100%;
+  }
+  
+    .innovation_cards_text {
+      font-size: 35px;
+    padding-top: 3rem;
+    font-weight: 500;
+    margin-top: 0rem;
+    width: 60%;
+    color: black;
+    padding-left: 1rem;
+    }
+  
+  
+    .flex_border {
+      width: 97%;
+      border-bottom: 1px solid black;
+      margin: 28px 0px 26px 11px;
+    }
+    .innovation_cards_flex {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: left;
+      margin: 0px;
+      margin-right: 0rem;
+      padding-bottom: 0rem;
+    }
+  
+    .innovation{
+      margin: 0px 24px;
+      padding-bottom: 1.8rem;
+    }
+
+}
+
+
+@media (max-width:1024px){
+  .flexing{
+    width: 50%;
+  }
+  
+  .flex_img{
+    height: 100%;
+    width: 100%;
+  }
+  
+    .innovation_cards_text {
+      font-size: 35px;
+    padding-top: 3rem;
+    font-weight: 500;
+    margin-top: 0rem;
+    width: 60%;
+    color: black;
+    padding-left: 1rem;
+    }
+  
+  
+    .flex_border {
+      width: 97%;
+      border-bottom: 1px solid black;
+      margin: 28px 0px 26px 11px;
+    }
+    .innovation_cards_flex {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: left;
+      margin: 0px;
+      margin-right: 0rem;
+      padding-bottom: 0rem;
+    }
+  
+    .innovation{
+      margin: 0px 24px;
+      padding-bottom: 1.8rem;
+    }
+
+  
+}
+@media (max-width:991px){
+  .flexing{
+    width: 50%;
+  }
+  
+  .flex_img{
+    height: 100%;
+    width: 100%;
+  }
+  
+    .innovation_cards_text {
+      font-size: 35px;
+    padding-top: 3rem;
+    font-weight: 500;
+    margin-top: 0rem;
+    width: 60%;
+    color: black;
+    padding-left: 1rem;
+    }
+  
+  
+    .flex_border {
+      width: 97%;
+      border-bottom: 1px solid black;
+      margin: 28px 0px 26px 11px;
+    }
+    .innovation_cards_flex {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: left;
+      margin: 0px;
+      margin-right: 0rem;
+      padding-bottom: 0rem;
+    }
+  
+    .innovation{
+      margin: 0px 24px;
+      padding-bottom: 1.8rem;
+    }
+  
+}
+
+@media (max-width:768px){
+
+.flexing{
+  width: 50%;
+}
+
+  .innovation_cards_text {
+    font-size: 22px;
+    padding-top: 3rem;
+    font-weight: 500;
+    margin-top: 0rem;
+    width: 50%;
+    color: black;
+    padding-left: 1rem;
+  }
+
+
+  .flex_border {
+    width: 97%;
+    border-bottom: 1px solid black;
+    margin: 28px 0px 26px 11px;
+  }
+  .innovation_cards_flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    margin: 0px;
+    margin-right: 0rem;
+    padding-bottom: 0rem;
+  }
+
+  .innovation{
+    margin: 0px 24px;
+    padding-bottom: 1.8rem;
+  }
+
+  
+}
+@media (max-width:575px){
+  .innovation_cards_text {
+    font-size: 20px;
+    padding-top: 3rem;
+    font-weight: 500;
+    margin-top: 0rem;
+    width: 100%;
+    color: black;
+    padding-left: 1rem;
+  }
+
+  .flexing{
+    width: 100%;
+  }
+
+  .flex_img{
+    height: 100%;
+    width: 100%;
+  }
+
+  .flex_border {
+    width: 95%;
+    border-bottom: 1px solid black;
+    margin: 28px 0px 26px 11px;
+  }
+  .innovation_cards_flex {
+    display: block;
+    margin: 0px;
+    margin-right: 0rem;
+    padding-bottom: 0rem;
+  }
+
+  .innovation{
+    margin: 0px 24px;
+    padding-bottom: 1.8rem;
+  }
+
+
+
+}
+
+
+
+
+@media (max-width:320px){
+  .innovation_cards_text {
+    font-size: 20px;
+    padding-top: 3rem;
+    font-weight: 500;
+    margin-top: 0rem;
+    width: 100%;
+    color: black;
+    padding-left: 1rem;
+  }
+  .flex_img{
+    height: 100%;
+    width: 100%;
+  }
+
+
+  .flexing{
+    width: 100%;
+  }
+
+
+
+
+  .flex_border {
+    width: 95%;
+    border-bottom: 1px solid black;
+    margin: 28px 0px 26px 11px;
+  }
+  .innovation_cards_flex {
+    display: block;
+    margin: 0px;
+    margin-right: 0rem;
+    padding-bottom: 0rem;
+  }
+
+  .innovation{
+    margin: 0px 24px;
+    padding-bottom: 1.8rem;
+  }
+}

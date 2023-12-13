@@ -1,66 +1,263 @@
-.Blockboard{
-      background-color: #D8D8D8;
-      position: relative;
-      /* height: 100vh; */
+.Blockboard {
+    background-color: #D8D8D8;
+    position: relative;
+    /* height: 100vh; */
   }
-  .Blockboard h1{
-      font-size: 120px;
-      font-weight: 500;
-      color: white;
-      padding-left:4rem;
-      padding-top: 2rem;
+  
+  .Blockboard_title {
+    padding-top: 2rem;
+    padding-left: 2rem;
   }
-  .Blockboard_details{
-      font-size: 20px;
-      font-weight: 400;
-      width: 100%;
-      padding: 6rem 46rem 0rem 18rem;
-
+  
+  .Blockboard h1 {
+    font-size: 120px;
+    font-weight: 500;
+    color: white;
+    padding-left: 4rem;
+    padding-top: 2rem;
   }
-  .blockboard_button{
+  
+  .Blockboard_details {
+    font-size: 20px;
+    font-weight: 400;
+    width: 100%;
+    padding: 6rem 19rem 0rem 6rem;
+  }
+  
+  .blockboard_button {
     margin-top: 1rem !important;
   }
-  .black_txt{
-     color: black;
+  
+  .black_txt {
+    color: black;
   }
-.blockboard_button{
+  
+  .blockboard_button {
     margin-top: 1rem;
-}
-
-  .Blue_text3{
+  }
+  
+  .Blue_text3 {
     color: #006F69;
   }
-  .blockboard_button{
-      background-color:transparent;
-      margin-top: 1.5rem;
+  
+  .blockboard_button {
+    background-color: transparent;
+    margin-top: 1.5rem;
   }
-  .Blockboard_led{
+  
+  .Blockboard_led {
+    position: absolute;
+    top: 0;
+    right: 18px;
+  }
+  
+  .Blockboard_desk {
+    display: flex;
+    margin-top: 9rem;
+    justify-content: center;
+  }
+  
+  .Blockboard_desk img {
+    width: 100%;
+  }
+  
+  /* -------------------1600---------------------- */
+  @media (min-width: 1600px) {
+  
+    .Blockboard_desk {
+      display: flex;
+      margin-top: 14rem;
+      justify-content: center;
+    }
+  
+    .Blockboard_details {
+      font-size: 20px;
+      font-weight: 400;
+      width: fit-content;
+      padding: 6rem 60rem 0rem 18rem;
+    }
+  }
+  
+  /* -------------------1024--------------------------- */
+  
+  @media (max-width:1024px) {
+  
+    .Blockboard_title {
+      padding-top: 4rem;
+      padding-left: 3rem;
+    }
+  
+  
+    .Blockboard_desk {
+      display: flex;
+      margin-top: 9rem;
+      justify-content: center;
+    }
+  
+    .Blockboard_desk img {
+      width: 100%;
+      height: 100%;
+    }
+  
+    .Blockboard_led {
       position: absolute;
       top: 0;
-      right: 180px;
-  }
-  .Blockboard_desk{
-      display: flex;
-      margin-top: 5.5rem;
-      justify-content:center;
-      /* padding-top: 15rem; */
-  }
+      right: 0%;
+    }
   
-  
-  @media (min-width: 1600px){
-      .Blockboard_desk{
-            display: flex;
-            margin-top: 14rem;
-            justify-content:center;
-            /* padding-top: 15rem; */
-        }
-        .Blockboard_details{
-            font-size: 20px;
-            font-weight: 400;
-            width: 100%;
-            padding: 6rem 60rem 0rem 18rem;
-      
-        }
+    .Blockboard_details {
+      font-size: 18px;
+      padding: 6rem 20rem 0rem 8rem;
+    }
   }
   
   
+  /* -------------------------------768--------------- */
+  @media (max-width:768px) {
+   
+    .Blockboard_title {
+      padding-top: 3.5rem;
+      padding-left: 1.5rem;
+    }
+  
+    .Blockboard_details {
+      font-size: 16px;
+      padding: 6rem 18rem 0rem 4rem;
+  
+    }
+  
+    .Blockboard_led img {
+      width: 150%;
+      height: auto;
+  
+    }
+  
+    .Blockboard_led {
+      right: 9%;
+      top: 0%;
+    }
+  
+    .Blockboard_desk img {
+      height: 100%;
+      width: 100%;
+    }
+  
+    .Blockboard_desk {
+      margin-top: 7.5rem;
+    }
+  
+  
+  }
+  
+  /* ----------------575---------------- */
+  
+  @media (max-width:575px) {
+  
+  
+    .Blockboard_title {
+      padding-top: 3rem;
+      padding-left: 1.8rem;
+    }
+  
+    .Blockboard_details {
+      font-size: 17px;
+      padding: 6rem 13rem 0rem 3rem;
+  
+    }
+  
+    .Blockboard_led img {
+      width: 120%;
+      height: auto;
+  
+    }
+  
+    .Blockboard_led {
+      right: 6%;
+      top: 0%;
+    }
+  
+    .Blockboard_desk img {
+      height: 100%;
+      width: 100%;
+    }
+  
+    .Blockboard_desk {
+      margin-top: 6.5rem;
+    }
+  }
+  
+  
+  /* -----------------------475----------------------------------- */
+  
+  @media (max-width:475px) {
+  
+  
+    .Blockboard_title {
+      padding-top: 2rem;
+      padding-left: 1.8rem;
+    }
+  
+    .Blockboard_details {
+      font-size: 14px;
+      padding: 6rem 10rem 0rem 3rem;
+  
+    }
+  
+    .Blockboard_led img {
+      width: 100%;
+      height: auto;
+  
+    }
+  
+    .Blockboard_led {
+      right: 3%;
+      top: 0%;
+    }
+  
+    .Blockboard_desk img {
+      height: 100%;
+      width: 100%;
+    }
+  
+    .Blockboard_desk {
+      margin-top: 6.5rem;
+    }
+  
+  }
+  
+   
+  
+  /* --------------------------------375--------------------------- */
+  @media (max-width:376px) {
+  
+    .Blockboard_title {
+      padding-top: 2rem;
+      padding-left: 1rem;
+    }
+  
+    .Blockboard_details {
+      font-size: 14px;
+      padding: 6rem 6rem 0rem 2rem;
+  
+    }
+  
+    .Blockboard_led img {
+      width: 80%;
+      height: auto;
+  
+    }
+  
+    .Blockboard_led {
+      right: -3%;
+      top: -1%;
+    }
+  
+    .Blockboard_desk img {
+      height: 100%;
+      width: 100%;
+    }
+  
+    .Blockboard_desk {
+      margin-top: 6.5rem;
+    }
+  }

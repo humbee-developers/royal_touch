@@ -44,6 +44,7 @@ const Page = () => {
                         duration: 1,
                         delay: inViewImg1 ? 0.7 : 0,
                       }}
+                      className={styles.flexing}
                     >
                       <div className={styles.innovation}>
                         <div className={styles.innovation_flex_card1}>
@@ -77,6 +78,7 @@ const Page = () => {
                         duration: 1,
                         delay: inViewImg2 ? 1 : 0,
                       }}
+                      className={styles.flexing}
                     >
                       <div className={styles.innovation}>
                         <div className={styles.innovation_flex_card2}>
@@ -107,6 +109,7 @@ const Page = () => {
                         duration: 1,
                         delay: inViewImg3 ? 1.3 : 0,
                       }}
+                      className={styles.flexing}
                     >
                       <div className={styles.innovation}>
                         <div className={styles.innovation_flex_card3}>

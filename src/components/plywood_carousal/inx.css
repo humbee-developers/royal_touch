@@ -1,8 +1,21 @@
 .swiper-thumbs {
-      cursor: pointer;
-      width: 30%;
-      float: right;
-      right: 4%;
-      top: 84%;
-      position: absolute;
-    }
+  cursor: pointer;
+  width: 30%;
+  float: right;
+  right: 4%;
+  top: 84%;
+  position: absolute;
+}
+@media (max-width: 1024px) {
+  .swiper-thumbs {
+    cursor: pointer;
+    width: 90%;
+    height: auto;
+    float: none;
+    right: 0%;
+    top: 84%;
+    position: absolute;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}

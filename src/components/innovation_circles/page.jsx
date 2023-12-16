@@ -5,7 +5,7 @@ import Button7 from "@/common/button/button7";
 import styles from "@/components/innovation_circles/circle.module.css";
 
 const page = () => {
-  const text = " Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem amet eveniet repellat ipsum tenetur eius ad, dolor, repellendus expedita repudiandae consectetur. Odit nesciunt deserunt veritatis officiis. Blanditiis sequi adipisci dolorem voluptas perferendis error iste voluptate".split(" ");
+  const text = " Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem amet eveniet repellat ipsum tenetur eius ad, dolor, repellendus expedita repudiandae consectetur. Odit nesciunt deserunt veritatis officiis. Blanditiis".split(" ");
 
   return (
     <div>
@@ -20,7 +20,7 @@ const page = () => {
             <div className={styles.circle_one}>
               <div className={styles.overlay}></div>
               <div className={styles.circles_inner_circle_outer}>
-                <div className={styles.circles_inner_circle}></div>
+                {/* <div className={styles.circles_inner_circle}></div> */}
                 <div className={styles.circles_inner_text}>Functionality</div>
               </div>
             </div>
@@ -31,7 +31,7 @@ const page = () => {
               <div className={styles.overlay}></div>
               <div className={styles.overlay}></div>
               <div className={styles.circles_inner_circle_outer}>
-                <div className={styles.circles_inner_circle}></div>
+                {/* <div className={styles.circles_inner_circle}></div> */}
                 <div className={styles.circles_inner_text}>Innovation</div>
               </div>
             </div>
@@ -41,7 +41,7 @@ const page = () => {
             <div className={styles.circle_three}>
               <div className={styles.overlay}></div>
               <div className={styles.circles_inner_circle_outer}>
-                <div className={styles.circles_inner_circle}></div>
+                {/* <div className={styles.circles_inner_circle}></div> */}
                 <div className={styles.circles_inner_text}>Design</div>
               </div>
             </div>

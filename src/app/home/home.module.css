@@ -2,7 +2,7 @@
 .homepage_third_image_wrapper {
   position: relative;
   width: 100%;
-  aspect-ratio: 70/35;
+  aspect-ratio: 74/35;
 }
 
 
@@ -13,7 +13,3 @@
     aspect-ratio: 1;
   }
 }
-@media(max-width:991px){
-  
-}
-

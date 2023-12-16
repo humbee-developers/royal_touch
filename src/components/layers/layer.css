@@ -1,0 +1,35 @@
+#page4{
+      /* position: relative;
+      height: 100vh;
+      background-color: blue;
+      width: 100vw; */
+      position: relative;
+        height: 100vh ;
+        /* width: 100vw; */
+        transform: none !important;
+    }
+    #page4>canvas{
+     max-height: 100vh;
+      max-width: 100vw;
+      position: relative;
+    }
+
+
+
+    /* .z1{
+      position: relative;
+    } */
+    
+    .pin-spacer{
+      /* padding: 0 !important; */
+      /* height: 1400px !important ; */
+    }
+    
+    
+    @media (min-width:1600px){
+      .pin-spacer{
+        /* padding: 0 !important; */
+        /* height: 1801px !important; */
+      }
+      
+    }

@@ -1,11 +1,14 @@
-import React from 'react';
-import { motion, useAnimation } from 'framer-motion';
-import { InView } from 'react-intersection-observer';
-import Image from 'next/image';
-import flex_img from '@/images/innovation4.png';
-import styles from '@/components/innovation_flex/innovation_flex.module.css';
+import React from "react";
+import { motion, useAnimation } from "framer-motion";
+import { InView } from "react-intersection-observer";
+import Image from "next/image";
+import flex_img from "@/images/innovation4.png";
+import styles from "@/components/innovation_flex/innovation_flex.module.css";
 const Page = () => {
-  const text = "Royale Touche Plywood is a premium-grade Structural Plywood made from carefully selected hardwood timber, offering exceptional strength, high load-bearing capacity, durability against all weather conditions, fire retardant properties, and protection against termites and borer. Utilizing an advanced vacuum pressure treatment system with nano-molecule chemicals ensures top-notch performance and longevity of the plywood.".split(' ');
+  const text =
+    "Royale Touche Plywood is a premium-grade Structural Plywood made from carefully selected hardwood timber, offering exceptional strength, high load-bearing capacity, durability against all weather conditions, fire retardant properties, and protection against termites and borer. Utilizing an advanced vacuum pressure treatment system with nano-molecule chemicals ensures top-notch performance and longevity of the plywood.".split(
+      " "
+    );
   const imageAnimationControls = useAnimation();
   return (
     <div>
@@ -19,15 +22,19 @@ const Page = () => {
                   initial={{ opacity: 0, y: 20 }}
                   animate={inViewImg ? { opacity: 1, y: 0 } : {}}
                   transition={{
-                    type: 'spring',
+                    type: "spring",
                     stiffness: 500,
                     damping: 30,
                     duration: 1,
-                        delay: inViewImg ? 1 : 0,
+                    delay: inViewImg ? 1 : 0,
                   }}
                   className={styles.innovation_flex_fifty_side1}
                 >
-                  <Image src={flex_img} alt="image" className={styles.flex_img_fifty} />
+                  <Image
+                    src={flex_img}
+                    alt="image"
+                    className={styles.flex_img_fifty}
+                  />
                 </motion.div>
               )}
             </InView>
@@ -43,7 +50,7 @@ const Page = () => {
                   key={i}
                   className={styles.innovation_flex_fifty_text}
                 >
-                  {el}{' '}
+                  {el}{" "}
                 </motion.span>
               ))}
             </div>

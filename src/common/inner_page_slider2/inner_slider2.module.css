@@ -40,7 +40,9 @@
   position: relative;
 }
 .inner_carousal_slider_img {
-max-width: 100%;
+/* max-width: 100%; */
+height: 100%;
+width: 100%;
 }
 .inner_carousal_word {
   position: absolute;

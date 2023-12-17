@@ -166,7 +166,7 @@ const CanvasComponent = () => {
           trigger: "#page4",
           //     pin:"#page4",
           // pinSpacing:false,
-          pin:true,
+          // pin:true,
           // trigger: `#page3`,
           start: `top top`,
           // end: "100%",

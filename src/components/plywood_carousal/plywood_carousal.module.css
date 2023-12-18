@@ -43,7 +43,7 @@
 }
 .image_ab_text {
   position: absolute;
-  top: 50%;
+  top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
@@ -52,7 +52,7 @@
   color: white;
 }
 .swiper_thumbnail {
-  margin-top: 2rem;
+  /* margin-top: 2rem; */
   margin-bottom: 2rem;
 }
 @media (min-width: 1600px) {

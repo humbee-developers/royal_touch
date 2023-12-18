@@ -64,8 +64,8 @@ const page = () => {
             modules={[Navigation, EffectFade, A11y, Autoplay]}
             spaceBetween={12}
             slidesPerView={3}
-            // loop={true}
-            // autoplay={{ delay: 5000 }}
+            loop={true}
+            autoplay={{ delay: 5000 }}
             breakpoints={{
         10: {
           // width: 576,
@@ -207,6 +207,28 @@ const page = () => {
                  </div>
                  </div>
             </div>
+        </div>
+        </SwiperSlide>
+
+        <SwiperSlide>
+        <div className={styles.inner_carousal_slider_outer}>
+            <div className={styles.inner_carousal_slider_img_outer}>
+            <Image src={slide} alt="slide" className={styles.inner_carousal_slider_img} />
+            <div className={styles.inner_carousal_word}>R</div>
+            </div>
+
+            <div className={styles.inner_carousal_data_outer}>
+                 <div>
+                 <div className={styles.inner_carousal_data_heading}>
+                        Raw Material:
+                  </div>
+                  <div className={styles.inner_carousal_paragraph_flex}>
+                  <div className={styles.inner_carousal_paragraph1}>Made from carefully selected hardwood timber to ensure high strength and durability.Gurjan species used in the face veneers.</div>
+                  <div className={styles.inner_carousal_paragraph2}>Made from all composed full sheet veneers in all layers, ensuring a robust and well-structured plywood.</div>
+                 </div>
+                  </div>
+            </div>
+            
         </div>
         </SwiperSlide>
       

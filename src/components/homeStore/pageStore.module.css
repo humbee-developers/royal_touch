@@ -55,6 +55,7 @@
 
 .responsive_section {
   display: flex;
+  background: #00615c;
   flex-direction: row;
   /* height: 100vh; */
   flex-wrap: wrap;

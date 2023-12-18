@@ -116,7 +116,7 @@ const TechnicalSpecifications = () => {
           </div>
         )}
         <button className={styles.button} onClick={handleClick}>
-          See more
+        {showMore ? "See less" : "See more"}
         </button>
       </div>
     </div>

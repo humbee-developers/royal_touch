@@ -1,8 +1,11 @@
 "use client"
-import React, { useState } from 'react';
+import React, { useState , useRef , useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLocationDot, faMapPin, faPhoneVolume, faClock } from '@fortawesome/free-solid-svg-icons';
+import gsap from "gsap";
+import splitType from "split-type";
 import styles from "@/components/findStore_search/findStore_search.module.css"
+import "./findStore.css"
 function Mapsection() {
     const [isOpen1, setIsOpen1] = useState(false);
     const [selectedOption1, setSelectedOption1] = useState('');
@@ -221,10 +224,67 @@ function Mapsection() {
         window.open('https://www.google.com/maps/place/Crown+Decor+Private+Limited,+One42,+North+Tower,+Suite+401+-+403,+4th+Floor,+Ambli+-+Bopal+Rd,+B%2FH,+Ashok+Vatika,+Ahmedabad,+Gujarat+380058');
     };
 
+
+
+    const storeRef = useRef("")
+    let refs = useRef([]);
+    useEffect(() => {
+      setTimeout(() => {
+      const ourText = new splitType(storeRef.current, { types: "chars" });
+      const chars = ourText.chars;
+      gsap.fromTo(
+        chars,
+        {
+          y: 100,
+          opacity: 0,
+          rotate: "45deg",
+        },
+        {
+          y: 0,
+          opacity: 1,
+          stagger: 0.02,
+          duration: 2,
+          rotate: "0deg",
+          ease: "power4.out",
+        }
+      );
+      }, 2300);
+    }, []);
+    const splitWords = (phrase) => {
+      let body = [];
+      phrase.split(" ").forEach((word, i) => {
+        const letters = splitLetters(word);
+        body.push(
+          <p key={word + "_" + i} className="findStore_text_animation_wrapper">
+            {letters}
+          </p>
+        );
+      });
+      return body;
+    };
+    const splitLetters = (word) => {
+      let letters = [];
+      word.split("").forEach((letter, i) => {
+        letters.push(
+          <span
+            key={letter + "_" + i}
+            ref={(el) => {
+              refs.current.push(el);
+            }}
+          >
+            {letter}
+          </span>
+        );
+      });
+      return letters;
+    };
+
+
+
     return (
         <div className={styles.Map_section}>
             <div className={styles.map_section1}>
-                <p className={styles.content_Text}>Royale Touché experience<br />center near me</p>
+            <div className={styles.content_Text} ref={storeRef}>{splitWords("Royale Touché experience center near me")}</div>
                 <div className={styles.option_section}>
                 
                 <div className={`${styles.select_menu} ${isOpen1 ? styles.active : ''}`} onClick={toggleDropdown1}>

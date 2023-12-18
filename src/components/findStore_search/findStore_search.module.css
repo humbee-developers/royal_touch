@@ -11,7 +11,8 @@
 .content_Text {
   color: #006f69;
   font-size: 70px;
-  margin: 0 auto;
+  /* margin: 0 auto; */
+  width: 70%;
   font-style: normal;
   font-weight: 300;
   line-height: normal;

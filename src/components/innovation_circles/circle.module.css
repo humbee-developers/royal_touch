@@ -55,6 +55,7 @@
   height: 470px;
   overflow: hidden;
   display: flex;
+  background-color: pink;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -101,6 +102,21 @@
   color: white;
   font-weight: 300;
   margin-left: 30px;
+}
+
+
+
+
+
+.cursor {
+  background-color: #111;
+  height: 32px;
+  width: 32px;
+  border-radius: 50%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
 }
 .circles_paragraph {
   text-align: center;

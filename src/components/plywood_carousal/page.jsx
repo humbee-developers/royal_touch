@@ -21,6 +21,7 @@ export default function SampleSlider() {
   const [thumbs, setThumbs] = useState(null);
   return (
     <>
+    <div></div>
       <div className={styles.main_section_carousel_circle}>
         <Swiper
           centeredSlides={false}
@@ -34,7 +35,10 @@ export default function SampleSlider() {
           thumbs={{ swiper: thumbs && !thumbs.destroyed ? thumbs : null }}
           navigation={false}
         >
-          <div className={styles.swiper_main_section_circle}>
+      <div>
+
+
+      <div className={styles.swiper_main_section_circle}>
             <SwiperSlide>
               <div className={styles.swiper_content_section_circle}>
                 <Image src={image} alt="" className={styles.img_main} />
@@ -56,6 +60,10 @@ export default function SampleSlider() {
               </div>
             </SwiperSlide>
           </div>
+
+
+
+      </div>
         </Swiper>
 
         <Swiper

@@ -1,0 +1,11 @@
+.card {
+      position: relative;
+      width: 100%;
+      overflow: hidden;
+  }
+  .card-cover-container {
+      position: absolute;
+      inset: 0;
+      overflow: hidden;
+      z-index: 1;
+  }

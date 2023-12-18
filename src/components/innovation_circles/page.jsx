@@ -3,6 +3,8 @@ import React from "react";
 import { useEffect, useState } from 'react';
 import { motion } from "framer-motion";
 import { InView } from 'react-intersection-observer';
+import Image from "next/image";
+import test_img from "@/images/img4.png"
 import styles from "@/components/innovation_circles/circle.module.css";
 
 const page = () => {
@@ -48,8 +50,8 @@ const page = () => {
       x: mousePosition.x - 75,
       y: mousePosition.y - 75,
       backgroundColor: "white",
-      zIndex:999,
-      // mixBlendMode: "difference"
+      zIndex:10,
+      // mixBlendMode:""
     }
   }
 
@@ -70,6 +72,9 @@ const page = () => {
           <div   className={styles.circles_circle}>
             <div onMouseEnter={textEnter} onMouseLeave={textLeave}  className={styles.circle_one}>
               <div className={styles.overlay}></div>
+             <div className={styles.tm_outer}>
+             <Image className={styles.tm} src={test_img} alt="img"/>
+             </div>
               <div className={styles.circles_inner_circle_outer}>
                 {/* <div className={styles.circles_inner_circle}></div> */}
                 <div className={styles.circles_inner_text}>Functionality</div>

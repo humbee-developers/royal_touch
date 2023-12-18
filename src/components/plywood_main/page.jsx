@@ -15,7 +15,7 @@ const Section1 = () => {
   return (
     <div>
       <div className={styles.section2}>
-        <div>
+        <div className={styles.nmnm}>
           <Common_animation text="PLYWOOD" />
         </div>
 

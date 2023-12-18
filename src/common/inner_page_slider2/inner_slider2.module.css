@@ -47,6 +47,7 @@ width: 100%;
 .inner_carousal_word {
   position: absolute;
   top: 1rem;
+  color: white;
   left: 2rem;
   font-size: 120px;
   font-weight: 700;

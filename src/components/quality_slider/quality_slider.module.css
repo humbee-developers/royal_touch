@@ -14,13 +14,10 @@
       background-color: #D9D9D9;
       padding: 0 0 100px;
     }
-    .wrapper {
-    }
-    .heading {
-    }
+
     .heading h2 {
       color: #000;
-      font-family: Lato;
+      /* font-family: Lato; */
       font-size: 90px;
       font-style: normal;
       font-weight: 300;
@@ -41,7 +38,7 @@
     .title {
       color: #000;
       margin: 0 0 29px;
-      font-family: Lato;
+      /* font-family: Lato; */
       font-size: 25px;
       font-style: normal;
       font-weight: 500;
@@ -49,7 +46,7 @@
     }
     .slider_wrapper p {
       color: #000;
-      font-family: Lato;
+      /* font-family: Lato; */
       font-size: 18px;
       font-style: normal;
       font-weight: 400;

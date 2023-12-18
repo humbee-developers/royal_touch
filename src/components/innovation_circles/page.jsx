@@ -5,15 +5,15 @@ import Button7 from "@/common/button/button7";
 import styles from "@/components/innovation_circles/circle.module.css";
 
 const page = () => {
-  const text = " Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem amet eveniet repellat ipsum tenetur eius ad, dolor, repellendus expedita repudiandae consectetur. Odit nesciunt deserunt veritatis officiis. Blanditiis".split(" ");
+  const text = " About Plywood who accept nothing less than the finest. Super Exclusive, handcrafted luxury laminates that make  a bold statement.  Always Classy, Beautifully Luxurious.  ONE transcends trends to create timeless elegance.".split(" ");
 
   return (
     <div>
-      <div className={styles.circles_heading_outer}>
+      {/* <div className={styles.circles_heading_outer}>
         <div className={styles.circles_heading1}><span>&#10102;</span> Our Story</div>
         <div className={styles.circles_heading2}><span>&#10103;</span> Humble beginning</div>
         <div className={styles.circles_heading3}><span>&#10104;</span> Work with us</div>
-      </div>
+      </div> */}
       <div className={styles.circles_outer_spacing}>
         <div className={styles.circles_outer}>
           <div className={styles.circles_circle}>
@@ -47,8 +47,11 @@ const page = () => {
             </div>
           </div>
         </div>
-      </div>
 
+
+
+
+        
       <InView triggerOnce={true}>
         {({ inView, ref }) => (
           <div ref={ref}>
@@ -67,24 +70,12 @@ const page = () => {
                 </motion.span>
               ))}
             </div>
-            <InView triggerOnce={true}>
-              {({ inView: inViewButton, ref: refButton }) => (
-                <motion.div
-                  ref={refButton}
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={inViewButton ? { opacity: 1, y: 0 } : {}}
-                  transition={{
-                    duration: 1,
-                    delay: inViewButton ? text.length / 20 : 0,
-                  }}
-                >
-                  <Button7 btn_text={"learn more"} />
-                </motion.div>
-              )}
-            </InView>
+           
           </div>
         )}
       </InView>
+      </div>
+
     </div>
   );
 };

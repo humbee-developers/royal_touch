@@ -29,7 +29,7 @@ const Page = () => {
     <div>
       <div className={styles.specifications_section}>
         <div className={styles.specifications_title}>
-          <Common_animation text="SPECIFICATIONS" />
+          <Common_animation text="SPECIFICATIONS"/>
         </div>
         <div className={styles.specifications_content}>
           <div className={styles.specifications_content_left}>

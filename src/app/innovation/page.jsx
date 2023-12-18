@@ -33,7 +33,7 @@ const Page = () => {
       </AnimatePresence>
 
       <div>
-        <Inner_header inner_header_image={innovation_image} invo="Innovation" />
+        <Inner_header inner_header_image={innovation_image}/>
         <Innovation_circles/>
         <Innovation_cards/>
         <Innovation_flex/>

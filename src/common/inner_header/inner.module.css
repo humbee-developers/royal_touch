@@ -14,6 +14,15 @@
   top: 5rem;
   right: 7rem;
 }
+
+
+
+.inner_header_text{
+  position: absolute;
+  top: 2rem;
+}
+
+
 .homepage_image{
   height: 100%;
   width:100%;

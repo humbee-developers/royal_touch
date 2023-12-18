@@ -12,6 +12,11 @@ const Page = (props) => {
     <div className={styles.inner_image_outer}>
     <Image fill alt="image" src={props.inner_header_image} className={styles.homepage_image}
           />
+          <div className={styles.inner_header_text}>
+          <div>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
+          <div>Lorem Ipsum is simply dummy text of</div>
+
+          </div>
     </div>
       <div className={styles.home_nav_setting}>
         <div className={styles.nav_menu_names}>

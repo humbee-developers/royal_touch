@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import { useEffect, useState } from "react";
-import contactUs_image from "@/images/new_contact.png";
+import contactUs_image from "@/images/contactUs_banner_image1.png";
 import Footer from "@/components/footer/page"
 import Form from "@/components/form/page2"
 import Contact_Map from "@/common/contact_map/page";

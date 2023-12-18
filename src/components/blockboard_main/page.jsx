@@ -60,7 +60,7 @@ const Blockboard = () => {
   return (
     <>
       <div className={styles.Blockboard}>
-        <div>
+        <div className={styles.nmnm}>
           <Common_animation text="BLOCKWOOD" />
         </div>
         <div className={styles.Blockboard_details}>

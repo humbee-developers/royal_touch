@@ -21,6 +21,7 @@
   font-size: 66px;
   padding: 79px 0px 0px 80px;
   font-weight: 400;
+  width: 50%;
   margin-bottom: 4rem;
   color: white;
   text-transform: uppercase;
@@ -39,7 +40,7 @@
   margin-top: 1.3rem;
   padding: 63px;
   line-height: 141.5%;
-  width: 60%;
+  width: 50%;
   font-size: 23px;
   color: white;
 }
@@ -57,8 +58,8 @@
   position: absolute;
   z-index: 19;
   transform: rotate(180deg);
-  bottom: 25rem;
-  left: 84rem;
+  bottom: 27rem;
+  left: 86rem;
   height: 85px;
 }
 .image_swiper_button_prev {
@@ -68,8 +69,8 @@
   z-index: 9;
   transform: rotate(0deg);
   position: absolute;
-  bottom: 25rem;
-  left: 75rem;
+  bottom: 27rem;
+  left: 80rem;
   height: 85px;
 }
 
@@ -88,7 +89,7 @@
     position: absolute;
     transform: rotate(180deg);
     z-index: 19;
-    bottom: 25rem;
+    bottom: 23rem;
     left: 108rem;
     height: 85px;
   }
@@ -108,8 +109,8 @@
     z-index: 9;
     transform: rotate(0deg);
     position: absolute;
-    bottom: 25rem;
-    left: 100rem;
+    bottom: 23rem;
+    left: 102rem;
     height: 85px;
   }
 }

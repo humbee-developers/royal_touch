@@ -49,7 +49,7 @@ const ProductOverviewItem = ({
       <div className={styles.productOverviewCard_wrapper}>
         <h2 className={styles.heading}>{heading}</h2>
         <div className={styles.image}>
-          <Image src={image} alt={title} width={500} height={300} />
+          <Image src={image} alt={title}  />
         </div>
         <div className={styles.contentSec}>
           <div className={styles.title}>{title}</div>

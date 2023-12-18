@@ -12,6 +12,8 @@
 
 
 
+
+
 .homepage_image_wrapper3 {
   position: relative;
   width: 100%;
@@ -134,7 +136,7 @@
     /* text-transform: uppercase; */
     font-weight: 300;
     line-height: normal;
-    width: 46%;
+    width: 50%;
   }
   
   .header_text2{

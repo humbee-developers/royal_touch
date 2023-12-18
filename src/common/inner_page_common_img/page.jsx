@@ -9,6 +9,7 @@ const Page = (props) => {
             
 <div className={styles.common_img_text}>
   <div className={styles.common_img_t}>{props.common_text}</div>
+  <div className={styles.common_img_t}>{props.common_text_big}</div>
 </div>
 
 <div className={styles.inner_invo}>

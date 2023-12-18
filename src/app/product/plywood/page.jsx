@@ -3,7 +3,7 @@ import React from "react";
 import { useEffect, useState } from "react";
 import { AnimatePresence } from "framer-motion";
 import Preloader from "@/components/preloader/page"
-import innovation_image  from "@/images/plywood_header.png"
+import innovation_image  from "@/images/plywood_hero_img.jpeg"
 import Plywood_main from "@/components/plywood_main/page"
 import Plywood_lights from "@/components/plywood_lights/page"
 import Inner_page_common_img from "@/common/inner_page_common_img/page"
@@ -33,8 +33,17 @@ const Page = () => {
     <AnimatePresence mode="wait">
         {isLoading && <Preloader />}
       </AnimatePresence>
+
+
+
+
+
     <Inner_header inner_header_image={innovation_image} heading="Lorem Ipsum is simply dummy text of the printing and typesetting industry."  heading2="Lorem Ipsum is simply dummy text of"/>
     <Plywood_main/>
+
+
+    
+
     <Plywood_lights/>
     <Inner_page_common_img common_img={common_img} common_text="Lorem Ipsum is simply dummy text of the printing and typesetting industry."/>
     <Plywood_carousal/>

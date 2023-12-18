@@ -4,10 +4,12 @@
 }
 .ply_side1 {
   width: 50%;
+  position: relative;
   background: #c3a464;
 }
 .block_side2 {
   width: 50%;
+  position: relative;
   background: #006f69;
 }
 
@@ -49,19 +51,20 @@
 }
 
 .big_arrow_outer {
-  margin-left: 34rem;
-  margin-top: 15rem;
+  /* margin-left: 34rem;
+  margin-top: 15rem; */
+  position:absolute;
+  bottom: 6rem;
+  right: 5rem;
 }
 
-@media (min-width: 1600px) {
+/* @media (min-width: 1600px) {
   .big_arrow_outer {
     margin-left: 43rem;
     margin-top: 24rem;
   }
-}
+} */
 
-@media (max-width: 1440px) {
-}
 @media (max-width: 1199px) {
   .ply_bock {
     cursor: pointer;

@@ -3,6 +3,7 @@ import {Navigation,EffectFade, A11y,} from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import Image from "next/image";
 import slider_image from "@/images/tst.png";
+import slider_image2 from "@/images/tst.png"
 import rightArrow from "@/images/arrow2.svg"
 
 // Import Swiper styles
@@ -18,7 +19,7 @@ const Page = () => {
       <div className={styles.sliderCard}>
         <Swiper
           effect="fade"
-          speed={2000}
+          speed={800}
           fadeEffect={{
             crossFade: true,
           }}
@@ -44,7 +45,7 @@ const Page = () => {
               </div>
               <div className={styles.slider_side_one}>
               <div className={styles.side_one_wrapper}>
-                <div className={styles.slider_header}>Lorem Ipsum is simply</div>
+                <div className={styles.slider_header}>Lorem Ipsum is simply a text</div>
               
                 <div className={styles.slider_text}>
                 {"Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,"}
@@ -72,7 +73,7 @@ const Page = () => {
 
             <div className={styles.slider_side_one}>
             <div className={styles.side_one_wrapper}>
-              <div className={styles.slider_header}>Lorem Ipsum is simply</div>
+              <div className={styles.slider_header}>Lorem Ipsum is simply footer</div>
             
               
               <div className={styles.slider_text}>
@@ -91,7 +92,7 @@ const Page = () => {
                 
                 <div className={styles.slider_image_outer}>
                   <Image
-                    src={slider_image}
+                    src={slider_image2}
                     alt="Picture of the author"
                   
                     className={styles.slider_image_test}
@@ -101,7 +102,7 @@ const Page = () => {
 
               <div className={styles.slider_side_one}>
               <div className={styles.side_one_wrapper}>
-                <div className={styles.slider_header}>Lorem Ipsum is simply</div>
+                <div className={styles.slider_header}>Lorem Ipsum </div>
               
                 
                 <div className={styles.slider_text}>
@@ -130,7 +131,7 @@ const Page = () => {
 
             <div className={styles.slider_side_one}>
             <div className={styles.side_one_wrapper}>
-              <div className={styles.slider_header}>Lorem Ipsum is simply</div>
+              <div className={styles.slider_header}>Lorem Ipsum is simply a text for test.</div>
             
               
               <div className={styles.slider_text}>

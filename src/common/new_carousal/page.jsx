@@ -20,7 +20,7 @@ const Page = ()=> {
       <div className={styles.sliderCard}>
         <Swiper
           effect="fade"
-          speed={2000}
+          speed={1200}
           fadeEffect={{
             crossFade: true,
           }}
@@ -32,7 +32,7 @@ const Page = ()=> {
           
           loop={true}
           autoplay={
-            {delay: 3000}
+            {delay: 2000}
           }
           navigation={{
             nextEl: ".new_carousal_image_swiper_button_next__S2lHF img",

@@ -32,7 +32,7 @@ const Contactform = () => {
               name="fullName"
               onChange={handleChange}
               value={values.fullName}
-              placeholder="Rahul Soni"
+              placeholder="John smith"
             />
             {touched.fullName && errors.fullName && (
               <p className={styles.error}>{errors.fullName}</p>
@@ -45,7 +45,7 @@ const Contactform = () => {
               name="email"
               onChange={handleChange}
               value={values.email}
-              placeholder="rahulsoni@humbeestudio.com"
+              placeholder="helloworld123@gmai.com"
             />
             {touched.email && errors.email && (
               <p className={styles.error}>{errors.email}</p>

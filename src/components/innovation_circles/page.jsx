@@ -59,13 +59,13 @@ const page = () => {
 
   return (
     <div>
-    
-      <div className={styles.circles_outer_spacing}>
-      <motion.div
+    <motion.div
         className={styles.cursor}
         variants={variants}
         animate={cursorVariant}
       />
+      <div className={styles.circles_outer_spacing}>
+      
         <div className={styles.circles_outer}>
           <div   className={styles.circles_circle}>
             <div onMouseEnter={textEnter} onMouseLeave={textLeave}  className={styles.circle_one}>

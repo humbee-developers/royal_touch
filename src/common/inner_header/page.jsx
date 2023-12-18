@@ -79,7 +79,7 @@ const newRef = useRef("")
     <Image fill alt="image" src={props.inner_header_image} className={styles.homepage_image}
           />
           <div className={styles.inner_header_text}>
-          <div className={styles.inner_header_t1}ref={newRef}>{splitWords(props.heading)}</div>
+          <div className={styles.inner_header_t1}ref={newRef}>{props.heading && splitWords(props.heading)}</div>
           <div className={styles.inner_header_t2}>{props.heading2}</div>
 
           </div>

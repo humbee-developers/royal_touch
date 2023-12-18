@@ -16,6 +16,11 @@ const navItems = [
     title: "About Us",
     href: "/aboutUs",
   },
+
+  {
+    title: "Innovation",
+    href: "/innovation",
+  },
   // {
   //   title: "Products",
   //   href: "/products",
@@ -33,10 +38,7 @@ const navItems = [
     title: "Find Store",
     href: "/findStore",
   },
-  {
-    title: "Innovation",
-    href: "/innovation",
-  },
+ 
   {
     title: "Contact Us",
     href: "/contactUs",

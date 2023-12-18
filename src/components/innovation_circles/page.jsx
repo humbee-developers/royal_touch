@@ -7,7 +7,7 @@ import Image from "next/image";
 import test_img from "@/images/img4.png"
 import styles from "@/components/innovation_circles/circle.module.css";
 
-const page = () => {
+const Page = () => {
   const text = " About Plywood who accept nothing less than the finest. Super Exclusive, handcrafted luxury laminates that make  a bold statement.  Always Classy, Beautifully Luxurious.  ONE transcends trends to create timeless elegance.".split(" ");
 
 
@@ -141,4 +141,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;

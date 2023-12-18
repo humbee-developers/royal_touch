@@ -85,7 +85,9 @@ const page = () => {
           <div  className={styles.circles_circle}>
             <div onMouseEnter={textEnter} onMouseLeave={textLeave}  className={styles.circle_two}>
               <div className={styles.overlay}></div>
-              <div className={styles.overlay}></div>
+              <div className={styles.tm_outer}>
+             <Image className={styles.tm} src={test_img} alt="img"/>
+             </div>
               <div className={styles.circles_inner_circle_outer}>
                 {/* <div className={styles.circles_inner_circle}></div> */}
                 <div className={styles.circles_inner_text}>Innovation</div>
@@ -96,6 +98,9 @@ const page = () => {
           <div  className={styles.circles_circle}>
             <div onMouseEnter={textEnter} onMouseLeave={textLeave}  className={styles.circle_three}>
               <div className={styles.overlay}></div>
+              <div className={styles.tm_outer}>
+             <Image className={styles.tm} src={test_img} alt="img"/>
+             </div>
               <div className={styles.circles_inner_circle_outer}>
                 {/* <div className={styles.circles_inner_circle}></div> */}
                 <div className={styles.circles_inner_text}>Design</div>

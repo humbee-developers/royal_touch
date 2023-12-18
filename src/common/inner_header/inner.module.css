@@ -19,8 +19,27 @@
 
 .inner_header_text{
   position: absolute;
-  top: 2rem;
+  bottom: 20rem;
+  width: 50%;
+  left: 10rem;
+  color: white;
 }
+
+
+.inner_header_t1{
+  font-size: 37px;
+  font-style: normal;
+  font-weight: 500;
+}
+
+.inner_header_t2{
+  font-size: 12px;
+  margin-top: 0.5rem;
+font-style: normal;
+font-weight: 500;
+line-height: 144.5%;
+}
+
 
 
 .homepage_image{

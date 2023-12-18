@@ -32,12 +32,12 @@ const Page = () => {
      <AnimatePresence mode="wait">
         {isLoading && <Preloader />}
       </AnimatePresence>
-      <Inner_header inner_header_image={innovation_image} />
+      <Inner_header inner_header_image={innovation_image} heading="Lorem Ipsum is simply dummy text of the printing and typesetting industry."  heading2="Lorem Ipsum is simply dummy text of"/>
       <Blockboard_main/>
       
       
       
-      <Inner_page_common_img common_img={common_img}/>
+      <Inner_page_common_img common_img={common_img}  common_text="Lorem Ipsum is simply dummy text of the printing and typesetting industry."/>
     <Specifications/>
     <Inner_page_slider2/>
     <Form/>

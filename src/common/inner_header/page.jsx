@@ -13,8 +13,8 @@ const Page = (props) => {
     <Image fill alt="image" src={props.inner_header_image} className={styles.homepage_image}
           />
           <div className={styles.inner_header_text}>
-          <div>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
-          <div>Lorem Ipsum is simply dummy text of</div>
+          <div className={styles.inner_header_t1}>{props.heading}</div>
+          <div className={styles.inner_header_t2}>{props.heading2}</div>
 
           </div>
     </div>

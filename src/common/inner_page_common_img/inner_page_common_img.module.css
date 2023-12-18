@@ -3,16 +3,52 @@
   width: 100%;
   aspect-ratio: 70/35;
 }
+
+.common_img_text {
+  color: white;
+  position: absolute;
+  right: 1rem;
+  width: 50%;
+  bottom: 10rem;
+}
+
+.common_img_t {
+  font-size: 37px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 144.5%;
+}
+
+.inner_invo{
+  position: absolute;
+}
+
+.inner_invo_text {
+  font-size: 120px;
+  position: absolute;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+@media (min-width: 1600px) {
+  .common_img_text {
+    color: white;
+    position: absolute;
+    right: 1rem;
+    width: 50%;
+    bottom: 14rem;
+  }
+}
+
 @media (max-width: 991px) {
   .common_img_outer {
     position: relative;
     width: 100%;
     aspect-ratio: 1;
   }
-
-
 }
-
 
 @media (max-width: 787px) {
   .common_img_outer {
@@ -20,7 +56,4 @@
     width: 100%;
     aspect-ratio: 1;
   }
-
-
 }
-

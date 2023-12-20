@@ -5,6 +5,7 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import { InView } from 'react-intersection-observer';
 import plywood_main_img from "@/images/plywood_main_table.png";
+import plywood_main from "@/images/floor.png";
 import Button8 from "@/common/button/button8";
 import Common_animation from "@/common/common_animation/animation";
 import styles from "@/components/plywood_main/plywood_main.module.css";
@@ -18,6 +19,9 @@ const Section1 = () => {
         <div className={styles.nmnm}>
           <Common_animation text="PLYWOOD" />
         </div>
+       <div className={styles.image_m_outer}>
+       <Image src={plywood_main} alt="none" className={styles.image_m} />
+       </div>
 
         <div className={styles.abc}>
           <div className={styles.abc1}>
@@ -33,6 +37,7 @@ const Section1 = () => {
                   }}
                 >
                   <Image src={plywood_main_img} alt="none" className={styles.image2} />
+                
                 </motion.div>
               )}
             </InView>

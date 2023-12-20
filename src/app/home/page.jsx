@@ -6,6 +6,7 @@ import Footer from "@/components/footer/page";
 import Layers from "@/components/layers/page";
 import Factory from "@/components/factory/page";
 import Form from "@/components/form/page2";
+import Navbar from "@/components/navbar/index";
 import HomeStore from "@/components/homeStore/page";
 import TextScroll from "@/common/textScroll/page";
 import New_carousal from "@/common/new_carousal/page";
@@ -45,6 +46,10 @@ const Page = () => {
   }, []);
   return (
     <div>
+
+<div >
+          <Navbar />
+        </div>
       <section className="cards">
         <div className="card">
           <div className="card-cover">

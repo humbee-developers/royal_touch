@@ -5,7 +5,7 @@ import Link from "next/link";
 import logo from "@/images/logo.png";
 import { useRouter } from "next/navigation";
 import Button from "@/common/button/Button";
-import Navbar from "@/components/navbar/index";
+
 import styles from "@/components/heroSection/heroSection.module.css";
 import { useEffect, ref } from "react";
 import gsap from "gsap";
@@ -80,9 +80,7 @@ const Page = (props) => {
         <div className={styles.btn_outer}>
           <Button onClick={() => router.push("/")} btn_text="New Arrivals" />
         </div>
-        <div className={styles.nav_ham_button}>
-          <Navbar />
-        </div>
+     
       </div>
       <div className={styles.homepage_image_wrapper}>
         {props.video_bg && (

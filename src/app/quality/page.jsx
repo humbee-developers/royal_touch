@@ -5,6 +5,7 @@ import Explore from "@/components/explore/page";
 import { AnimatePresence } from "framer-motion";
 import Preloader from "@/components/preloader/page";
 import Footer from "@/components/footer/page"
+import Navbar from "@/components/navbar/index";
 import Form from "@/components/form/page2"
 import Product_overview from "@/components/product_overview/page"
 import Quality_timeline from "@/common/quality_timeline/page"
@@ -33,7 +34,9 @@ const Page = () => {
       <AnimatePresence mode="wait">
         {isLoading && <Preloader />}
       </AnimatePresence>
-
+      <div >
+          <Navbar />
+        </div>
       <div>
         <HeroSection
           banner_image={quality_image}

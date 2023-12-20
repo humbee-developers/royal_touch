@@ -5,6 +5,7 @@ import Explore from "@/components/explore/page"
 import { AnimatePresence } from 'framer-motion';
 import Preloader from "@/components/preloader/page"
 import HeroSection from "@/components/heroSection/page"
+import Navbar from "@/components/navbar/index";
 import Footer from "@/components/footer/page"
 import Form from "@/components/form/page2"
 import Real_Timeline from "@/common/real_timeline/page"
@@ -34,7 +35,9 @@ const Page = () => {
     <AnimatePresence mode='wait'>
     {isLoading && <Preloader />}
   </AnimatePresence>
-  
+  <div >
+          <Navbar />
+        </div>
    <div>
    <HeroSection banner_image={aboutUs_image}   header_name="About Us" header_comment="Lorem Ipsum is simply dummy text of the printing and typesetting industry.  Lorem Ipsum"/>
    <Aboutus_hammer/>

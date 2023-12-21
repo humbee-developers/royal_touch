@@ -96,6 +96,23 @@
 
 
 @media (max-width: 1440px){
+  .main_section_carousel_circle {
+    overflow: hidden;
+    background-color: #D8D8D8;
+    position: relative;
+    padding: 110px 0 0;
+  }
+  .main_section_carousel_circle::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 55%;
+    height: 110%;
+    border: 2px solid white;
+    border-radius: 100%;
+    transform: translate(-50%, -50%);
+  }
 
 }
 

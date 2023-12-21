@@ -17,16 +17,15 @@ const AirpodsAnimation = () => {
     const text = textRef.current;
     const context = canvas.getContext("2d");
     contextRef.current = context;
-
     // Set a fixed size for the canvas (adjust as needed)
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
 
-    const frameCount = 99;
+    const frameCount = 345;
     const currentFrame = (index) =>
       `  https://iraoverseas.com/wp-content/uploads/2023/12/${(index + 1)
         .toString()
-        .padStart(5, "0")}-scaled.jpg`;
+        .padStart(3, "0")}-scaled.jpg`;
 
     for (let i = 0; i < frameCount; i++) {
       let img = new Image();
@@ -40,7 +39,7 @@ const AirpodsAnimation = () => {
         scrollTrigger: {
           trigger: section,
           pin: true,
-          scrub: 1.5,
+          scrub: 0.5,
           end: "+=200%",
         },
       })

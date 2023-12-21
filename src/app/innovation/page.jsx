@@ -5,6 +5,7 @@ import Inner_header from "@/common/inner_header/page";
 import Innovation_circles from "@/components/innovation_circles/page"
 import Innovation_cards from "@/components/innovation_cards/page"
 import Innovation_flex from "@/components/innovation_flex/page"
+import Factory_walk from "@/components/factory_walk/page"
 import Timeline from "@/components/timeline/page"
 import Footer from "@/components/footer/page";
 import Form from "@/components/form/page2";
@@ -34,6 +35,7 @@ const Page = () => {
 
       <div>
         <Inner_header inner_header_image={innovation_image}/>
+        <Factory_walk/>
         <Innovation_circles/>
         <Innovation_cards/>
         <Innovation_flex/>

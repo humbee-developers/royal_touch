@@ -1,212 +1,77 @@
 "use client"
-import React, { useEffect, useRef } from "react";
+import { useEffect, useRef } from "react";
 import gsap from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-import "./layer.css";
-
+import ScrollTrigger from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
-const CanvasComponent = () => {
+
+const AirpodsAnimation = () => {
+  const sectionRef = useRef(null);
   const canvasRef = useRef(null);
-
+  const textRef = useRef(null);
+  const contextRef = useRef(null);
+  const imagesRef = useRef([]);
+  const airpodsRef = useRef({ frame: 0 });
   useEffect(() => {
-    // Function to load images and return a Promise
-    const loadImage = (src) =>
-      new Promise((resolve) => {
-        const img = new Image();
-        img.src = src;
-        img.onload = () => resolve(img);
-      });
+    const section = sectionRef.current;
+    const canvas = canvasRef.current;
+    const text = textRef.current;
+    const context = canvas.getContext("2d");
+    contextRef.current = context;
+    // Set a fixed size for the canvas (adjust as needed)
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
 
-    // Function to load all images
-    const loadImages = async () => {
-      const files = `
-          ./SEQ1 SHORTENED00.jpg
-          ./SEQ1 SHORTENED01.jpg
-          ./SEQ1 SHORTENED02.jpg
-          ./SEQ1 SHORTENED03.jpg
-          ./SEQ1 SHORTENED04.jpg
-             ./SEQ1 SHORTENED05.jpg
-             ./SEQ1 SHORTENED06.jpg
-             ./SEQ1 SHORTENED07.jpg
-             ./SEQ1 SHORTENED08.jpg
-             ./SEQ1 SHORTENED09.jpg
-             ./SEQ1 SHORTENED10.jpg
-             ./SEQ1 SHORTENED11.jpg
-             ./SEQ1 SHORTENED12.jpg
-             ./SEQ1 SHORTENED13.jpg
-             ./SEQ1 SHORTENED14.jpg
-             ./SEQ1 SHORTENED15.jpg
-             ./SEQ1 SHORTENED16.jpg
-             ./SEQ1 SHORTENED17.jpg
-             ./SEQ1 SHORTENED18.jpg
-             ./SEQ1 SHORTENED19.jpg
-             ./SEQ1 SHORTENED20.jpg
-             ./SEQ1 SHORTENED21.jpg
-             ./SEQ1 SHORTENED22.jpg
-             ./SEQ1 SHORTENED23.jpg
-             ./SEQ1 SHORTENED24.jpg
-             ./SEQ1 SHORTENED25.jpg
-             ./SEQ1 SHORTENED26.jpg
-             ./SEQ1 SHORTENED27.jpg
-             ./SEQ1 SHORTENED28.jpg
-             ./SEQ1 SHORTENED29.jpg
-             ./SEQ1 SHORTENED30.jpg
-             ./SEQ1 SHORTENED31.jpg
-             ./SEQ1 SHORTENED32.jpg
-             ./SEQ1 SHORTENED33.jpg
-             ./SEQ1 SHORTENED34.jpg
-             ./SEQ1 SHORTENED35.jpg
-             ./SEQ1 SHORTENED36.jpg
-             ./SEQ1 SHORTENED37.jpg
-             ./SEQ1 SHORTENED38.jpg
-             ./SEQ1 SHORTENED39.jpg
-             ./SEQ1 SHORTENED40.jpg
-             ./SEQ1 SHORTENED41.jpg
-             ./SEQ1 SHORTENED42.jpg
-             ./SEQ1 SHORTENED43.jpg
-             ./SEQ1 SHORTENED44.jpg
-             ./SEQ1 SHORTENED45.jpg
-             ./SEQ1 SHORTENED46.jpg
-             ./SEQ1 SHORTENED47.jpg
-             ./SEQ1 SHORTENED48.jpg
-             ./SEQ1 SHORTENED49.jpg
-             ./SEQ1 SHORTENED50.jpg
-             ./SEQ1 SHORTENED51.jpg
-             ./SEQ1 SHORTENED52.jpg
-             ./SEQ1 SHORTENED53.jpg
-             ./SEQ1 SHORTENED54.jpg
-             ./SEQ1 SHORTENED55.jpg
-             ./SEQ1 SHORTENED56.jpg
-             ./SEQ1 SHORTENED57.jpg
-             ./SEQ1 SHORTENED58.jpg
-             ./SEQ1 SHORTENED59.jpg
-             ./SEQ1 SHORTENED60.jpg
-             ./SEQ1 SHORTENED61.jpg
-             ./SEQ1 SHORTENED62.jpg
-             ./SEQ1 SHORTENED63.jpg
-             ./SEQ1 SHORTENED64.jpg
-             ./SEQ1 SHORTENED65.jpg
-             ./SEQ1 SHORTENED66.jpg
-             ./SEQ1 SHORTENED67.jpg
-             ./SEQ1 SHORTENED68.jpg
-             ./SEQ1 SHORTENED69.jpg
-             ./SEQ1 SHORTENED70.jpg
-             ./SEQ1 SHORTENED71.jpg
-             ./SEQ1 SHORTENED72.jpg
-             ./SEQ1 SHORTENED73.jpg
-             ./SEQ1 SHORTENED74.jpg
-             ./SEQ1 SHORTENED75.jpg
-             ./SEQ1 SHORTENED76.jpg
-             ./SEQ1 SHORTENED77.jpg
-             ./SEQ1 SHORTENED78.jpg
-             ./SEQ1 SHORTENED79.jpg
-             ./SEQ1 SHORTENED80.jpg
-             ./SEQ1 SHORTENED81.jpg
-             ./SEQ1 SHORTENED82.jpg
-             ./SEQ1 SHORTENED83.jpg
-             ./SEQ1 SHORTENED84.jpg
-          `
-        .trim()
-        .split("\n");
+    const frameCount = 117;
+    const currentFrame = (index) =>
+      `  https://iraoverseas.com/wp-content/uploads/2023/12/${(index + 1)
+        .toString()
+        .padStart(4, "0")}-scaled.jpg`;
 
-      const promises = files.map((file) => loadImage(file));
-      return Promise.all(promises);
-    };
+    for (let i = 0; i < frameCount; i++) {
+      let img = new Image();
+      img.src = currentFrame(i);
+      imagesRef.current.push(img);
+    }
 
-    const frameCount = 85;
-
-    // Function to scale and draw the image on the canvas
-    const scaleImage = (img, ctx) => {
-      const canvas = ctx.canvas;
-      const hRatio = canvas.width / img.width;
-      const vRatio = canvas.height / img.height;
-      const ratio = Math.max(hRatio, vRatio);
-      const centerShift_x = (canvas.width - img.width * ratio) / 2;
-      const centerShift_y = (canvas.height - img.height * ratio) / 2;
-
-      ctx.clearRect(0, 0, canvas.width, canvas.height);
-      ctx.drawImage(
-        img,
-        0,
-        0,
-        img.width,
-        img.height,
-        centerShift_x,
-        centerShift_y,
-        img.width * ratio,
-        img.height * ratio
-      );
-
-      console.log("Canvas Dimensions:", canvas.width, canvas.height);
-      console.log("Image Dimensions:", img.width, img.height);
-      console.log("Calculated Ratio:", ratio);
-    };
-
-    // Main canvas initialization
-    const initCanvas = async () => {
-      const canvas = canvasRef.current;
-      const context = canvas.getContext("2d");
-
-      canvas.width = window.innerWidth;
-      canvas.height = window.innerHeight;
-
-      // Load images
-      const images = await loadImages();
-
-      // Initialize GSAP animation
-      const imageSeq = { frame: 1 };
-
-      gsap.to(imageSeq, {
+    gsap
+      .timeline({
+        onUpdate: render,
+        scrollTrigger: {
+          trigger: section,
+          pin: true,
+          scrub: 1.5,
+          end: "+=200%",
+        },
+      })
+      .to(airpodsRef.current, {
         frame: frameCount - 1,
         snap: "frame",
         ease: "none",
-        scrollTrigger: {
-      //     markers: true,
-          scrub: true,
-          trigger: "#page4",
-          //     pin:"#page4",
-          // pinSpacing:false,
-          // pin:true,
-          // trigger: `#page3`,
-          start: `top top`,
-          // end: "100%",
-          // end: `150% center`,
+        duration: 1,
+      })
+      .add(() => {
+        text.style.opacity = 1;
+      }, 0);
 
-          // start: `top top`,
-          // end: () => '+=' + innerWidth * sections.length,
-          // scroller: `#main`,
-        },
-        onUpdate: () => render(images, imageSeq.frame, context),
-      });
-      render(images, imageSeq.frame, context);
+    imagesRef.current[0].onload = render;
 
-      // Initialize ScrollTrigger
-      // ScrollTrigger.create({
-      //   trigger: '#page4',
-      //   pin: true,
-      //   // scroller: '#main',
-      //   start: `top top`,
-      //   end: `150% center`,
-      //   markers: true,
-      //   // markers: true,
-      // });
+    function render() {
+      context.clearRect(0, 0, canvas.width, canvas.height);
+      // Draw the image without scaling
+      context.drawImage(imagesRef.current[airpodsRef.current.frame], 0, 0, canvas.width, canvas.height);
+    }
+
+    // Cleanup
+    return () => {
+      ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
     };
-
-    // Function to render the canvas
-    const render = (images, frame, context) => {
-      scaleImage(images[frame], context);
-    };
-
-    initCanvas();
   }, []);
 
   return (
-    <div className="z1">
-      <div id="page4">
-        <canvas ref={canvasRef}></canvas>
-      </div>
-    </div>
+    <section ref={sectionRef}>
+      <canvas ref={canvasRef}></canvas>
+    </section>
   );
 };
 
-export default CanvasComponent;
+export default AirpodsAnimation;

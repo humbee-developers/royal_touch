@@ -61,7 +61,7 @@
   line-height: 158%;
 }
 .productOverviewCard:last-child {
-  background: #C3A464;
+  background-color: #d0af6b;
   color: black;
 }
 .productOverviewCard:last-child h2 {
@@ -80,6 +80,17 @@
 }
 .productOverviewCard:last-child .secondConetnt {
   color: black;
+}
+
+
+
+@media (min-width:1600px){
+  .contentSec {
+    width: 600px;
+    margin: 0 auto;
+    padding: 73px 0px 73px;
+
+  }
 }
 @media (max-width: 1199px) {
   .contentSec {
@@ -111,8 +122,33 @@
   }
 }
 @media (max-width: 575px) {
+
+  .productOverviewCard h2 {
+    padding: 15px;
+    font-size: 40px;
+  
+  }
+
+
+  .image img {
+   height: 100%;
+    width: 100%;
+    display: block;
+  }
+
+
+  .title {
+    color: #fff;
+    /* font-family: Lato; */
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 144.5%;
+    margin: 0 0 19px;
+  }
+
   .contentSec {
-    width: 90%;
-    padding: 60px 20px 60px 20px;
+    width: 100%;
+    padding: 60px 25px 55px 25px;
   }
 }

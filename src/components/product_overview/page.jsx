@@ -1,6 +1,5 @@
 import ProductOverviewItem from "@/components/product_overview/index"
 import styles from '@/components/product_overview/product_overview.module.css'
-import Image from "next/image"
 import propImage from "@/images/quality1.png"
 import propMaxImage from "@/images/quality2.png"
 const productOverviewData = [

@@ -5,10 +5,10 @@ import big_arrow from "@/images/bigarrow.svg";
 import Link from "next/link";
 import Navbar from "@/components/navbar/index";
 import styles from "@/app/product/product2.module.css";
-// import { gsap } from "gsap";
 import gsap from "gsap";
 import splitType from "split-type";
 import "./productTextAnimation.css";
+
 const Page = () => {
   const plywoodRef = useRef(null);
   const blockboardRef = useRef(null);

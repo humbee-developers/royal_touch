@@ -1,8 +1,6 @@
 import { useRef, useEffect } from "react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import gsap from "gsap";
-import Image from "next/image";
-import loading from "@/images/loading.png"
 import styles from "@/common/quality_timeline/quality_timeline.module.css"
 const Home = () => {
   const container = useRef(null);
@@ -29,11 +27,8 @@ const Home = () => {
 
   return (
     <div>
-    <div>
-    <Image src={loading} alt="Picture"  className={styles.loading_image} />
-    </div>
     <div className={styles.quality_timeline_usps}>
-    <h1 className={styles.quality_usps}>Usps:</h1>
+    <h1 className={styles.quality_usps}>Timeline</h1>
     </div>
       <div className={styles.first_timeline_outer}>
         <div className={styles.first_timeline_inner}>

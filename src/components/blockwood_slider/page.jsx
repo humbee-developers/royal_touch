@@ -2,7 +2,7 @@
 import { useState } from 'react';
 import Slider from 'react-slick';
 import Image from 'next/image';
-import pic1 from "@/images/ply.png"
+import pic1 from "@/images/Ply.png"
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import './blockwood_Slider.css';

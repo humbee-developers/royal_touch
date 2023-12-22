@@ -1,5 +1,5 @@
 .nav_menu_names {
-  color: #006f69;
+  color: #006F69;
   font-size: 16px;
   font-style: normal;
   z-index: 1;
@@ -14,45 +14,34 @@
   top: 5rem;
   right: 7rem;
 }
-
-
-
-.inner_header_text{
+.inner_header_text {
   position: absolute;
-  bottom: 20rem;
+  top: 50%;
   width: 50%;
   left: 10rem;
   color: white;
 }
-
-
-.inner_header_t1{
+.inner_header_t1 {
   font-size: 37px;
   font-style: normal;
   font-weight: 500;
 }
-
-.inner_header_t2{
+.inner_header_t2 {
   font-size: 12px;
   margin-top: 0.5rem;
-font-style: normal;
-font-weight: 500;
-line-height: 144.5%;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 144.5%;
 }
-
-
-
-.homepage_image{
+.homepage_image {
   height: 100%;
-  width:100%;
+  width: 100%;
 }
-.inner_image_outer{
+.inner_image_outer {
   position: relative;
-    width: 100%;
-    aspect-ratio: 70/35;
+  width: 100%;
+  aspect-ratio: 70/35;
 }
-
-
 @media (max-width: 991px) {
   .logo {
     height: 100%;
@@ -63,9 +52,8 @@ line-height: 144.5%;
     top: 2rem;
     right: 5rem;
   }
-
   .nav_menu_names {
-    color: #006f69;
+    color: #006F69;
     font-size: 16px;
     font-style: normal;
     z-index: 1;
@@ -76,15 +64,12 @@ line-height: 144.5%;
     font-weight: 500;
     line-height: normal;
   }
-
-
-  .inner_image_outer{
+  .inner_image_outer {
     position: relative;
-      width: 100%;
-      aspect-ratio: 1;
+    width: 100%;
+    aspect-ratio: 1;
   }
 }
-
 @media (max-width: 787px) {
   .logo {
     height: 100%;
@@ -95,9 +80,8 @@ line-height: 144.5%;
     top: 2rem;
     right: 5rem;
   }
-
   .nav_menu_names {
-    color: #006f69;
+    color: #006F69;
     font-size: 16px;
     font-style: normal;
     z-index: 1;
@@ -108,13 +92,30 @@ line-height: 144.5%;
     font-weight: 500;
     line-height: normal;
   }
-
-
-
-  .inner_image_outer{
-    position: relative;
-      width: 100%;
-      aspect-ratio: 1;
+  .inner_header_text {
+    left: 5rem;
+    width: 80%;
   }
-  
+  .inner_header_t1 {
+    font-size: 30px;
+  }
+  .inner_image_outer {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 1;
+  }
+}
+@media (max-width: 575px) {
+  .inner_header_text {
+    left: 1rem;
+    width: 90%;
+  }
+  .inner_header_t1 {
+    font-size: 28px;
+  }
+}
+@media (max-width: 375px) {
+  .inner_header_text {
+    top: 40%;
+  }
 }

@@ -1,0 +1,45 @@
+.numscroll_section {
+      background-color: #006861;
+    }
+    .numscroll {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .innerCircle {
+      border-radius: 50%;
+      background-color: rgba(255, 255, 255, 0.228);
+      border: 1px solid rgba(255, 255, 255, 0.508);
+      position: relative;
+      transform: translate(-50%, -50%);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .outerCircle {
+      border-radius: 50%;
+      top: 50%;
+      left: 50%;
+      border: 1px solid rgba(255, 255, 255, 0.303);
+      position: relative;
+      position: absolute;
+      transform: translate(-50%, -50%);
+      display: flex;
+      justify-content: center;
+    }
+    .percentage_tag {
+      color: white;
+    }
+    @media screen and (max-width: 425px) {
+      .innerCircle {
+        width: 40%;
+        height: 40%;
+      }
+      .outerCircle {
+        width: 90%;
+        height: 90%;
+      }
+    }

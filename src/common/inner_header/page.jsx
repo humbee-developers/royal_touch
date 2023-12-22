@@ -66,12 +66,6 @@ const newRef = useRef("")
 
 
 
-
-
-
-
-
-
   const router = useRouter();
   return (
     <div className={styles.s}>

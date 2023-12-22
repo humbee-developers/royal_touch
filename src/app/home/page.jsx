@@ -6,11 +6,11 @@ import Footer from "@/components/footer/page";
 import Layers from "@/components/layers/page";
 import Factory from "@/components/factory/page";
 import Form from "@/components/form/page2";
+import Plyspin from "@/components/plyspin/page"
 import Navbar from "@/components/navbar/index";
 import HomeStore from "@/components/homeStore/page";
 import TextScroll from "@/common/textScroll/page";
 import New_carousal from "@/common/new_carousal/page";
-import { useEffect, useRef } from "react";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import Lenis from "@studio-freight/lenis";
@@ -59,13 +59,13 @@ const Page = () => {
             />
           </div>
         </div>
-        {/*<HeroSection  banner_image={homepage_image_second}  homepage_heading2="Elevate Your Space with Royale Touche: Where Luxury is a Lifestyle."/> */}
         <div className="card">
           <TextScroll />
         </div>
       </section>
       <Factory />
       <Layers />
+     <Plyspin/>
       <Timeline />
       <New_carousal />
       <HomeStore />

@@ -2,12 +2,22 @@
   margin: 0;
   padding: 0;
   line-height: 1.5;
+  display: flex;
   font-weight: 400;
   color: white;
   /* background: #006f69; */
 }
 .first_timeline_inner {
   max-width: 800px;
+  width: 43%;
+}
+
+.timeline_animation_text {
+  font-size: 40px;
+}
+
+.canvas_side_outer {
+  width: 59%;
 }
 
 .timeline {
@@ -16,7 +26,7 @@
   margin-bottom: 15rem;
 }
 .twoo {
-  font-weight: 300;
+  font-weight: 400;
   letter-spacing: 1px;
 }
 
@@ -32,7 +42,7 @@
   color: white;
 }
 
-.line{
+.line {
   position: absolute;
   z-index: 1;
   left: calc(20% - -1px);
@@ -41,48 +51,59 @@
   bottom: 360px;
   border-right: 2px solid #218e88;
 }
-.bead{
+.bead {
   position: absolute;
   display: block;
   height: 1rem;
   width: 1rem;
   border-radius: 50%;
-  background-color: #0F8A83;
+  background-color: #0f8a83;
   left: 20.3%;
   z-index: 2;
   top: 20%;
   transform: translateX(-50%);
 }
 
-.timeline_number{
+.timeline_number {
   font-size: 20px;
 }
-.timeline_sec_comment{
+.timeline_sec_comment {
   font-size: 19px;
   font-weight: 300;
 }
 
-.contentX{
-  width: 100%; 
+.contentX {
+  width: 100%;
   padding: 46px 0px 0px 220px;
   width: calc(100% - 2rem);
-  color: #26ACA5;
+  color: #26aca5;
   font-size: 35px;
   opacity: 0;
 }
 
-@media(max-width:991px){
+
+@media (min-width: 1600px){
 
 
-  .contentX{
-    width: 100%; 
+
+  .timeline_animation_text {
+    font-size: 80px;
+    margin-left: 8rem;
+  }
+  
+
+}
+
+@media (max-width: 991px) {
+  .contentX {
+    width: 100%;
     padding: 19px 0px 0px 174px;
     width: calc(100% - 2rem);
-    color: #26ACA5;
+    color: #26aca5;
     font-size: 25px;
     opacity: 0;
   }
-  
+
   .timeline {
     position: relative;
     min-height: 150px;
@@ -92,7 +113,7 @@
     font-weight: 400;
     letter-spacing: 1px;
   }
-  
+
   .section {
     display: flex;
     position: relative;
@@ -104,8 +125,8 @@
     min-height: 218px;
     color: white;
   }
-  
-  .line{
+
+  .line {
     position: absolute;
     z-index: 1;
     left: calc(20% - -1px);
@@ -114,53 +135,38 @@
     bottom: 111px;
     border-right: 2px solid #218e88;
   }
-  .bead{
+  .bead {
     position: absolute;
     display: block;
     height: 1rem;
     width: 1rem;
     border-radius: 50%;
-    background-color: #0F8A83;
+    background-color: #0f8a83;
     left: 20.3%;
     z-index: 2;
     top: 20%;
     transform: translateX(-50%);
   }
-  
-  .timeline_number{
+
+  .timeline_number {
     font-size: 20px;
   }
-  .timeline_sec_comment{
+  .timeline_sec_comment {
     font-size: 19px;
     font-weight: 300;
   }
-  
-
-
-
-
-
-
-
-
-
-
-
-
 }
 
-
-
-@media(max-width:787px){
-  .contentX{
-    width: 100%; 
+@media (max-width: 787px) {
+  .contentX {
+    width: 100%;
     padding: 40px 0px 0px 150px;
     width: calc(0);
-    color: #26ACA5;
+    color: #26aca5;
     font-size: 20px;
     opacity: 0;
   }
-  
+
   .timeline {
     position: relative;
     min-height: 150px;
@@ -170,7 +176,7 @@
     font-weight: 400;
     letter-spacing: 1px;
   }
-  
+
   .section {
     display: flex;
     position: relative;
@@ -182,8 +188,8 @@
     min-height: 218px;
     color: white;
   }
-  
-  .line{
+
+  .line {
     position: absolute;
     z-index: 1;
     left: calc(20% - -1px);
@@ -192,42 +198,38 @@
     bottom: 111px;
     border-right: 2px solid #218e88;
   }
-  .bead{
+  .bead {
     position: absolute;
     display: block;
     height: 1rem;
     width: 1rem;
     border-radius: 50%;
-    background-color: #0F8A83;
+    background-color: #0f8a83;
     left: 20.3%;
     z-index: 2;
     top: 27%;
     transform: translateX(-50%);
   }
-  
-  .timeline_number{
+
+  .timeline_number {
     font-size: 20px;
   }
-  .timeline_sec_comment{
+  .timeline_sec_comment {
     font-size: 19px;
     font-weight: 300;
   }
-
 }
 
-
-
-
-@media(max-width:575px){
-  .contentX{
-    width: 100%; 
+@media (max-width: 575px) {
+  .contentX {
+    width: 100%;
     padding: 46px 0px 0px 80px;
     width: calc(0);
-    color: #26ACA5;
+    color: #26aca5;
     font-size: 20px;
     opacity: 0;
   }
-  
+
   .timeline {
     position: relative;
     min-height: 150px;
@@ -237,7 +239,7 @@
     font-weight: 400;
     letter-spacing: 1px;
   }
-  
+
   .section {
     display: flex;
     position: relative;
@@ -249,8 +251,8 @@
     min-height: 218px;
     color: white;
   }
-  
-  .line{
+
+  .line {
     position: absolute;
     z-index: 1;
     left: calc(20% - -1px);
@@ -259,25 +261,24 @@
     bottom: 111px;
     border-right: 2px solid #218e88;
   }
-  .bead{
+  .bead {
     position: absolute;
     display: block;
     height: 1rem;
     width: 1rem;
     border-radius: 50%;
-    background-color: #0F8A83;
+    background-color: #0f8a83;
     left: 20.3%;
     z-index: 2;
     top: 20%;
     transform: translateX(-50%);
   }
-  
-  .timeline_number{
+
+  .timeline_number {
     font-size: 20px;
   }
-  .timeline_sec_comment{
+  .timeline_sec_comment {
     font-size: 19px;
     font-weight: 300;
   }
-
 }

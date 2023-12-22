@@ -1,18 +1,16 @@
-import React from 'react';
-import { motion, useAnimation } from 'framer-motion';
-import { useInView } from 'react-intersection-observer';
-import Image from 'next/image';
+import React from "react";
+import { motion, useAnimation } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+import Image from "next/image";
 import plywood_wall_light from "@/images/wall_light.png";
 import plywood_standing_lamp from "@/images/standing_lamp.png";
 import plywood_desk from "@/images/desk.png";
 import styles from "@/components/plywood_lights/plywood.module.css";
-
 const Page = () => {
   const deskControls = useAnimation();
   const lampControls = useAnimation();
   const wallLightControls = useAnimation();
   const textControls = useAnimation();
-
   const [deskRef, deskInView] = useInView({
     triggerOnce: true,
   });
@@ -22,36 +20,42 @@ const Page = () => {
   const [wallLightRef, wallLightInView] = useInView({
     triggerOnce: true,
   });
-
   // Animation for plywood_desk_outer
   const deskAnimation = {
     hidden: { opacity: 0, y: 50 },
-    visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: 'easeOut' } },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: { duration: 0.8, ease: "easeOut" },
+    },
   };
-
   // Animation for plywood_standing_lamp
   const lampAnimation = {
     hidden: { opacity: 0, x: 50 },
-    visible: { opacity: 1, x: 0, transition: { duration: 0.8, ease: 'easeOut' } },
+    visible: {
+      opacity: 1,
+      x: 0,
+      transition: { duration: 0.8, ease: "easeOut" },
+    },
   };
-
   // Animation for plywood_wall_light_outer
   const wallLightAnimation = {
     hidden: { opacity: 0, y: -50 },
-    visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: 'easeOut' } },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: { duration: 0.8, ease: "easeOut" },
+    },
   };
-
   const startSequentialAnimation = async () => {
-    await wallLightControls.start('visible');
-    await lampControls.start('visible');
-    await deskControls.start('visible');
-    await textControls.start('visible');
+    await wallLightControls.start("visible");
+    await lampControls.start("visible");
+    await deskControls.start("visible");
+    await textControls.start("visible");
   };
-
   if (deskInView && lampInView && wallLightInView) {
     startSequentialAnimation();
   }
-
   const text = [
     "Royale",
     "Touche",
@@ -104,33 +108,25 @@ const Page = () => {
     "longevity",
     "of",
     "the",
-    "plywood."
+    "plywood.",
   ];
-  
-
   const { ref, inView } = useInView({
     triggerOnce: true,
   });
-
-
-
-
-
   const textAnimation = {
     hidden: { opacity: 0, y: 50 },
     visible: {
       opacity: 1,
       y: 0,
-      transition: { type: 'spring', stiffness: 200, damping: 20 },
+      transition: { type: "spring", stiffness: 200, damping: 20 },
     },
   };
-
   return (
-    <div>
+    <div style={{ position: "relative" }}>
       <div className={styles.plywood_lights_outer}>
         <div className={styles.plywood_lights_one}>
           <div className={styles.plywood_lights_text_outer} ref={ref}>
-          <motion.div
+            <motion.div
               className={styles.plywood_lights_text}
               animate={textControls}
               initial="hidden"
@@ -150,7 +146,7 @@ const Page = () => {
                   }}
                   className={styles.innovation_flex_fifty_text}
                 >
-                  {el}{' '}
+                  {el}{" "}
                 </motion.span>
               ))}
             </p>
@@ -162,7 +158,11 @@ const Page = () => {
             initial="hidden"
             variants={wallLightAnimation}
           >
-            <Image className={styles.plywood_wall_light} src={plywood_wall_light} alt='image'/>
+            <Image
+              className={styles.plywood_wall_light}
+              src={plywood_wall_light}
+              alt="image"
+            />
           </motion.div>
         </div>
         <div className={styles.plywood_lights_two}>
@@ -174,10 +174,9 @@ const Page = () => {
               initial="hidden"
               variants={lampAnimation}
             >
-              <Image src={plywood_standing_lamp} alt='image'/>
+              <Image src={plywood_standing_lamp} alt="image" />
             </motion.div>
           </div>
-
           <motion.div
             className={styles.plywood_desk_outer}
             ref={deskRef}
@@ -185,12 +184,24 @@ const Page = () => {
             initial="hidden"
             variants={deskAnimation}
           >
-            <Image className={styles.plywood_desk} src={plywood_desk} alt=''/>
+            <Image className={styles.plywood_desk} src={plywood_desk} alt="" />
+          </motion.div>
+          <motion.div
+            className={styles.plywood_wall_light_outer}
+            ref={wallLightRef}
+            animate={wallLightControls}
+            initial="hidden"
+            variants={wallLightAnimation}
+          >
+            <Image
+              className={styles.plywood_wall_light_mobile}
+              src={plywood_wall_light}
+              alt="image"
+            />
           </motion.div>
         </div>
       </div>
     </div>
   );
 };
-
 export default Page;

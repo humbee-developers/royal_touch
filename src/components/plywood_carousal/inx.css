@@ -6,6 +6,9 @@
   top: 84%;
   position: absolute;
 }
+.another_slider {
+  position: absolute !important;
+}
 @media (max-width: 1024px) {
   .swiper-thumbs {
     cursor: pointer;
@@ -18,4 +21,16 @@
     padding-left: 40px;
     padding-right: 40px;
   }
+  .another_slider {
+    position: static !important;
+    margin: 40px 0 0;
+  }
 }
+@media (max-width: 575px) {
+  .another_slider {
+    margin: 0;
+  }
+}
+
+
+

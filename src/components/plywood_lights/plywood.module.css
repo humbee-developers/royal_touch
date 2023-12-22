@@ -5,10 +5,11 @@
   width: 60%;
 }
 .plywood_lights_text_outer {
-  padding: 14rem 16rem 8rem 7rem;
+  padding: 15rem 4rem 5rem 8rem;
+  width: 55%;
 }
 .plywood_lights_text {
-  color: #c3a464;
+  color: #C3A464;
   font-size: 37px;
   font-weight: 600;
   line-height: 144.5%;
@@ -21,45 +22,104 @@
 }
 .plywood_lights_two {
   width: 40%;
-  background-color: #c3a464;
-}
-.plywood_wall_light_outer {
+  background-color: #C3A464;
   position: relative;
 }
+/* .plywood_wall_light_outer {
+  position: relative;
+} */
 .plywood_wall_light {
-  bottom: 23.2rem;
   position: absolute;
-  right: 1%;
+  left: 48%;
+  top: 0;
 }
-
 .plywood_standing_lamp {
-  float: right;
+  position: absolute;
+  right: 0;
+  bottom: 0;
 }
-
-.plywood_desk_outer {
+/* .plywood_desk_outer {
   position: relative;
-}
- 
+} */
 .plywood_desk {
   color: transparent;
   max-width: 100%;
-
   position: absolute;
-
   left: -15rem;
-  top: 30.5rem;
+  bottom: 0;
 }
-
-@media (min-width: 1600px) {
-  .plywood_wall_light_outer {
-    position: relative;
-  }
+.plywood_wall_light_mobile {
+  display: none;
+}
+/* @media (min-width: 1600px) {
   .plywood_wall_light {
     bottom: 18.8rem;
     position: absolute;
     right: 1%;
   }
-
   .plywood_standing_lamp {
+  }
+} */
+@media (max-width: 1440px) {
+  .plywood_desk {
+    left: -14rem;
+    bottom: 0;
+  }
+}
+@media (max-width: 1199px) {
+  .plywood_lights_text_outer {
+    padding: 10rem 4rem 5rem 8rem;
+    width: 80%;
+  }
+  .plywood_desk {
+    left: -12rem;
+    bottom: 0;
+  }
+}
+@media (max-width: 991px) {
+  .plywood_lights_text_outer {
+    padding: 8rem 7rem 5rem 6rem;
+    width: 90%;
+  }
+  .plywood_desk {
+    left: -10rem;
+    bottom: 0;
+  }
+  .plywood_wall_light {
+    position: absolute;
+    left: 45%;
+    top: 0;
+  }
+}
+@media (max-width: 767px) {
+  .plywood_lights_outer {
+    flex-direction: column;
+  }
+  .plywood_lights_one {
+    width: 100%;
+  }
+  .plywood_lights_two {
+    width: 100%;
+    background-color: #C3A464;
+    position: relative;
+    height: 697px;
+  }
+  .plywood_wall_light {
+    display: none;
+  }
+  .plywood_wall_light_mobile {
+    display: block;
+  }
+  .plywood_desk {
+    left: -10rem;
+    bottom: 0;
+  }
+  .plywood_lights_text_outer {
+    padding: 2rem;
+    width: 100%;
+  }
+  .plywood_lights_small_text {
+    font-size: 20px;
+    margin: 20px 0 0;
   }
 }

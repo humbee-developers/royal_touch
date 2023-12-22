@@ -5,20 +5,19 @@ import Link from "next/link";
 import logo from "@/images/logo.png";
 import { useRouter } from "next/navigation";
 import Button from "@/common/button/Button";
-
 import styles from "@/components/heroSection/heroSection.module.css";
 import { useEffect, ref } from "react";
 import gsap from "gsap";
 import splitType from "split-type";
 import { useReducer } from "react";
-import "./heroSection_textAnimation.css"
+import "./heroSection_textAnimation.css";
 const Page = (props) => {
   const router = useRouter();
   const heading_ref = useRef("");
   let refs = useRef([]);
   useEffect(() => {
     setTimeout(() => {
-      const ourText = new splitType(heading_ref.current, { types: "chars" });
+      const ourText = new splitType(".hero_big_heading", { types: "chars" });
       const chars = ourText.chars;
       gsap.fromTo(
         chars,
@@ -36,7 +35,7 @@ const Page = (props) => {
           ease: "power4.out",
         }
       );
-    }, 2300);
+    }, 2500);
   }, []);
   const splitWords = (phrase) => {
     let body = [];
@@ -80,7 +79,6 @@ const Page = (props) => {
         <div className={styles.btn_outer}>
           <Button onClick={() => router.push("/")} btn_text="New Arrivals" />
         </div>
-     
       </div>
       <div className={styles.homepage_image_wrapper}>
         {props.video_bg && (
@@ -106,7 +104,7 @@ const Page = (props) => {
           <div
             data-scroll
             data-scroll-speed="0.3"
-            className={styles.header_text}
+            className={`${styles.header_text} hero_big_heading`}
             ref={heading_ref}
           >
             {props.homepage_heading && splitWords(props.homepage_heading)}
@@ -121,9 +119,10 @@ const Page = (props) => {
           <div
             data-scroll
             data-scroll-speed="0.2"
-            className={styles.header_name}
+            className={`${styles.header_name} hero_big_heading`}
+            // ref={heading_ref}
           >
-            {props.header_name}
+            {props.header_name && splitWords(props.header_name)}
           </div>
           <div
             data-scroll

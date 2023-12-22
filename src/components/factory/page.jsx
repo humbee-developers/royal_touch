@@ -50,9 +50,9 @@ const AirpodsAnimation = () => {
         ease: "none",
         duration: 1,
       })
-      .add(() => {
-        text.style.opacity = 1;
-      }, 0);
+      // .add(() => {
+      //   text.style.opacity = 1;
+      // }, 0);
 
     imagesRef.current[0].onload = render;
 

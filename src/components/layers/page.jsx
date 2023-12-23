@@ -7,6 +7,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 const Airpods = () => {
   const [scrollPercentage, setScrollPercentage] = useState(0);
+  const [circleSize, setCircleSize] = useState(100); // Initial circle size
 
   const sectionRef = useRef(null);
   const canvasRef = useRef(null);
@@ -38,7 +39,7 @@ const Airpods = () => {
 
     const timeline = gsap.timeline({
       onUpdate: () => {
-        const progress = (timeline.progress() * 100).toFixed(0); 
+        const progress = (timeline.progress() * 100).toFixed(0);
         setScrollPercentage(progress);
         render();
       },
@@ -68,6 +69,14 @@ const Airpods = () => {
         canvas.width,
         canvas.height
       );
+
+      // Draw the circle border
+      context.beginPath();
+      const circleRadius = 100 + timeline.progress() * 100; // Adjust the multiplier as needed
+      context.arc(canvas.width / 2, canvas.height / 2, circleRadius, 0, 2 * Math.PI);
+      context.strokeStyle = "white";
+      context.lineWidth = 1;
+      context.stroke();
     }
 
     // Cleanup
@@ -104,8 +113,13 @@ const Airpods = () => {
     <div className={styles.counter_relm}>
       <section ref={sectionRef}>
         <div className={styles.percentage_counter_outer}>
-        <div className={styles.percentageCounter}>{scrollPercentage}%</div>
-        <span className={styles.counter_text}>Royale Touche</span>
+          <div
+            className={styles.percentageCounter}
+            // style={{ fontSize: `${circleSize}px` }}
+          >
+            {scrollPercentage}%
+          </div>
+          <span className={styles.counter_text}>Royale Touche</span>
         </div>
         <canvas ref={canvasRef}></canvas>
       </section>

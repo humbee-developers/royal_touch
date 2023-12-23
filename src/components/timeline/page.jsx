@@ -22,7 +22,7 @@ useEffect(() => {
   contextRef.current = context;
 
   // Set a fixed size for the canvas (adjust as needed)
-  canvas.width = 1100;
+  canvas.width = 900;
     // canvas.height = 600;
   canvas.height = window.innerHeight;
 
@@ -40,12 +40,12 @@ useEffect(() => {
 
   gsap
     .timeline({
-      onUpdate: render,
+      onUpdate: render, 
       scrollTrigger: {
         trigger: section,
         pin: true,
         scrub: 1.5,
-        end: "+=200%",
+        end: "+=350%",
       },
     })
     .to(airpodsRef.current, {
@@ -86,8 +86,8 @@ useEffect(() => {
       scrollTrigger: {
         trigger: container.current,
         scrub: 1,
-        start: "top 50%",
-        end: "bottom 60%",
+        start: "top 70%",
+        end: "bottom 90%",
       },
       opacity: 1,
       color: "white",
@@ -100,7 +100,7 @@ useEffect(() => {
     <div>
       <div className={styles.first_timeline_outer}>
         <div className={styles.first_timeline_inner}>
-        <div className={styles.timeline_animation_text}>Heading text here</div>
+        <div className={styles.timeline_animation_text}>Promise Of Quality</div>
           <div
             className={styles.timeline}
             ref={container}>

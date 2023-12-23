@@ -41,13 +41,15 @@ const AirpodsAnimation = () => {
         scrollTrigger: {
           trigger: section,
           pin: true,
-          scrub: 0.2,
-          end: "+=200%",
+          scrub: 0.1,
+          // scrub: true,
+          end: "+=1300%",
         },
       })
       .to(airpodsRef.current, {
         frame: frameCount - 1,
         snap: "frame",
+        
         ease: "none",
         duration: 1,
       })

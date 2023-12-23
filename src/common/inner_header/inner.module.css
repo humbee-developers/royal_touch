@@ -33,6 +33,19 @@
   font-weight: 500;
   line-height: 144.5%;
 }
+
+.inner_header_big{
+  font-size: 120px;
+  font-style: normal;
+  font-weight: 500;
+  left: -7rem;
+  position: absolute;
+  top: 9rem;
+  width: 100%;
+  display: flex;
+}
+
+
 .homepage_image {
   height: 100%;
   width: 100%;
@@ -42,6 +55,24 @@
   width: 100%;
   aspect-ratio: 70/35;
 }
+
+
+@media(min-width:1600px){
+  .inner_header_big{
+    font-size: 118px;
+    font-style: normal;
+    font-weight: 500;
+    left: -7rem;
+    position: absolute;
+    /* margin-top: 10rem; */
+    top: 11rem;
+    width: 100%;
+    display: flex;
+  
+  }
+}
+
+
 @media (max-width: 991px) {
   .logo {
     height: 100%;

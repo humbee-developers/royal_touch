@@ -8,37 +8,6 @@ gsap.registerPlugin(ScrollTrigger);
 
 const AirpodsAnimation = () => {
 
-  const [count, setCount] = useState(0);
-  const [maxScroll, setMaxScroll] = useState(0);
-  const [innerCircleSize, setInnerCircleSize] = useState(10);
-  const [outerCircleSize, setOuterCircleSize] = useState(10);
-
-
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
-      const maxScrollDistance = document.documentElement.scrollHeight - window.innerHeight;
-      setMaxScroll(maxScrollDistance);
-      if (currentScroll >= maxScrollDistance) {
-        setCount(100);
-      } else if (currentScroll === 0) {
-        setCount(0);
-      } else {
-        const scrollPercentage = (currentScroll / maxScrollDistance) * 100;
-        setCount(scrollPercentage);
-        setInnerCircleSize(100 + (scrollPercentage * 13)); // Adjust inner circle size based on scrollPercentage
-        setOuterCircleSize(160 + (scrollPercentage * 19)); // Adjust outer circle size based on scrollPercentage
-      }
-    };
-    window.addEventListener('scroll', handleScroll);
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
-
-
-
   const sectionRef = useRef(null);
   const canvasRef = useRef(null);
   const textRef = useRef(null);
@@ -74,7 +43,7 @@ const AirpodsAnimation = () => {
           trigger: section,
           pin: true,
           scrub: 1.5,
-          end: "+=200%",
+          end: "+=500%",
         },
       })
       .to(airpodsRef.current, {
@@ -105,30 +74,6 @@ const AirpodsAnimation = () => {
 <section ref={sectionRef}>
       <canvas ref={canvasRef}></canvas>
     </section>
-
-
-    {/* <div className='numscroll_section'>
-      <div className={styles.numscroll}>
-        <div
-          className={styles.innerCircle}
-          style={{
-            width: `${innerCircleSize}px`,
-            height: `${innerCircleSize}px`,
-          }}
-        >
-          <div
-            className={styles.outerCircle}
-            style={{
-              width: `${outerCircleSize}px`,
-              height: `${outerCircleSize}px`,
-            }}
-          />
-          <h1 className={styles.percentage_tag}>{Math.floor(count)}%</h1>
-        </div>
-      </div>
-    </div> */}
-
-
 
 
    </div>

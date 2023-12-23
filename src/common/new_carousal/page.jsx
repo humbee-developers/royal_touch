@@ -20,7 +20,7 @@ const Page = ()=> {
       <div className={styles.sliderCard}>
         <Swiper
           effect="fade"
-          speed={1200}
+          speed={500}
           fadeEffect={{
             crossFade: true,
           }}

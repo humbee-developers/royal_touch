@@ -3,3 +3,32 @@
   width: 100%;
   object-fit: cover;
 }
+.video_extra{
+  text-align: center;
+  margin: auto;
+  left: 25rem;
+  bottom: 18rem;
+  position: absolute;
+  width: 50%;
+}
+
+
+.plyspin_text{
+  color: white;
+  font-weight: 500;
+  font-size: 69px;
+}
+
+
+
+.plyspin_btn_outer{
+  margin: auto;
+  width: 13%;
+  position: absolute;
+  left: 42rem;
+  bottom: 11rem;
+}
+
+.video_loop_outer{
+  position: relative;
+}

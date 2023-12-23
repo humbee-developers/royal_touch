@@ -6,75 +6,13 @@ import styles from "@/components/layers/layer.module.css";
 gsap.registerPlugin(ScrollTrigger);
 
 const Airpods = () => {
-  const [count, setCount] = useState(0);
-  const [innerCircleSize, setInnerCircleSize] = useState(10);
-  const [outerCircleSize, setOuterCircleSize] = useState(10);
+  const [scrollPercentage, setScrollPercentage] = useState(0);
 
   const sectionRef = useRef(null);
   const canvasRef = useRef(null);
   const contextRef = useRef(null);
   const imagesRef = useRef([]);
   const airpodsRef = useRef({ frame: 0 });
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
-      const sectionTop = sectionRef.current.getBoundingClientRect().top;
-
-      if (sectionTop >= 0 && sectionTop <= window.innerHeight) {
-        const scrollPercentage = (sectionTop / window.innerHeight) * 100;
-        setCount(scrollPercentage);
-        setInnerCircleSize(100 + scrollPercentage * 13);
-        setOuterCircleSize(160 + scrollPercentage * 19);
-      } else {
-        setCount(0);
-      }
-    };
-
-    const section = sectionRef.current;
-
-    gsap.to(section, {
-      scrollTrigger: {
-        // pin: true,
-        scrub:true,
-        end: "+=500%", // change this to fit your needs
-        onToggle: (self) => {
-          if (self.isActive) {
-            window.addEventListener("scroll", handleScroll);
-          } else {
-            window.removeEventListener("scroll", handleScroll);
-          }
-        },
-      },
-    });
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
-
-
-
-
-
-
-
-
-
-
-// cute
-
-
-
-
-
-
-
-
-
-
-
-
 
   useEffect(() => {
     const section = sectionRef.current;
@@ -98,28 +36,38 @@ const Airpods = () => {
       imagesRef.current.push(img);
     }
 
-    gsap
-      .timeline({
-        onUpdate: render,
-        scrollTrigger: {
-          trigger: section,
-          pin: true,
-          scrub: 1.5,
-          end: "+=500%",
-        },
-      })
-      .to(airpodsRef.current, {
-        frame: frameCount - 1,
-        snap: "frame",
-        ease: "none",
-        duration: 1,
-      });
+    const timeline = gsap.timeline({
+      onUpdate: () => {
+        const progress = (timeline.progress() * 100).toFixed(0); 
+        setScrollPercentage(progress);
+        render();
+      },
+      scrollTrigger: {
+        trigger: section,
+        pin: true,
+        scrub: 1.5,
+        end: "+=500%",
+      },
+    });
+
+    timeline.to(airpodsRef.current, {
+      frame: frameCount - 1,
+      snap: "frame",
+      ease: "none",
+      duration: 1,
+    });
 
     imagesRef.current[0].onload = render;
 
     function render() {
       context.clearRect(0, 0, canvas.width, canvas.height);
-      context.drawImage(imagesRef.current[airpodsRef.current.frame], 0, 0, canvas.width, canvas.height);
+      context.drawImage(
+        imagesRef.current[airpodsRef.current.frame],
+        0,
+        0,
+        canvas.width,
+        canvas.height
+      );
     }
 
     // Cleanup
@@ -132,13 +80,14 @@ const Airpods = () => {
     const handleScrollDirection = () => {
       let lastScrollTop = 0;
       window.addEventListener("scroll", () => {
-        const currentScrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        const currentScrollTop =
+          window.pageYOffset || document.documentElement.scrollTop;
         if (currentScrollTop > lastScrollTop) {
           // Scrolling down
-          setCount(0); // Hide the counter when scrolling down
+          setScrollPercentage(0); // Hide the counter when scrolling down
         } else {
           // Scrolling up
-          handleScroll(); // Show the counter when scrolling up
+          // The counter will be updated by the GSAP timeline onUpdate
         }
         lastScrollTop = currentScrollTop;
       });
@@ -152,31 +101,14 @@ const Airpods = () => {
   }, []);
 
   return (
-    <div>
+    <div className={styles.counter_relm}>
       <section ref={sectionRef}>
+        <div className={styles.percentage_counter_outer}>
+        <div className={styles.percentageCounter}>{scrollPercentage}%</div>
+        <span className={styles.counter_text}>Royale Touche</span>
+        </div>
         <canvas ref={canvasRef}></canvas>
       </section>
-      {/* <div className="numscroll_section">
-        <div className={styles.numscroll}>
-          <div
-            className={styles.innerCircle}
-            style={{
-              width: `${innerCircleSize}px`,
-              height: `${innerCircleSize}px`,
-              visibility: count > 0 ? "visible" : "hidden",
-            }}
-          >
-            <div
-              className={styles.outerCircle}
-              style={{
-                width: `${outerCircleSize}px`,
-                height: `${outerCircleSize}px`,
-              }}
-            />
-            <h1 className={styles.percentage_tag}>{Math.floor(count)}%</h1>
-          </div>
-        </div>
-      </div> */}
     </div>
   );
 };

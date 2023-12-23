@@ -37,6 +37,13 @@ const Airpods = () => {
       imagesRef.current.push(img);
     }
 
+    // Fade in the counter and circle on mount
+    gsap.from([`.${styles.percentageCounter}`, `.${styles.percentage_counter_outer}`], {
+      opacity: 1,
+      duration: 1,
+      delay: 0.5, // Adjust the delay as needed
+    });
+
     const timeline = gsap.timeline({
       onUpdate: () => {
         const progress = (timeline.progress() * 100).toFixed(0);

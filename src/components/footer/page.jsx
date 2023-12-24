@@ -11,7 +11,7 @@ const Page = () => {
     <div>
   <div className={styles.footer_upper_heading_wrapper}>
   <h1 className={styles.footer_upper_heading}>{"Become an early adopter"}</h1>
-  <Button btn_text="Book demo"/>
+  <Button btn_text="Book Demo"/>
  
   </div>
   <Title/>

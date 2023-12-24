@@ -49,7 +49,7 @@ const Page = () => {
 <Quality_text/>
 <Quality_slider/>
 <Layers/>
-      <Quality_timeline/>
+      {/* <Quality_timeline/> */}
       <Technical/>
       <Explore />
 

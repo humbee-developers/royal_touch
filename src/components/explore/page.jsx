@@ -15,7 +15,7 @@ const ExploreUs = () => {
           <p className={styles.explore_text}>Lorem ipsum dolor sit amet consectetuxxr, adipisicing elit. Ipsa quis autem inventore, hic ut consequuntur.</p>
           <div className={styles.explore_button_wrapper}>
           
-          <Button  btn_text="Explore us"/>
+          <Button  btn_text="Explore Us"/>
       
          
           </div>

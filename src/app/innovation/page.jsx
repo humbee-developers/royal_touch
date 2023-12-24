@@ -12,7 +12,7 @@ import Form from "@/components/form/page2";
 import innovation_image from "@/images/innovation_header.png";
 import { AnimatePresence } from "framer-motion";
 import Preloader from "@/components/preloader/page";
-
+import styles from "@/app/innovation/innovation.module.css"
 const Page = () => {
   const [isLoading, setIsLoading] = useState(true);
   useEffect(() => {
@@ -39,7 +39,9 @@ const Page = () => {
         <Innovation_circles/>
         <Innovation_cards/>
         <Innovation_flex/>
+        <div className={styles.just_space}>
         <Timeline/>
+        </div>
       </div>
 
       <Form />

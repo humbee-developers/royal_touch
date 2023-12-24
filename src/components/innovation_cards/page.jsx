@@ -56,9 +56,9 @@ const Page = () => {
                         </div>
                         <div>
                           <p className={styles.flex_cards_name}>Cubord</p>
-                          <Link className={styles.flex_cards_link} href="/">
+                          {/* <Link className={styles.flex_cards_link} href="/">
                             Link to page 1
-                          </Link>
+                          </Link> */}
                         </div>
                       </div>
                     </motion.div>
@@ -89,10 +89,10 @@ const Page = () => {
                           />
                         </div>
                         <div>
-                          <p className={styles.flex_cards_name}>drower</p>
-                          <Link className={styles.flex_cards_link} href="/">
+                          <p className={styles.flex_cards_name}>Drower</p>
+                          {/* <Link className={styles.flex_cards_link} href="/">
                             Link to page 2
-                          </Link>
+                          </Link> */}
                         </div>
                       </div>
                     </motion.div>
@@ -121,9 +121,9 @@ const Page = () => {
                         </div>
                         <div>
                           <p className={styles.flex_cards_name}>Lamination</p>
-                          <Link className={styles.flex_cards_link} href="/">
+                          {/* <Link className={styles.flex_cards_link} href="/">
                             Link to page 2
-                          </Link>
+                          </Link> */}
                         </div>
                       </div>
                     </motion.div>

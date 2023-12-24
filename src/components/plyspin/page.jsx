@@ -52,7 +52,7 @@ const Page = () => {
             variants={variants}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
-            <Button btn_text="learn more" />
+            <Button btn_text="Learn More" />
           </motion.div>
         </div>
       </div>

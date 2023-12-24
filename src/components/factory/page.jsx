@@ -10,7 +10,7 @@ const AirpodsAnimation = () => {
   const textRef = useRef(null);
   const contextRef = useRef(null);
   const imagesRef = useRef([]);
-  const airpodsRef = useRef({ frame: 0 });
+  const airpodsRef = useRef({ frame: 6 });
   useEffect(() => {
     const section = sectionRef.current;
     const canvas = canvasRef.current;

@@ -16,43 +16,59 @@
   margin-top: 10rem;
 }
 .plywood_title {
-  font-size: 63px;
+  font-size: 100px;
+  padding: 123px 0 0;
   font-style: normal;
+  text-transform: uppercase;
   font-weight: 300;
   text-align: center;
   color: black;
-}
-.plywood_text {
-  color: #000;
-  transform: translateX(60%);
-  margin: 50px 0 0;
-  font-weight: 500;
-  width: 50%;
-  font-size: 18px;
 }
 .blockboard {
   margin-top: 10rem;
 }
 .blockboard_title {
-  font-size: 63px;
+  font-size: 100px;
+  padding: 123px 0 0;
   font-style: normal;
+  text-transform: uppercase;
   text-align: center;
   font-weight: 300;
-  color: black;
+  color: rgb(255, 255, 255);
 }
-.blockboard_text {
-  color: #000;
-  transform: translateX(50%);
-  font-weight: 500;
-  margin: 50px 0 0;
-  width: 50%;
-  font-size: 18px;
-}
+
 .big_arrow_outer {
   position: absolute;
-  bottom: 6rem;
+  bottom: 3rem;
   right: 5rem;
 }
+
+@media (min-width:1600px){
+  .blockboard_title {
+    font-size: 110px;
+    padding: 248px 0 0;
+    font-style: normal;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 300;
+    color: rgb(255, 255, 255);
+  }
+
+  .plywood_title {
+    font-size: 110px;
+    padding: 248px 0 0;
+    font-style: normal;
+    text-transform: uppercase;
+    font-weight: 300;
+    text-align: center;
+    color: black;
+  }
+
+
+}
+
+
+
 @media (max-width: 1199px) {
   .ply_bock {
     cursor: pointer;
@@ -102,10 +118,12 @@
     background: #C3A464;
   }
   .blockboard_title {
-    font-size: 55px;
+    font-size: 50px;
+    padding: 150px 0 0;
   }
   .plywood_title {
-    font-size: 55px;
+    font-size: 50px;
+    padding: 150px 0 0;
   }
   .block_side2 {
     width: 100%;
@@ -172,12 +190,12 @@
 }
 @media (max-width: 575px) {
   .blockboard_title {
-    font-size: 55px;
-    padding: 30px 0 0;
+    font-size: 47px;
+    padding: 181px 0 0;
   }
   .plywood_title {
-    font-size: 55px;
-    padding: 30px 0 0;
+    font-size: 47px;
+    padding: 181px 0 0;
   }
   .ply_bock {
     display: block;
@@ -206,18 +224,5 @@
   .big_arrow {
     width: 40%;
   }
-  .plywood_text {
-    color: #000;
-    width: 100%;
-    transform: none;
-    padding: 10px 12px 0px 35px;
-    font-size: 18px;
-  }
-  .blockboard_text {
-    color: #000;
-    width: 100%;
-    transform: none;
-    padding: 10px 12px 0px 35px;
-    font-size: 18px;
-  }
+  
 }

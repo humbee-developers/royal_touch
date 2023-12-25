@@ -26,7 +26,7 @@ useEffect(() => {
     // canvas.height = 600;
   canvas.height = window.innerHeight;
 
-  const frameCount = 300;
+  const frameCount = 500;
   const currentFrame = (index) =>
     `https://iraoverseas.com/wp-content/uploads/2023/12/${(index + 1)
       .toString()

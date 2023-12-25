@@ -1,3 +1,4 @@
+'use client'
 import React from 'react';
 import Image from 'next/image';
 import { motion, useAnimation } from 'framer-motion';
@@ -8,12 +9,16 @@ import LeftContent from '@/common/specifications/data';
 import RightContent from '@/common/specifications/data2';
 import Common_animation from '@/common/common_animation/animation';
 const Page = () => {
-    const controls = useAnimation();
     const [ref, inView] = useInView({ triggerOnce: true });
+    const controls = useAnimation();
+    const controlsLeft = useAnimation();
+    const controlsRight = useAnimation();
+    const [refLeft, inViewLeft] = useInView({ triggerOnce: true });
+    const [refRight, inViewRight] = useInView({ triggerOnce: true });
     // Animation variant for entering from the bottom
     const animationVariant = {
-        hidden: { opacity: 0, y: 50 },
-        visible: { opacity: 1, y: 0, transition: { duration: 0.5, ease: "easeOut" } }
+        hidden: { opacity: 0, y: 80 },
+        visible: { opacity: 1, y: 0, transition: { duration: 1.4, ease: "easeOut" } }
     };
     const staggerVariants = {
         hidden: { opacity: 0 },
@@ -32,12 +37,17 @@ const Page = () => {
         hidden: { opacity: 0, y: 50 },
         visible: { opacity: 1, y: 0, transition: { duration: 0.7, ease: "easeInOut"  } }
     };
-    // Trigger animation when inView changes
     React.useEffect(() => {
+        if (inViewLeft) {
+            controlsLeft.start('visible');
+        }
+        if (inViewRight) {
+            controlsRight.start('visible');
+        }
         if (inView) {
             controls.start('visible');
         }
-    }, [controls, inView]);
+    }, [controlsLeft, controlsRight, inViewLeft, inViewRight,inView]);
     return (
         <div>
             <div className={styles.specifications_section}>
@@ -45,11 +55,11 @@ const Page = () => {
                     <Common_animation text="SPECIFICATIONS" />
                 </div>
                 <div className={styles.specifications_content}>
-                    <div className={styles.specifications_content_left}>
+                    <div className={styles.specifications_content_left} ref={refLeft}>
                         <motion.div
                             variants={staggerVariants}
                             initial="hidden"
-                            animate="visible"
+                            animate={controlsLeft}
                         >
                             {LeftContent.map((item, index) => (
                                 <motion.div
@@ -64,11 +74,11 @@ const Page = () => {
                             ))}
                         </motion.div>
                     </div>
-                    <div className={styles.specifications_content_right}>
+                    <div className={styles.specifications_content_right} ref={refRight}>
                         <motion.div
                             variants={staggerVariants}
                             initial="hidden"
-                            animate="visible"
+                            animate={controlsRight}
                         >
                             {RightContent.map((item, index) => (
                                 <motion.div

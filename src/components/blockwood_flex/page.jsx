@@ -5,7 +5,8 @@ import icon1 from "@/images/inner_icon1.png"
 import icon2 from "@/images/inner_icon2.png"
 import icon3 from "@/images/inner_icon3.png"
 import icon4 from "@/images/inner_icon4.png"
-import rectangle from "@/images/Rectangle_28.png";
+import rectangle from "@/images/rectangle4.png";
+import rectangle2 from "@/images/rectangle3.png";
 
 const Slide_section = () => {
   return (
@@ -48,7 +49,7 @@ const Slide_section = () => {
             {/* <h1>mohit</h1> */}
           </div>
           <div className="right">
-            <Image src={rectangle} alt="image" />
+            <Image src={rectangle2} alt="image" />
             {/* <h1>suman</h1> */}
           </div>
         </div>

@@ -1,119 +1,112 @@
-"use client"
-import React from "react";
-import { useEffect, useState } from 'react';
+import React, { useEffect, useRef } from 'react';
 import { motion } from "framer-motion";
 import { InView } from 'react-intersection-observer';
-import Image from "next/image";
-import test_img from "@/images/img4.png"
-import styles from "@/components/innovation_circles/circle.module.css";
+import styles from "@/components/innovation_circles/circle.module.css"
+const YourComponent = () => {
 
-const Page = () => {
+
+
   const text = " About Plywood who accept nothing less than the finest. Super Exclusive, handcrafted luxury laminates that make  a bold statement.  Always Classy, Beautifully Luxurious.  ONE transcends trends to create timeless elegance.".split(" ");
 
+  const magicRef = useRef(null);
+  const sceneRef = useRef(null);
 
-
-  const [mousePosition, setMousePosition] = useState({
-    x: 0,
-    y: 0
-  });
-  const [cursorVariant, setCursorVariant] = useState("default");
-
+  const magicRef1 = useRef(null);
+  const sceneRef1 = useRef(null);
+  
+  const magicRef2 = useRef(null);
+  const sceneRef2 = useRef(null);
 
   useEffect(() => {
-    let animationFrameId;
-  
-    const mouseMove = (e) => {
-      animationFrameId = requestAnimationFrame(() => {
-        setMousePosition({
-          x: e.clientX,
-          y: e.clientY,
-        });
-      });
+    const magic = magicRef.current;
+    const scene = sceneRef.current;
+
+    const magic1 = magicRef1.current;
+    const scene1 = sceneRef1.current;
+    
+    const magic2 = magicRef2.current;
+    const scene2 = sceneRef2.current;
+
+    const magicWHalf = magic.offsetWidth / 2;
+    const magicWHalf1 = magic1.offsetWidth / 2;
+    const magicWHalf2 = magic2.offsetWidth / 2;
+
+    const handleMouseMove = (e) => {
+      const x = e.pageX - scene.offsetLeft;
+      const y = e.pageY - scene.offsetTop;
+      magic.style.left = `${x - magicWHalf}px`;
+      magic.style.top = `${y - magicWHalf}px`;
     };
-  
-    window.addEventListener("mousemove", mouseMove);
-  
+
+    const handleMouseMove1 = (e) => {
+      const x = e.pageX - scene1.offsetLeft;
+      const y = e.pageY - scene1.offsetTop;
+      magic1.style.left = `${x - magicWHalf1}px`;
+      magic1.style.top = `${y - magicWHalf1}px`;
+    };
+
+    const handleMouseMove2 = (e) => {
+      const x = e.pageX - scene2.offsetLeft;
+      const y = e.pageY - scene2.offsetTop;
+      magic2.style.left = `${x - magicWHalf2}px`;
+      magic2.style.top = `${y - magicWHalf2}px`;
+    };
+
+    scene.addEventListener('mousemove', handleMouseMove);
+    scene1.addEventListener('mousemove', handleMouseMove1);
+    scene2.addEventListener('mousemove', handleMouseMove2);
+
     return () => {
-      window.removeEventListener("mousemove", mouseMove);
-      cancelAnimationFrame(animationFrameId);
+      // Cleanup the event listener when the component unmounts
+      scene.removeEventListener('mousemove', handleMouseMove);
+      scene1.removeEventListener('mousemove', handleMouseMove1);
+      scene2.removeEventListener('mousemove', handleMouseMove2);
     };
-  }, []);
-
-  const variants = {
-    default: {
-      x: mousePosition.x - 16,
-      y: mousePosition.y - 16,
-    },
-    text: {
-      height: 150,
-      width: 150,
-      x: mousePosition.x - 75,
-      y: mousePosition.y - 75,
-      backgroundColor: "white",
-      zIndex:10,
-      opacity:0.1,
-    }
-  }
-
-  const textEnter = () => setCursorVariant("text");
-  const textLeave = () => setCursorVariant("default");
-
+  }, []); // Empty dependency array to run the effect only once on mount
 
   return (
-    <div>
-    <motion.div
-        className={styles.cursor}
-        variants={variants}
-        animate={cursorVariant}
-      />
-      <div className={styles.circles_outer_spacing}>
-      
-        <div className={styles.circles_outer}>
-          <div   className={styles.circles_circle}>
-            <div onMouseEnter={textEnter} onMouseLeave={textLeave}  className={styles.circle_one}>
-              {/* <div className={styles.overlay}></div> */}
-             <div className={styles.tm_outer}>
-            
-             </div>
-              <div className={styles.circles_inner_circle_outer}>
-                {/* <div className={styles.circles_inner_circle}></div> */}
-                <div className={styles.circles_inner_text}>Functionality</div>
-              </div>
-            </div>
-          </div>
+   <div>
 
-          <div  className={styles.circles_circle}>
-            <div onMouseEnter={textEnter} onMouseLeave={textLeave}  className={styles.circle_two}>
-              {/* <div className={styles.overlay}></div> */}
-              <div className={styles.tm_outer}>
-             
-             </div>
-              <div className={styles.circles_inner_circle_outer}>
-                {/* <div className={styles.circles_inner_circle}></div> */}
-                <div className={styles.circles_inner_text}>Innovation</div>
-              </div>
-            </div>
-          </div>
+<div className={styles.circles_outer_spacing}>
 
-          <div  className={styles.circles_circle}>
-            <div onMouseEnter={textEnter} onMouseLeave={textLeave}  className={styles.circle_three}>
-              {/* <div className={styles.overlay}></div> */}
-              <div className={styles.tm_outer}>
-            
-             </div>
-              <div className={styles.circles_inner_circle_outer}>
-                {/* <div className={styles.circles_inner_circle}></div> */}
-                <div className={styles.circles_inner_text}>Design</div>
-              </div>
-            </div>
-          </div>
-        </div>
+  
+<div className={styles.circles_gap}>
+     
+     <div>
+
+
+     <div className={styles.scene} ref={sceneRef}>
+     <div className={styles.magic} ref={magicRef}>
+       
+       </div>
+     </div>
+     <div className={styles.circles_text}>Functionally</div>
 
 
 
+     </div>
 
-        
-      <InView triggerOnce={true}>
+     <div>
+     <div className={styles.scene1} ref={sceneRef1}>
+     <div className={styles.magic1} ref={magicRef1}>
+       </div>
+     </div>
+    <div className={styles.circles_text}>Innovation</div>
+     </div>
+
+     <div>
+
+     <div className={styles.scene2} ref={sceneRef2}>
+     <div className={styles.magic2} ref={magicRef2}>
+       
+       </div>
+     </div>
+     <div className={styles.circles_text}>Design</div>
+     </div>
+   </div>
+
+
+   <InView triggerOnce={true}>
         {({ inView, ref }) => (
           <div ref={ref}>
             <div className={styles.circles_paragraph}>
@@ -135,10 +128,15 @@ const Page = () => {
           </div>
         )}
       </InView>
-      </div>
 
-    </div>
+</div>
+
+
+
+
+
+   </div>
   );
 };
 
-export default Page;
+export default YourComponent;

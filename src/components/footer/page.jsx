@@ -10,7 +10,7 @@ const Page = () => {
   return (
     <div>
   <div className={styles.footer_upper_heading_wrapper}>
-  <h1 className={styles.footer_upper_heading}>{"Become an early adopter"}</h1>
+  <h1 className={styles.footer_upper_heading}>{"Explore the Royale Experience"}</h1>
   <Button btn_text="Book Demo"/>
  
   </div>

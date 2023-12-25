@@ -2,6 +2,7 @@
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
+import styles from "@/components/factory_walk/factory_walk.module.css"
 gsap.registerPlugin(ScrollTrigger);
 
 
@@ -43,7 +44,7 @@ const AirpodsAnimation = () => {
           pin: true,
           scrub: 0.1,
           // scrub: true,
-          end: "+=1500%",
+          end: "+=1600%",
         },
       })
       .to(airpodsRef.current, {
@@ -69,9 +70,13 @@ const AirpodsAnimation = () => {
   }, []);
 
   return (
-    <section ref={sectionRef}>
+    <div>
+    <div className={styles.factory_walk_text}>Lorem ipsum dolor sit</div>
+
+<section ref={sectionRef}>
       <canvas ref={canvasRef}></canvas>
     </section>
+    </div>
   );
 };
 

@@ -14,6 +14,7 @@ const imagesRef = useRef([]);
 const airpodsRef = useRef({ frame: 0 });
 
 
+
 useEffect(() => {
   const section = sectionRef.current;
   const canvas = canvasRef.current;
@@ -26,11 +27,11 @@ useEffect(() => {
     // canvas.height = 600;
   canvas.height = window.innerHeight;
 
-  const frameCount = 500;
+  const frameCount = 501;
   const currentFrame = (index) =>
     `https://iraoverseas.com/wp-content/uploads/2023/12/${(index + 1)
       .toString()
-      .padStart(3, "0")}-1-scaled.jpg`;
+      .padStart(3, "0")}-scaled.jpg`;
 
   for (let i = 0; i < frameCount; i++) {
     let img = new Image();
